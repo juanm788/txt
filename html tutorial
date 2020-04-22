@@ -1,0 +1,944 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>    
+  </head>
+  <body>
+    <h1>La receta de la abuela</h1>  
+    <h2>Ingredientes</h2>		
+    <ul>				
+      <li>Agua</li>				
+      <li>Harina</li>
+      <li>Azucar</li>
+      <li>Mantequilla</li>
+    </ul>
+
+    <h2>Procedimiento</h2>
+    <ol>				//etiqueta numerada
+      <li>Mezclar la azucar y la mantequilla</li>
+      <li>Agregar el agua y mezclar</li>
+      <li>Agregar a la mezcla la harina lentamente</li>
+      <li>Meter en el horno</li>
+    </ol>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>La vida en el mar</h1>
+    <h2>Capítulo 1: La ventana</h2>
+    <p>
+      Viendo por la ventana todas las mañanas...
+    </p>
+    <img
+      src="https://free-images.com/md/4ea0/window_open_ocean_sea.jpg" /*para visualizar las imagenes   width y height sirven para ancho y alto
+      alt="Ventana"                                                 /* nombre de la imagen
+    />
+  </body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>Comparación</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Criterio</th>
+          <th>Producto A</th>
+          <th>Producto B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Precio</td>
+          <td>Alto</td>
+          <td>Bajo</td>
+        </tr>
+        <tr>
+          <td>Calidad</td>
+          <td>Mucha</td>
+          <td>Poca</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
+
+
+
+
+!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>Viajar a NY</h1>
+
+    <img src="https://images.freeimages.com/images/large-previews/a89/new-york-city-1451712.jpg" width="20%" alt="">
+    <p>
+      Aqui conseguirás información para planificar tu viaje a NY
+    </p>
+
+    <h2>Recordatorios</h2>
+    <ul>
+      <li>Comprar tarjeta de metro</li>
+      <li>Alquilar un Hotel</li>
+      <li>Crear la lista de lugares para visitar</li>
+      <li>Crear la lista de lugares para comer</li>
+    </ul>
+
+    <h2>Costos</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Descripción</th>
+          <th>Costo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Transporte</td>
+          <th>100</th>
+        </tr>
+        <tr>
+          <td>Hotel</td>
+          <th>500</th>
+        </tr>
+        <tr>
+          <td>Comida</td>
+          <th>150</th>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>
+            Total
+          </th>
+          <th>750</th>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>  //
+        <legend>Registro</legend>
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" />
+        </p>
+        <p>
+          <label for="tipo">Tipo</label>
+          <select name="tipo">
+            <option value="musico">Músico</option>
+            <option value="pintor">Pintor</option>
+            <option value="actor">Actor</option>
+          </select>
+        </p>
+        <p>
+          <label for="comentario">Comentario</label><br />
+          <textarea name="comentario" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          <input type="submit" value="Continuar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html> 
+
+
+html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Registro</legend>
+        <p>
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" />
+        </p>
+        <p>
+          <label for="tipo">Tipo</label><br />
+          <select name="tipo" multiple="true">
+            <option value="musico">Músico</option>
+            <option value="pintor">Pintor</option>
+            <option value="actor">Actor</option>
+          </select>
+        </p>
+        <p>
+          <label for="comentario">Comentario</label><br />
+          <textarea name="comentario" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+          Disponibilidad <br />
+          <input type="radio" name="disponibilidad" id="semana" />
+          <label for="semana">De lunes a viernes</label><br />
+          <input type="radio" name="disponibilidad" id="fin" />
+          <label for="fin">Fin de semana</label>
+        </p>
+        <p>
+          <input type="checkbox" name="terminos" id="terminos" />
+          <label for="terminos">Acepto términos y condiciones</label><br />
+        </p>
+        <p>
+          <input type="submit" value="Continuar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Registro</legend>
+        <p>
+          <label for="nombre">Nombre*</label>
+          <input type="text" name="nombre" required />
+        </p>
+        <p>
+          <label for="tipo">Tipo*</label><br />
+          <select name="tipo" multiple="true" required>
+            <option value="musico">Músico</option>
+            <option value="pintor">Pintor</option>
+            <option value="actor">Actor</option>
+          </select>
+        </p>
+        <p>
+          <label for="comentario" required>Comentario*</label><br />
+          <textarea name="comentario" cols="30" rows="10" required></textarea>
+        </p>
+        <p>
+          Disponibilidad <br />
+          <input type="radio" name="disponibilidad" id="semana" />
+          <label for="semana">De lunes a viernes</label><br />
+          <input type="radio" name="disponibilidad" id="fin" />
+          <label for="fin">Fin de Semana</label>
+        </p>
+        <p>
+          <input type="checkbox" name="terminos" id="terminos" required />
+          <label for="terminos">Acepto términos y condiciones*</label><br />
+        </p>
+        <p>
+          <input type="submit" value="Continuar" />
+        </p>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>Registro en nuestra tienda</h1>
+    <form action="#">
+      <p>
+        <label for="username">Nombre de usuario*:</label>
+        <br />
+        <input type="text" name="username" placeholder="Ej: luis" required />
+      </p>
+      <p>
+        <label for="email">Email*: </label>
+        <br />
+        <input type="text" name="email" placeholder="Ej: luis@gmail.com" required />
+      </p>
+      <p>
+        <label for="age">Edad: </label>
+        <br />
+        <input type="text" name="age" placeholder="Ej: 21" />
+      </p>
+
+      <p>
+        <label for="recommend">Recomendado por: </label>
+        <br />
+        <select name="recommend">
+          <option value="1">Google</option>
+          <option value="1">Amigo</option>
+          <option value="1">Redes Sociales</option>
+        </select>
+      </p>
+      <p>
+        <label for="comment">Comentarios: </label>
+        <br />
+        <textarea name="comment" id="" cols="30" rows="3"></textarea>
+      </p>
+
+      <p>
+
+
+        <input type="checkbox" id="accept" required/>
+        <label for="accept">Acepto terminos y condiciones*: </label>
+      </p>
+
+      <p>
+        <input type="submit" value="Registrar" />
+      </p>
+    </form>
+  </body>
+</html>
+
+
+<html>
+<head>
+	<title>Inicio</title>
+</head>
+<body>
+<h1><img src="images/concert_logo.png" alt="Logo"> Tu concierto</h1>
+<p>
+	Bienvenido a este blog de conciertos...
+</p>
+<img src="images/concert.jpg" alt="Concierto" width="60%">
+<p>
+	<a href="mailto:info@concierto.com">Contacto</a> | <a href="http://www.youtube.com" target="_blank">YouTube</a> | <a href="acerca_de.html">Acerca de</a>
+</p>
+
+</body>
+</html>
+
+
+
+
+<html>
+<head>
+	<title>Acerca de</title>
+</head>
+<body>
+<h1><a href="index.html"><img src="images/concert_logo.png" alt="Logo"></a> Tu concierto - Acerca de</h1>
+<p>
+	Este blog es desarrollado por ...
+</p>
+<p>
+	<a href="mailto:info@concierto.com">Contacto</a> | <a href="http://www.youtube.com" target="_blank">YouTube</a> | <a href="index.html">Inicio</a>
+</p>
+
+
+</body>
+</html>
+
+
+<!Doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Recetas</title>
+</head>
+<body>
+<header>
+	<h1>
+		<img src="images/recetas.jpg" alt=""> Recetas.com
+	</h1>
+</header>
+<nav>
+	<a href="http://www.recetasgratis.net">Recetas Principales</a>
+	|
+	<a href="http://cocinalatina.about.com/od/Postresentremesesydulces/">Postres Latinos</a>
+</nav>
+<br>
+<br>
+<p>
+	Bienvenido a nuestro sitio web sobre gastronom&iacute;a latina, te invitamos a preparar nuestras recetas.
+</p>
+<section>
+	<h1>Nuevas Recetas</h1>
+	<article>
+		<h1>**Arroz Criollo**</h1>
+		<p>
+        Tiempo de preparaci&oacute;n: <strong>45 minutos</strong>
+
+        N&uacute;mero de porciones <strong>4</strong>
+        <h1><strong>Ingredientes</strong> </h1>
+        <ul>
+        <li> Salsa de tomate </li>
+        <li> 2 cucharadas de aceite 14gr </li>
+        <li> 1 cebolla larga picada 45gr </li>
+        <li> 2 dientes de ajo finamente picado 3gr </li>
+        <li> 1 piment&oacute;n rojo picado en cuadritos 60gr </li>
+        <li> 1 taza de arroz blanco 225gr </li>
+        <li> 1 taza de maíz desgranado 79gr </li>
+        <li> 150gr de pechuga de pollo cocinado y desmechado </li>
+        <li> Sal al gusto </li>
+        </ul>
+
+        <H1> <strong>Preparaci&oacute;n</strong></H1>
+        <ol>
+        <li> Calentar en una olla el aceite, sofre&iacute;r la cebolla junto con el ajo, el piment&iacute;n por 3 minutos. </li>
+        <li> Adicionar el arroz y continua sofriendo para que se dore. </li>
+        <li> Agregar el pollo, el ma&iacute;z desgranado y las verduras. </li>
+        <li> Mezclar todo, rectificar sal y dejar cocinar hasta que seque. </li>
+        <li> Bajar el fuego, tapar la olla y continuar la cocci&oacute;n por 25 minutos m&aacute;s. </li>
+        </ol>
+ 	    </p>
+        <p> Esta rica receta fue proporcionada por María Paula. </p>
+	</article>
+	<article>
+		<p>
+        <h1>**Arroz con Leche**</h1>
+		</p>
+        Tiempo de preparaci&oacute;n: <strong>30 minutos</strong>
+
+        N&uacute;mero de porciones <strong>8</strong>
+        <h1><strong>Ingredientes</strong> </h1>
+        <ul>
+        <li> 215 grs de Arroz </li>
+        <li> 2 litros de leche </li>
+        <li> 215 grs de Azúcar </li>
+        <li> 1 rama de canela </li>
+        <li> 1 cucharada de mantequilla </li>
+        <li> Sal al gusto </li>
+        </ul>
+
+        <h1> <strong>Preparaci&oacute;n</strong></h1>
+        <ol>
+        <li> Calentar la leche y agregar el arroz </li>
+        <li> Adicionar el azúcar y la canela </li>
+        <li> Agregar la mantequilla y cocinar a fuego lento tapado. </li>
+        <li> Cocinar por 25 minutos aproximadamente o hasta que este blando el arroz. </li>
+        <li> Refrigerar por 3 horas y servir frío. </li>
+        </ol>
+
+		 <p> Esta fácil receta es una contribución de Janeth Patricia. </p>
+	</article>
+</section>
+<br>
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+abbr>
+	Para abreviaciones
+
+<b>
+	En negrita
+
+<blockquote>
+	Referencia de un texto
+
+<cite>
+	Cita
+
+<del>
+	Texto eliminado (tachado)
+
+<em>
+	Énfasis
+
+<ins>
+	Texto insertado
+
+<meter>
+	Medida
+
+<q>
+
+<small>
+	Cita corta
+
+<strong>
+	Texto importante
+
+<sub>
+	Subíndice
+
+<sup>
+	Supraíndice
+
+    La etiqueta <code> se emplea para representar un código fuente  usando  un tipo y tamaño de letra, para proporcionar un formato adecuado a una pieza de programa de computación. 
+
+    La etiqueta <pre> se usa para que todos los (espacios, saltos, tabulaciones) que estén dentro de ella sean interpretados literalmente.
+
+    La etiqueta <var> se emplea para definir variables.
+
+    La etiqueta <samp> se usa para definir la salida de un programa.
+
+    La etiqueta <kbd> define una combinación de teclas.
+
+    La etiqueta <template> es usada para colocar código HTML y no interpretar las etiquetas.
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Azúcar</h1>
+  
+    Definición:
+    <blockquote>
+      Se denomina <strong>azúcar</strong> a la sacarosa, cuya fórmula química es
+      C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>,también llamado <em>azúcar común</em> o <em>azúcar de mesa</em>.
+    </blockquote>
+  
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+
+  <body>
+    <h2>Comenzando con Python</h2>
+    <p>Definimos la variable <var>x</var> y usamos la intrucción <code>print()</code></p>
+
+    <h3>Ejemplo</h3>
+
+    <code>
+<pre>
+x = "Hola Mundo"
+print(x)
+</pre>
+    </code>
+
+    <h3>Salida</h3>
+    <samp>
+      Hola Mundo
+    </samp>
+  </body>
+</html>
+
+
+La etiqueta <div> representa agrupa un bloque de código HTML e inserta saltos de línea antes y después su contenido.
+
+La etiqueta <span> agrupa una porción de una línea de código HTML.
+
+A continuación usaremos el atributo style que permite definir un color de fondo con CSS, para ilustrar el comportamiento de la dos etiquetas:
+
+<p>
+    Ejemplo de uso de la etiqueta <span style="background-color:lightblue">span</span> para ilustrar su uso.
+</p>
+<p>
+    Ejemplo de uso de la etiqueta <div style="background-color:lightgreen">div</div> para ilustrar su uso.
+
+
+Ejemplo de uso de la etiqueta span para ilustrar su uso.
+
+Ejemplo de uso de la etiqueta
+div
+
+para ilustrar su uso.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+
+  <body>
+    <h1>Programando el área del cuadrado</h1>
+
+    <h2>Área del cuadrado</h2>
+    <p>
+      Se calcula de la siguente manera: <var>area</var> = <var>lado</var> *
+      <var>lado</var> = <var>lado<sup>2</sup></var>
+    </p>
+    <p>En <em>Javascript</em> podemos declarar la siguiente función:</p>
+    <code>
+<pre>
+function area(lado){
+  return lado*lado;
+}
+</pre>
+    </code>
+    <p>Si llamamos a: <code>area(4)</code>. Dará como resultado: <samp>16</samp></p>
+  </body>
+</html>
+
+</p>
+
+
+<figure>
+     <img src="https://free-images.com/sm/cede/lion_head_male_lion.jpg" alt="León">
+       <figcaption>Imagen 1.1: León</figcaption>     
+</figure>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+
+  <body>
+    <h1>Recetas</h1>
+    <p>
+      Aquí trabajaremos los postres, vea la siguiente tabla:
+      <figure>
+        <figcaption>Tabla 1.1: Conversiones</figcaption>
+        <table>
+          <thead>
+            <tr>
+              <th>Medida</th>
+              <th>Azúcar</th>
+              <th>Harina</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1 Taza</td>
+              <td>200gr</td>
+              <td>125gr</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+    </p>
+  </body>
+</html>
+
+<html>
+  <head>
+    <title>Ejemplo</title>
+  </head>
+
+  <body>
+    <h1>Ejemplo de audio</h1>
+    <audio
+      src="http://soundbible.com/grab.php?id=2208&type=mp3"
+      controls
+    ></audio>
+  </body>
+</html>
+
+<video controls postres="xx.png" width="500px" height="500px">
+<source src="dfdfd.ogv" type="video/ogg">
+<source src="dfdfd.webm" type="video/webm">
+</video>  
+
+ntejada@celsa.com.co
+
+<html>
+<head>
+	<title>T&iacute;tulo</title>
+</head>
+<body>
+<header>
+	<h1>
+		T&iacute;tulo en encabezado
+	</h1>
+</header>
+
+<p>
+	Descripci&oacute;n del audio
+</p>
+
+<p>
+	<audio controls autoplay>
+		<source src="audios/audio.mp3" type="audio/mp3">
+		Texto cuando tu browser no soporta audio
+	</audio>
+</p>
+
+<footer>
+	Derechos Reservados (Pie)
+</footer>
+</body>
+</html>
+
+<html>
+<head>
+	<title>T&iacute;tulo</title>
+</head>
+<body>
+<header>
+	<h1>
+		T&iacute;tulo en encabezado
+	</h1>
+</header>
+
+<p>
+	Este es un p&aacute;rrafo
+</p>
+
+<p>
+	<iframe src="http://www.nextu.com" width="65%" height="65%" sandbox="allow_forms">No se puede cargar el iframe</iframe>
+</p>
+
+<footer>
+	Derechos Reservados (Pie)
+</footer>
+</body>
+</html>
+
+Para enlazar CSS
+
+    Etiqueta <style>: se emplea para insertar código CSS. Cabe mencionar que esta etiqueta debe ubicarse dentro del <head>.
+    Etiqueta <link>:  se emplea dentro de la etiqueta <head> y permite enlazar un archivo con un CSS externo. Por ejemplo, el siguiente código: <link rel="stylesheet" type="text/css" href="estilo.css"> enlaza el archivo CSS estilo.css.
+    Estilo en línea: podemos agregar el atributo style y asignarle como valor los estilos CSS que deseemos.
+
+Para enlazar JavaScript
+
+    Etiqueta <script>: se emplea para insertar código escrito en JavaScript.
+    Etiqueta <script> con atributo src:  permite que enlacemos un archivo con código JavaScript externo. Por ejemplo, el siguiente código: <script src="funciones.js"></script>, enlaza el archivo JavaScript,  funciones.js.
+    JavaScript en etiquetas: podemos asociar código JavaScript que responda  a ciertos eventos. Por ejemplo, se emplea cuando deseamos ejecutar un código JavaScript al hacer click en un enlace. El siguiente código ilustra lo antes dicho: <a onclick="alert(1)">Presiona</a>. Este muestra un enlace que al darle click ejecuta alert(1) que despliega una ventana con el contenido “1”.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejemplo</title>
+    <link rel="stylesheet" href="./estilos/animate.min.css" />
+  </head>
+  <body>
+    <h1>Bienvenido</h1>
+    <button>Animar</button>
+    <script src="./scripts/animar.js"></script>
+  </body>
+</html>
+
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="blue" />
+  Sorry, your browser does not support inline SVG.
+</svg>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>Ejemplo</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+      <rect x="0" y="0" width="100" height="100" style="fill:yellow" />
+      <rect x="100" y="0" width="100" height="100" style="fill:green" />
+    </svg>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1>Ejemplo</h1><br/>
+<svg>
+          <circle cx="50" cy="50" r="40" stroke="red" stroke-width="7" fill="blue" />
+    </svg>
+    <li>rectangulo</li><br/>
+    <svg width="450" height="150"=>
+      <rect width="300" height="100" fill="brown" stroke="black" stroke-width="3"/>
+  </svg>
+</svg>
+<li>Cuadrado</li><br/>
+<svg width="400" height="400"=>
+  <rect width="200" height="200" fill="blue" stroke="black" stroke-width="2"/>
+</svg>
+<li>Poligono</li><br/>
+<svg width="500" height="250"=>
+  <polygon points="220,10,300,210,170,250 123,234" fill="lime" stroke="purple" stroke-width="5"/>
+</svg><br/>
+<li>Elipse</li><br/>
+<svg width="400" height="140"=>
+  <ellipse cx="200" cy="80" rx="100"ry="20" fill="yelow" stroke="red" stroke-width="2" />
+</svg>
+<li>Linea</li><br/>
+<svg width="300" height="240"=>
+  <line x1="0" y1="0" x2="500" y2="200" stroke="red" stroke-width="10">
+</svg>
+<li>Polyline</li><br/>
+<svg width="500" height="250"=>
+  <polyline points="20,20,300,210,270,250 123,234" fill="none" stroke="black" stroke-width="5"/>
+</svg><br/>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulo</title>
+</head>
+<body>
+<header>
+	<h1>
+		Primer SVG
+	</h1>
+</header>
+
+<svg width="100" height="100">
+	<circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="#00bff0"/>
+</svg>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulo</title>
+</head>
+<body>
+<header>
+	<h1>
+		Primer SVG
+	</h1>
+</header>
+
+<svg width="100" height="100">
+	<circle cx="50" cy="50" r="40" stroke="black" stroke-width="1" fill="#00bff0"/>
+</svg>
+
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Titulo</title>
+</head>
+<body>
+<header>
+	<h1>
+		Reloj SVG
+	</h1>
+</header>
+
+<svg width="200" height="200">
+	<g>
+		<circle cx="100" cy="100" r="100" stroke="black" stroke-width="1" fill="#eeeeee"/>
+
+		<line stroke="black" stroke-width="1" x1="100" y1="10" x2="100" y2="0"/>
+		<line stroke="black" stroke-width="1" x1="150" y1="13" x2="145" y2="22"/>
+		<line stroke="black" stroke-width="1" x1="187" y1="50" x2="178" y2="55"/>
+		<line stroke="black" stroke-width="1" x1="190" y1="100" x2="200" y2="100"/>
+		<line stroke="black" stroke-width="1" x1="187" y1="150" x2="178" y2="145"/>
+		<line stroke="black" stroke-width="1" x1="150" y1="187" x2="145" y2="178"/>
+		<line stroke="black" stroke-width="1" x1="100" y1="190" x2="100" y2="200"/>
+		<line stroke="black" stroke-width="1" x1="50" y1="187" x2="55" y2="178"/>
+		<line stroke="black" stroke-width="1" x1="13" y1="150" x2="22" y2="145"/>
+		<line stroke="black" stroke-width="1" x1="0" y1="100" x2="10" y2="100"/>
+		<line stroke="black" stroke-width="1" x1="13" y1="50" x2="22" y2="55"/>
+		<line stroke="black" stroke-width="1" x1="50" y1="13" x2="55" y2="22"/>
+	</g>
+	<g>
+		<line stroke="blue" stroke-width="3" x1="100" y1="100" x2="100" y2="45"/>
+		<line stroke="blue" stroke-width="2" x1="100" y1="100" x2="180" y2="100"/>
+		<line stroke="red" stroke-width="1" x1="100" y1="100" x2="48" y2="180"/>
+	</g>
+</svg>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <h1>Ejemplo</h1>
+  <canvas id="miCanvas" width="200" height="100"></canvas>
+  <script>
+      var c = document.getElementById("miCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 100);
+      ctx.lineTo(200, 0);
+      ctx.stroke();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <h1>Ejemplo</h1>
+  <canvas id="miCanvas" width="300" height="200"></canvas>
+  <script>
+  var canvas = document.getElementById("miCanvas");
+   var context = canvas.getContext("2d");
+   canvas.width = 500;
+   canvas.height = 500;
+   context.beginPath();
+   context.arc(250, 250, 100, 0, Math.PI * 2, true);
+   context.moveTo(235, 225);
+   context.arc(225, 225, 10, 0, Math.PI * 2, true);
+   context.moveTo(285, 225);
+   context.arc(275, 225, 10, 0, Math.PI * 2, true);
+   context.moveTo(300, 275);
+   context.lineTo(200, 275);
+   context.stroke();
+  </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+

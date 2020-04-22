@@ -1,0 +1,3034 @@
+ECMA5
+ECMASCRIPT6
+
+TRASNPILERS
+ESC7
+
+ Con el comando let declaramos variables limitando su uso a un bloque de código determinado, mientras que con el comando const definimos constantes o variables que tendrán un valor que no podrá modificarse posteriormente.
+
+edad----- entero
+distacia----float
+nombre""-----string
+colores=["",""]---- arreglo
+persona={}------objetos
+estaActivo=false-----boleano
+
+
+-------------------------------------............................----------------------------------------
+
+tipos
+
+var edad = 15;
+console.log(edad);
+
+var distancia = 1.5;
+console.log(distancia);
+
+var nombre = "luis";
+console.log(nombre);
+
+var colores = ["rojo", "blanco", "azul"];
+console.log(colores[2]);
+
+var persona = { "altura": 160, colorDeOjos: "café"};
+console.log(persona.colorDeOjos);
+
+var estaActivo = false;
+console.log(estaActivo);
+
+var a = 1;
+var b = 3;
+
+var c = a + b;
+console.log(c);
+
+var nombreYEdad = "Nombre: " + nombre + ", Edad: " + edad;
+console.log(nombreYEdad);
+.................-------------------------------------.................
+
+
+function totalMinutos(horas, minutos){
+  return horas * 60 + minutos;
+}
+
+console.log(totalMinutos(5, 25));
+console.log(totalMinutos(1, 5));
+console.log(totalMinutos(0, 15));
+
+function cantidadRecolectadaSimple(costo, cantidad){
+  return costo * cantidad;
+}
+
+console.log(cantidadRecolectadaSimple(10, 5));
+console.log(cantidadRecolectadaSimple(1, 5));
+
+function cantidadRecolectada(costoEstudiante, costoAdulto, cantidadEstudiantes, cantidadAdultos){
+  return cantidadRecolectadaSimple(costoEstudiante, cantidadEstudiantes) + cantidadRecolectadaSimple(costoAdulto, cantidadAdultos);
+}
+
+console.log(cantidadRecolectada(1, 5, 20, 4));
+console.log(cantidadRecolectada(0, 5, 20, 3));
+
+.........................................................--------------------------------.......................
+
+Longitud (length)
+ retorna un valor numérico del tamaño de la cadena de caracteres 
+
+"Primer nombre".length;
+
+JavaScript
+
+var nombre = "Primer nombre";
+
+JavaScript
+
+nombre.length;
+
+JavaScript
+Resultado= 13
+
+.........................................................--------------------------------......................
+Minusculas (toLowerCase)
+
+nos permite obtener la cadena de caracteres convertida a caracteres en minúscula;
+"CURSO DE JAVASCRIPT" .toLowerCase ();
+
+JavaScript
+
+Resultado= "curso de javascript"
+
+JavaScript
+
+
+.........................................................----------------------------
+Mayúsculas (toUpperCase)
+
+el método toUpperCase nos devuelve el contenido del string en mayúsculas
+
+"estoy aprendiendo javascript". ToUpperCase ();
+
+JavaScript
+
+Resultado= "ESTOY APRENDIENDO JAVASCRIPT"
+
+.........................................................----------------------------
+Recortar (trim)
+devuelve el valor del string, eliminando los caracteres en blanco que estén al inicio y al final de la cadena, sin importar la cantidad de caracteres en blanco que contenga. Por ejemplo:
+
+"     eliminando espacios en blanco        " .trim ();
+
+JavaScript
+
+Resultado= "eliminando espacios en blanco"
+
+........................................................----------------------------
+
+function saludar(nombre, apellido, curso){
+
+  var resultado = `Hola ${nombre} ${apellido}, bienvenido al curso ${curso}` /*interpolacion*/
+  return resultado;
+
+}
+
+console.log(saludar("Maria", "Gil", "C++"));
+...............................----------------------------------..............-..-
+
+/*
+
+Dada una fila que tiene el nombre y apellido separado ','
+Retornar el nombre y apellido con la primera letra en mayuscula
+y el resto en minuscula.
+
+Ejemplo: para la fila `    luiS, BLANCO    `
+El resultado es `Luis Blanco`
+
+  /* charART:El método charAt(índice). Simplemente devuelve el carácter en la posición dada.
+    str.slice(inicial, final)
+
+Funciona de la siguiente manera:
+
+    inicial es la posición desde la cual va a extraer el contenido, recuerda que en JavaScript los índices comienzan en CERO.
+.trim: elimina espacios en blanco.
+*/
+
+
+function capitalize(x){
+ return x.charAt(0).toUpperCase() + x.slice(1).toLowerCase();
+
+}
+
+function procesarFila(fila){
+  var arreglo = fila.split(",");
+  var nombre = arreglo[0].trim();
+  var apellido = arreglo[1].trim();
+  return capitalize(nombre) + " " + capitalize(apellido);
+}
+
+var fila = " anA, BLANCO    ";
+console.log(procesarFila(fila));
+
+.................------------------------------------------------.------.............
+/*string*/
+function encabezadoEvento(nombre, lugar){
+  return `Evento: ${nombre}. Lugar: ${lugar}`;
+}
+
+console.log(encabezadoEvento("Intercambio de Libros", "Biblioteca"));
+console.log(encabezadoEvento("Lectura de Poemas", "Sala A"));
+
+function limpiarNombreParticipante(nombre, apellidos){
+  return `${apellidos.trim().toUpperCase()}, ${nombre.trim().toLowerCase()}`;
+}
+
+console.log(limpiarNombreParticipante("    Luis", "Castro   "));
+console.log(limpiarNombreParticipante(" ANA", "MENDEZ   "));
+
+..............................--------------------------..................
+
+.trim()
+.toUpperCase()
+.toLowerCase()
+``
+
+...............--------------------------..................
+
+var tieneCocina = false;
+var tieneWifi = true;
+var maximaOcupacion = 4;
+var lugar = "Ciudad";
+
+if (lugar == "Playa"){
+  console.log("Hotel A1");
+}
+else if (lugar == "Lago"){
+  console.log("Hotel B2");
+}
+else{
+  console.log("Hotel C3");
+}
+.........................----------------------------................
+
+..............................--------------------------..................
+
+var tieneCocina = false;
+var tieneWifi = true;
+var maximaOcupacion = 4;
+var lugar = "Ciudad";
+
+if (lugar == "Playa"){
+  console.log("Hotel A1");
+}
+else if (lugar == "Lago"){
+  console.log("Hotel B2");
+}
+else{
+  console.log("Hotel C3");
+}
+........................------------....
+
+var color = "azul";
+
+switch(color){
+  case "rojo":
+    console.log("FF0000");
+    break;
+  case "negro":
+    console.log("000000");
+    break;
+  case "azul":
+    console.log("0000FF");
+    break;
+  default:
+    console.log("???");
+}
+.................-------------------.--------
+
+var menu1 = "vegetariano";
+var menu2 ="NoVegetariano" ;
+var tipoMenu = true;
+var lugar = "Ciudad";
+
+if (tipoMenu == true){
+  console.log(menús:["menu1"]);
+
+}
+
+else{
+  console.log("menu2");
+
+}
+.......-----------------------------.
+
+function saludo(nombre, apellido, genero, evento, minutosQueFaltan){
+  var saludo = "";
+  var dia = "";
+
+
+  if (genero == "FEMENINO"){
+      saludo = "Bienvenida";
+  }
+  else{
+      saludo = "Bienvenido";
+  }
+
+  if (minutosQueFaltan < 60*24){
+      dia = "hoy";
+  }
+  else if (minutosQueFaltan < 60*24*2){
+      dia = "maÃ±ana";
+  }
+  else{
+      dia = "pronto";
+  }
+
+  return `${saludo} ${nombre.trim().toUpperCase()} ${apellido.trim().toUpperCase()}, recuerda ${dia} el evento (${evento})`;
+
+}
+
+console.log(saludo("    LUIS", "perez", "MASCULINO", "PelÃ­cula", 600));
+console.log(saludo("ana ", "peRez", "FEMENINO", "Comidas del Mundo", 1500));
+console.log(saludo("  PEDRO ", "Gil", "MASCULINO", "Juego de Baloncesto", 5000));
+
+
+-.,,,,................................................,,,,,,,,,,,,,
+ 
+/*for*/
+var arreglo = [3,4,5,6,7,8];
+
+var suma = 0;
+
+for (var elemento of arreglo){
+    suma = suma + elemento;
+}
+
+console.log(suma);
+
+
+....................................------------------------
+var contador = 1;
+
+do {
+
+  contador++;
+  if (contador > 5) {
+    continue;
+  }
+  console.log(contador);
+
+}
+while (contador < 10);
+.....................................--------------------------------------------------------
+++ Incremento
+	
+
+variable++;
+
+++variable;
+
+	variable=variable+1;
+..................................................------------------------------------
+--
+	
+
+Decremento
+	
+
+variable--;
+
+--variable;
+
+	
+
+variable=variable-1;
+
+=
+	
+
+Asignación
+	
+
+x=1;
+
+	
+
++=
+	
+
+Asignación y suma
+	
+
+x+=1;
+
+	
+
+x=x+1;
+
+-=
+	
+
+Asignación y resta
+	
+
+x-=1;
+
+	
+
+x=x-1;
+
+*=
+	
+
+Asignación y producto
+	
+
+x*=1;
+
+	
+
+x=x*1;
+
+/=
+	
+
+Asignación y división
+	
+
+x/=1;
+
+	
+
+x=x/1;
+
+%=
+	
+
+Asignación y módulo
+	
+
+x%=1;
+
+	
+
+x=x%1;
+Operador
+	
+
+Significado
+	
+
+Ejemplo
+
+==
+	
+
+es igual a
+	
+
+5 == 9 es falso
+
+===
+	
+
+es igual con tipo
+	
+
+5 == “5” es verdadero
+5 === “5” es falso
+
+!=
+	
+
+no es igual a
+	
+
+15 != 13 es verdad
+
+>
+	
+
+es mayor que
+	
+
+15 > 10 es verdad
+
+<
+	
+
+es menor que
+	
+
+25 < 28 es verdad
+
+>=
+	
+
+es mayor o igual que
+	
+
+555 >= 8012 es falso
+
+<=
+	
+
+es menor o igual que
+	
+
+5 <= 1 es falso
+
+Operador
+	
+
+Significado
+	
+
+Ejemplo
+
+&&
+	
+
+Y
+	
+
+1 == 1 && 2 < 1 es falso
+
+||
+	
+
+O
+	
+
+1 == 2 || 15 > 2 es verdad
+
+!
+	
+
+NO
+	
+
+!(1 > 2) es verdad
+
+---------------------------.......
+
+for(var i=0;i<10;i++){
+console.log(i);
+}
+
+................--------------------------------.................-
+
+var arreglo = [3,4,5,6,7,];
+
+var suma = 0;
+
+for(var i=0;i<arreglo.length;i++){
+suma = suma + arreglo[i];
+console.log(suma);
+}
+
+..................------------------------------....................
+..................------------------------------....................
+
+
+var arreglo = [3,4,5,6,7,8];
+
+var suma = 0;
+
+for(var i in arreglo){
+	suma = suma + arreglo[i];
+}
+
+console.log(suma);
+.....................---------------......
+
+var arreglo = [3,4,5,6,7,8];
+
+var suma = 0;
+
+for (var elemento of arreglo){
+    suma = suma + elemento;
+}
+
+
+sudo add-apt-repository ppa:webupd8team/brackets
+sudo apt update
+sudo apt install brackets
+console.log(suma);
+.....................---------------......
+var contador = 1;
+
+while	(contado < 10){
+	console.log(contador);
+	contador ++;
+}
+.....................---------------...........................---------------...........................---------------......
+
+do{
+	console.log(contador);
+	contador ++;
+}
+
+while(contador < 10)
+
+................................---------------.......................-
+//break
+
+
+do{
+	console.log(contador);
+	contador ++;
+}
+
+while(contador < 10);
+.....................---------------...........................---------------...........................---------------......
+
+var contador = 1;
+
+do
+{
+	console.log(contador);
+	if(contador > 5){
+	break;
+	}
+	contador ++;
+}
+
+while(contador < 10);
+...............................-----------------------........
+
+
+var contador = 1;
+
+do
+{
+		contador ++;
+	if(contador > 5){
+	continue;
+	}
+	console.log(contador);
+
+while(contador < 10);
+
+...............................-----------------------........
+
+function maximo(donaciones){
+  var max = 0;
+  for (monto of donaciones){
+      if (monto > max){
+          max = monto;
+      }
+  }
+  return max;
+}
+
+function minimo(donaciones){
+  var min = 1000;
+  for (monto of donaciones){
+      if (monto < min){
+          min = monto;
+      }
+  }
+  return min;
+}
+
+function promedio(min, max,donaciones){
+  var sum = 0;
+  var cantidad = 0;
+  for (monto of donaciones){
+      if (monto > min && monto < max){
+          sum += monto;
+          cantidad++;
+      }
+  }
+  return sum/cantidad;
+}
+
+var donaciones = [5,15,22,25,30,52,5,1,0];
+var min = minimo(donaciones);
+var max = maximo(donaciones);
+console.log(min);
+console.log(max);
+console.log(promedio(min, max, donaciones));
+
+..................................-----------------------------
+persona = {
+  nombre: "luis",
+  apellido: "torres",
+  telefonos: ["123123","321321"],
+  direccion: {
+      estado: "principal",
+      ciudad: "dorado",
+      calle: "7",
+      casa: 5
+  }
+}
+console.log(persona.direccion.estado);
+.....................---------------...................
+
+var = persona;
+
+persona = {
+
+nombre= "luis",
+apellido = "Agudelo"
+};
+
+console.log(persona.nombre)
+console.log(persona.apellido)
+.............-----------------...................
+var = persona;
+
+persona = {
+
+nombre= "luis",
+apellido = "Agudelo"
+};
+
+console.log(persona[`nombre`])
+console.log(persona[`apellido`])
+.............-----------------...................
+var = persona;
+
+persona = {
+
+nombre= "luis",
+apellido = "Agudelo"
+};
+
+var propiedad = `nombre`;
+console.log(persona[`propiedad`])
+
+............-----------------...................
+persona = {
+  nombre: "luis",
+  apellido: "torres",
+  telefonos: ["123123","321321"],
+}
+
+console.log(persona.telefonos[0]);
+console.log(persona.telefonos.legth)
+
+
+..................----------------------------------....................------
+
+stringValido(string, largo){
+
+if (string == null || string = undefined){
+    return false;
+  }
+  
+  if (largo && string.trim().length < largo){
+      return false;
+    }
+    return true;
+  }
+
+  function fechaValida(fecha,minimaFecha){
+
+    if (fecha == null || fecha = undefined){
+        return false;
+      }
+
+      if (minimaFecha && fecha.getTime() < minimaFecha.getTime()){
+          return false;
+        }
+        return true;
+      }
+
+function eventoValido(evento){
+  if (evento ​==​​null​​||​ evento ​==​​undefined​){
+            return​​false​;
+}
+return​ (stringValido​(​evento​.​nombre​, ​3​) ​&& stringValido​(​evento​.​descripcion​, ​10​) ​&& fechaValida​(​evento​.​fecha​, ​new​​Date​(​2018​,​0​,​1​,​0​,​0​,​0​))
+
+var​ evento ​=​ {
+              nombre: ​"Evento 1"​,
+               descripcion: ​"Esto es una descripción"​
+               fecha: ​new​​Date​(​2018​,​10​,​1​)​
+               };
+    console​.​log​(​eventoValido​(evento));       
+
+
+.................--------------------------................................    
+
+var color = "blanco";
+var color2 = color;
+console.log(color);
+console.log(color2);
+color2 = "verde";
+console.log(color);
+console.log(color2);
+
+
+var personas
+personas = [
+  {
+    nombre: "luis"
+  }
+]
+
+console.log(personas);
+
+personas.push({
+  nombre: "marcos",
+  edad: 10
+})
+
+console.log(personas);
+
+personas[1].amigos = ['roberto', 'ana'];
+
+console.log(personas);
+console.log(personas[1].amigos[0]);
+
+var usuarios = personas;
+
+usuarios[1].nombre = "pedro";
+console.log(usuarios);
+console.log(personas);
+.....................-------------------------------------..................................
+
+
+La notación usada en el ejemplo está basada en las siguientes reglas:
+
+    Los objetos van encerrados entre llaves `{` `}`.
+    Los arreglos van encerrados entre corchetes `[` `]`.
+    Un objeto tiene un conjunto de valores clave / valor indicando el nombre de la clave luego el símbolo `:` y luego el valor.
+    La clave formalmente de estar entre comillas dobles.
+    Los strings se encierran entre comillas dobles.
+
+Los enteros, reales y booleanos no van encerrados entre comillas.
+
+Con esta notación se pueden componer objetos dentro de arreglos, objetos dentro de objetos, y así.
+
+En JavaScript, existen formas de convertir documentos JSON a strings y viceversa. La primera forma, que consiste en convertir un JSON a un string, se hace a través del siguiente método:
+
+<json>.stringify()
+
+Mientras que la segunda, que consiste en convertir un string a un JSON, se ejecuta usando este otro método:
+
+JSON.parse(<string>)
+
+Recordemos que es importante la portabilidad de los elementos cuando estamos trabajando en cualquier lenguaje de programación, tal como JavaScript. Entre sus ventajas, JSON tiene amplia aceptación e implementación en otros lenguajes de programación que facilitan la portabilidad de objetos JavaScript a otros sistemas.
+
+....................------------------------------------------------------..........................-
+
+
+class Persona{
+
+  constructor(){
+    this.nombre = "luis";
+    this.apellido = "torres";
+  }
+
+}
+
+var p = new Persona();
+console.log(p.nombre);
+console.log(p.apellido);
+
+class Persona{
+
+  constructor(){
+    this.nombre = "luis";
+    this.apellido = "torres";
+  }
+
+  nombreCompleto(){
+    return `${this.nombre} ${this.apellido}`
+  }
+
+}
+
+var p = new Persona();
+console.log(p.nombre);
+console.log(p.apellido);
+console.log(p.nombreCompleto());
+
+class Mascota{
+  constructor(nombreApodo){
+    this.apodo = nombreApodo;
+  }
+}
+
+var m1 = new Mascota("tobby");
+console.log(m1.apodo);
+
+class Mascota{
+  constructor(nombreApodo){
+    this.apodo = nombreApodo;
+  }
+
+  setPropietario(propietario){
+    this.propietario = propietario;
+  }
+
+}
+
+m1.setPropietario(p);
+console.log(m1.propietario.nombreCompleto())
+
+
+class Empleado extends Persona{
+  constructor(id){
+    super();
+    this.id = id;
+  }
+}
+
+var emp = new Empleado(123);
+console.log(emp.id);
+console.log(emp.nombre);
+console.log(emp.nombreCompleto());
+
+...............----------------------------------------------............
+
+En ES6 podemos definir clases. A continuación un ejemplo:
+
+class Empleado {
+contructor(nombre = undefined) {
+    this.nombre = nombre
+}
+saludar() {
+    return `Hola soy ${this.nombre}`
+}
+}
+emp = new Empleado("luis")
+console.log(emp.saludar())
+
+Lo que se traduce usando Babel en ES5.1 en lo siguiente:
+
+"use strict";
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+var Empleado = function () {
+function Empleado() {
+_classCallCheck(this, Empleado);
+}
+Empleado.prototype.contructor = function contructor() {
+var nombre = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : undefined;
+this.nombre = nombre;        };        Empleado.prototype.saludar = function saludar() {
+return "Hola soy " + this.nombre;
+};
+return Empleado;
+}();
+emp = new Empleado("luis")
+console.log(emp.saludar());
+
+Aquí puedes encontrar la herramienta Babel https://babeljs.io/. Pero así como Babel, existen otras implementaciones de conversores.
+
+Además de convertir a partir de ES6, existen otros lenguajes que se inspiran en JavaScript pero que hacen, en su parecer, mejoras. Por ejemplo, CoffeeScript es un lenguaje que promete escribir código más limpio usando el concepto de sangrado (o indentación), que se emplea en Python. Un ejemplo de CoffeeScript se muestra a continuación:
+
+class Empleado
+constructor: (@name) ->
+saludar: ->
+"Hola soy #{@name}"
+        emp = new Empleado("luis")
+
+Lo anterior da como resultado el siguiente código en ES5.1:
+
+var Empleado, emp;
+Empleado = (function() {
+function Empleado(name) {
+this.name = name;
+}
+Empleado.prototype.saludar = function() {
+return "Hola soy " + this.name;
+};
+return Empleado;
+})();
+emp = new Empleado("luis");
+
+Otro lenguaje que está tomando mucha fuerza es TypeScript, el cual es definido por Microsoft y es una implementación de ES6 con algunos elementos añadidos, entre los cuales tenemos el manejo de tipos de datos explícitos (fuertemente tipado), lo cual se hace atractivo para desarrollos más formales.
+
+A continuación un ejemplo de TypeScript donde se utiliza el tipo string para definir el atributo nombre.
+
+class Empleado {
+nombre: string
+contructor(nombre: string) {
+    this.nombre = nombre
+}
+saludar() {
+    return `Hola soy ${this.nombre}`
+}
+}
+emp = new Empleado("luis")
+console.log(emp.saludar())
+
+Aunque hoy en día se utilizan las versiones ECMAScript estudiadas en esta lectura, a medida que pasa el tiempo se implementan nuevas versiones de EcmaScript con sus respectivos transpiladores para adaptarse a las necesidades de los desarrollos de software recientes.
+
+
+............................----------------------------------------------------------------...............
+
+
+class Evento{
+
+  constructor( id, nombre, cantidadAsistentes, precioPorAsistente){
+    this.id = id;
+    this.nombre = nombre;
+    this. cantidadAsistentes = cantidadAsistentes;
+    this.precioPorAsistente = precioPorAsistente;
+  }
+
+enlace(){
+  return​​`/evento/​${​this​.​id​}​`
+}
+
+dineroTotalRecaudado(){
+  return this​.​cantidadAsistentes​ * this​.​precioPorAsistente​;
+}
+}
+var evento = new Evento(1,"e1", 12, 5);      
+console.log(evento1.enlace())     
+console.log(evento1.dineroTotalRecaudado()) 
+
+
+
+...............................---------------------------------...................
+
+var palabra;
+var expresionRegular;
+
+expresionRegular = /as/;
+
+var pa
+palabra = "caza";
+console.log(expresionRegular.test(palabra));
+
+palabra = "cASa";
+console.log(expresionRegular.test(palabra));
+
+expresionRegular = /as/i;
+palabra = "cASa";
+console.log(expresionRegular.test(palabra));
+
+palabra = "abc";
+
+expresionRegular = new RegExp('^[abc]l[0-9]');
+var resultado = palabra.match(expresionRegular)
+console.log(resultado);
+
+var fila = "luis,torres"
+var filaProcesada = fila.replace(/^([^,]*),([^,]*)/, "$2, $1");
+console.log(filaProcesada);
+
+
+................--------------------..................-.-.
+
+var fecha = new Date();
+console.log(fecha.toDateString());
+console.log(fecha.toISOString());
+
+console.log(fecha.getDay());
+console.log(fecha.getDate());
+console.log(fecha.getMonth());
+console.log(fecha.getFullYear());
+console.log(fecha.getHours());
+console.log(fecha.getMinutes());
+
+console.log(fecha.getTime());
+
+fecha = new Date(2015, 1, 1, 2, 3, 4, 1000);/*año,mes.dia,hora,min,seg,milis*/
+console.log(fecha.getDate());
+console.log(fecha.getFullYear());
+console.log(fecha.getHours());
+
+
+.......................------------------------------------------.......................
+
+Probaremos con esta instrucción e iremos variando los números.console​.​log​(​fechaParaHumanos​(​new​​Date​(​2018​,​6​,​1​,​9​,​1​,​1​,​1000​), ​newDate​(​2018​,​6​,​1​,​10​,​1​,​1​,​100​),))Paraterminarlafunción,debesseguirdividiendoladiferenciaalaunidadquelesigueeirretornandoloscasos,recuerdaconsiderarelsingularypluralparalasunidadesde tiempo según corresponda (ej. minutos, hora, horas).function​​fechaParaHumanos​(​fecha​, ​fechaRerencia​){​var​ t1 ​=​​fecha​.​getTime​() ​/​​1000​; ​// segundos​var​ t2 ​=​​fechaRerencia​.​getTime​() ​/​​1000​; ​// segundos​var​ diferencia   diferencia ​=​​Math​.​round​(t2​-​t1);​if​ (diferencia ​<​​1​) {​return​​"hace 1 segundo"   }​if​ (diferencia ​<​​60​) {​return​​`hace ​${​diferencia​}​ segundos`   }   diferencia ​=​​Math​.​round​(diferencia​/​60​);​if​ (diferencia ​<=​​1​) {​return​​"hace 1 minuto"   }​if​ (diferencia ​<​​60​) {​return​​`hace ​${​diferencia​}​ minutos`   }   diferencia ​=​​Math​.​round​(diferencia​/​60​);
+​if​ (diferencia ​<=​​1​) {​return​​"hace 1 hora"   }​if​ (diferencia ​<​​24​) {​return​​`hace ​${​diferencia​}​ horas`   }   diferencia ​=​​Math​.​round​(diferencia​/​24​);​return​​`hace ​${​diferencia​}​ dias`}console​.​log​(​fechaParaHumanos​(​new​​Date​(​2018​,​6​,​1​,​9​,​1​,​1​,​1000​), ​newDate​(​2018​,​6​,​1​,​10​,​1​,​1​,​100​),))
+
+
+....................................---------------------------.
+
+function fechaParaHumanos(fecha, fechaRerencia){
+    var t1 = fecha.getTime() / 1000; // segundos
+    var t2 = fechaRerencia.getTime() / 1000; // segundos
+                var diferencia;
+    diferencia = Math.round(t2-t1);
+                if (diferencia < 1) {
+        return "hace 1 segundo"
+    }
+                if (diferencia < 60) {
+        return `hace ${diferencia} segundos`
+    }
+                diferencia = Math.round(diferencia/60);
+                if (diferencia < 1) {
+        return "hace 1 minuto"
+    }
+    if (diferencia <= 1) {
+return "hace 1 minuto"
+}
+if (diferencia <= 60) {
+return "return​​`hace ​${​diferencia​}​ minutos`
+}
+  diferencia = Math.round(diferencia/60);
+    if (diferencia <= 1)
+  return "hace 1 hora"
+  if​ (diferencia ​<​​24​) {​
+    return​​`hace ​${​diferencia​}​ horas
+    }   
+    diferencia ​=​​Math​.​round​(diferencia​/​24​);
+    return​​`hace ​${​diferencia​}​ dias`
+    }console​.​log​(​fechaParaHumanos​(​new​​Date​(​2018​,​6​,​1​,​9​,​1​,​1​,​1000​), ​newDate​(​2018​,​6​,​1​,​10​,​1​,​1​,​100​),))
+
+
+.------------------......................................................
+var amigos = ["Ana", "Luis", "Pedro"];
+
+amigos.forEach(function (amigo){
+  console.log(`Hola ${amigo}`);
+});
+
+function saludar(amigo){
+  console.log(`Hola ${amigo}`);
+}
+
+saludar('pedro')
+
+
+function saludarYMas(amigo, otraFuncion){
+  console.log(`Hola ${amigo}`);
+}
+
+function fin(){
+  console.log("Fin...");
+}
+
+saludarYMas('pedro',fin);
+
+ ................................--------------------------
+
+var resultado;
+var personas = [
+  {
+    nombre:"luis",
+    edad:20
+  },
+  {
+    nombre:"ana",
+    edad: 15
+  },
+  {
+    nombre:"marcos",
+    edad: 25
+  }
+];
+
+resultado= personas.filter(x =>{
+  return x.edad > 19
+})
+console.log(resultado);
+
+//map que lo que hace transformar 
+//la estructura en lo que nosostros decidamos que retorne la funcion interna
+
+var resultado;
+var personas = [
+  {
+    nombre:"luis",
+    edad:20
+  },
+  {
+    nombre:"ana",
+    edad: 15
+  },
+  {
+    nombre:"marcos",
+    edad: 25
+  }
+];
+
+resultado= personas.filter(x =>{
+  return x.nombre
+})
+console.log(resultado); //solo muestran los nombres ["luis","ana","marcos"]
+
+
+var resultado;
+var personas = [
+  {
+    nombre:"luis",
+    edad:20
+  },
+  {
+    nombre:"ana",
+    edad: 15
+  },
+  {
+    nombre:"marcos",
+    edad: 25
+  }
+];
+
+resultado= personas.filter(x =>{
+  return x.edad + 50
+})
+console.log(resultado); //muestra la edad y le suma 50 [70,65,75]
+
+//find que busca en el arreglo basandose en la funcion
+// declarada en la funcion interna y devuelve el primer elemento que cumple la misma
+
+var resultado;
+var personas = [
+  {
+    nombre:"luis",
+    edad:20
+  },
+  {
+    nombre:"ana",
+    edad: 15
+  },
+  {
+    nombre:"marcos",
+    edad: 25
+  }
+];
+
+resultado= personas.find(x =>{
+  return x.nombre == "ana";
+})
+console.log(resultado); //muestra un solo elemento {"nombre":"ana","edad":15}
+
+else {
+  {}
+}
+...----------------------------------------------------------
+
+var filtrado1;
+var filtrado2;
+var arreglo1;
+var arreglo2;
+
+arreglo1 = [1,2,3,4,5];
+arreglo2 = [1,2,4,8];
+
+filtrado1 = arreglo1.map(function(x){
+      return (2*x);
+});
+filtrado2 = arreglo2.map(function(x){
+      return (2*x);
+});
+
+console.log(filtrado1);
+console.log(filtrado2);
+filtrado1 = arreglo1.filter(function(x){
+      return x%2 == 1;
+});
+filtrado2 = arreglo2.filter(function(x){
+     return x%2 == 1;
+});
+console.log(filtrado1);
+console.log(filtrado2);
+
+filtrado1 = arreglo1.map(function(x){
+     if (x%2 == 1) {
+  return (2*x)
+}
+else {
+    return (x%2)
+}
+})
+filtrado2 = arreglo2.map(function(x){
+     if (x%2 == 1) {
+  return (x*2)
+}
+else {
+      return (x%2)
+}
+})
+console.log(filtrado1);
+console.log(filtrado2);
+
+...................................-----------------------------------...........
+var​ futuros ​=​​eventos​.​filter​(​x​​=>​​x​.​fecha​.​getTime​() ​>
+fechaReferencia​.​getTime​())
+var​ pasados ​=​​eventos​.​filter​(​x​​=>​​x​.​fecha​.​getTime​() ​<=
+fechaReferencia​.​getTime​())}
+futuros ​=​​futuros​.​sort​((​a​,​b​)​=>​{
+​if​ (​a​.​fecha​.​getTime​() ​>​​b​.​fecha​.​getTime​()){
+​return​​ 1​;     
+  }
+  if​ (​a​.​fecha​.​getTime​() ​<​​b​.​fecha​.​getTime​()){
+  return​​-​1​;
+  }
+  return​​ 0​;
+  })
+   pasados ​=​​pasados​.​sort​((​a​,​b​)​=>​{
+   if​ (​a​.​fecha​.​getTime​() ​>​​b​.​fecha​.​getTime​()){
+   return​​ -​1​;
+   }
+   if​ (​a​.​fecha​.​getTime​() ​<​​b​.​fecha​.​getTime​()){
+   return​​ 1​;
+   }
+   return​​0​;
+   })
+   return​ [futuros,pasados];
+...................-----------------------.....................-----------------....
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Formulario</h1>
+  <form action="">
+    <p>
+      <label>Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+    </p>
+    <p>
+      <label>Email</label>
+      <input type="text" name="email" id="email">
+    </p>
+    <p>
+      <label>Contraseña</label>
+      <input type="password" name="contrasena" id="contrasena">
+    </p>
+    <p>
+      <label>Contraseña (Confirmación)</label>
+      <input type="password" name="confirmacion" id="confirmacion">
+    </p>
+
+    <p>
+      <p>Género</p>
+      <input type="radio" name="genero" id="m" value="m">
+      <label for="m">Masculino</label>
+      <input type="radio" name="genero" id="f" value="f">
+      <label for="f">Femenino</label>
+    </p>
+
+    <p>
+      <label>País</label>
+      <select name="pais" id="pais">
+        <option value="">Seleccione</option>
+        <option value="1">Colombia</option>
+        <option value="2">Brasil</option>
+        <option value="3">México</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="terminos">
+        <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
+    </p>
+
+    <p>
+      <input type="submit" value="Continuar" onclick="return validar(this.form)" >
+    </p>
+
+
+  </form>
+
+  <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
+
+.........................-----------------------------------------------------------.............................
+
+function validar(formulario) {
+
+  if (formulario.nombre.value.trim().length == 0) {
+    alert("Nombre obligatorio");
+    return false;
+  }
+
+  if (formulario.contrasena.value.trim().length == 0) {
+    alert("Contraseña obligatorio");
+    return false;
+  }
+
+  if (formulario.contrasena.value != formulario.confirmacion.value) {
+    alert("Confirmación no coincide");
+    return false;
+  }
+
+  return true;
+
+}
+..............................-------------------------------------------------------................
+
+function validar(formulario) {
+
+  if (formulario.nombre.value.trim().length == 0) {
+    alert("Nombre obligatorio");
+    return false;
+  }
+//Para el correo.
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!re.test(formulario.email.value)) {
+    alert("Email inválido");
+    return false;
+  }
+
+  if (formulario.contrasena.value.trim().length == 0) {
+    alert("Contraseña obligatorio ");
+    return false;
+  }
+
+  if (formulario.contrasena.value != formulario.confirmacion.value) {
+    alert("Confirmación no coincide");
+    return false;
+  }
+  if (formulario.genero.value == "") {
+    alert("Género es obligatorio");
+    return false;
+  }
+
+  if (formulario.pais.value == "") {
+    alert("País es obligatorio");
+    return false;
+  }
+
+  if (!formulario.terminos.checked) {
+    alert("Debe aceptar los términos y condiciones");
+    return false;
+  }
+
+  return false;
+}
+.......---------------------------------................................
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <h1>Página</h1>
+
+
+  <hr>
+
+  <img src="./images/imagen1.png" id="imagen">
+
+  <div id="saludo"></div>
+
+
+  <hr>
+
+  <button onclick="saludar()">Saludar</button>
+  <button onclick="cargarLista()">Cargar Lista</button>
+  <button onclick="cambiarImagen()">Cambiar Imagen</button>
+
+
+
+  <hr>
+  <h2>Lista</h2>
+  <ul id="lista">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+  <script src="./javascripts/main.js"></script>
+</body>
+</html>
+
+function saludar(){
+  // alert("Bienvenido JS");
+  var elemento = document.getElementById('saludo');
+  elemento.innerHTML = "Bienvenido!";
+
+}
+
+var noticias = ["Noticia 1", "Noticia 2", "Noticia 3", "Noticia 4"];
+
+function cargarLista(){
+
+  var lista = document.getElementById("lista");
+
+  for(var i=0; i<noticias.length; i++){
+      var li = document.createElement("li");
+      li.innerText = noticias[i];
+      lista.appendChild(li);
+  }
+}
+
+
+function cambiarImagen(){
+  var imagen = document.getElementById("imagen");
+  // imagen.src = "./images/imagen2.png"
+  imagen.setAttribute('src',"./images/imagen2.png");
+}
+
+// insertBefore
+// parentNode
+// querySelectorAll
+// querySelector
+// classList.add()
+// hasChildNodes
+
+........................--------------------------..........
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <h1>Página</h1>
+
+
+  <hr>
+
+  <img src="./images/imagen1.png" id="imagen">
+
+  <div id="saludo"></div>
+
+
+  <hr>
+
+  <button onclick="saludar()">Saludar</button>
+  <button onclick="cargarLista()">Cargar Lista</button>
+  <button onclick="cambiarImagen()">Cambiar Imagen</button>
+
+
+
+  <hr>
+  <h2>Lista</h2>
+  <ul id="lista">
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+  <script src="./javascripts/main.js"></script>
+</body>
+</html>
+
+function saludar(){
+  // alert("Bienvenido JS");
+  var elemento = document.getElementById('saludo');
+  elemento.innerHTML = "Bienvenido!";
+
+}
+
+var noticias = ["Noticia 1", "Noticia 2", "Noticia 3", "Noticia 4"];
+
+function cargarLista(){
+
+  var lista = document.getElementById("lista");
+
+  for(var i=0; i<noticias.length; i++){
+      var li = document.createElement("li");
+      li.innerText = noticias[i];
+      lista.appendChild(li);
+  }
+}
+
+
+function cambiarImagen(){
+  var imagen = document.getElementById("imagen");
+  // imagen.src = "./images/imagen2.png"
+  imagen.setAttribute('src',"./images/imagen2.png");
+}
+
+// insertBefore
+// parentNode
+// querySelectorAll
+// querySelector
+// classList.add()
+// hasChildNodes
+
+....................--------------------------------------....................
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+
+  <style>
+    .error {
+      color: red
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Registro</h1>
+  <form action="" >
+    <p>
+      <label>Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+      <span id="errorNombre" class="error"></span>
+    </p>
+    <p>
+      <label>Email</label>
+      <input type="text" name="email" id="email">
+      <span id="errorEmail" class="error"></span>
+    </p>
+    <p>
+      <label>Contraseña</label>
+      <input type="password" name="contrasena" id="contrasena">
+      <span id="errorContrasena" class="error"></span>
+    </p>
+    <p>
+      <label>Contraseña (Confirmación)</label>
+      <input type="password" name="confirmacion" id="confirmacion">
+      <span id="errorConfirmacion" class="error"></span>
+    </p>
+
+    <p>
+      <p>Género <span id="errorGenero" class="error"></span></p>
+      <input type="radio" name="genero" id="m" value="m">
+      <label for="m">Masculino</label>
+      <input type="radio" name="genero" id="f" value="f">
+      <label for="f">Femenino</label>
+
+    </p>
+
+    <p>
+      <label>País</label>
+      <select name="pais" id="pais">
+        <option value="">Seleccione</option>
+        <option value="1">Colombia</option>
+        <option value="2">Brasil</option>
+        <option value="3">México</option>
+      </select>
+      <span id="errorPais" class="error"></span>
+    </p>
+
+    <p>
+      <label for="terminos">
+        <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
+        <span id="errorTerminos" class="error"></span>
+    </p>
+
+    <p>
+      <input type="submit" value="Continuar" onclick="return validar(this.form)">
+    </p>
+
+
+  </form>
+
+  <script src="./javascripts/script.js"></script>
+</body>
+
+</html>
+
+
+function limpiarErrores(){
+  var errores = document.getElementsByClassName("error");
+  for(var i = 0; i < errores.length; i++){
+    errores[i].innerHTML = "";
+  }
+}
+
+function validar(formulario) {
+
+  limpiarErrores();
+
+  if (formulario.nombre.value.trim().length == 0) {
+    document.getElementById("errorNombre").innerText = "Campo obligatorio";
+    formulario.nombre.focus();
+    return false;
+  }
+
+  if (formulario.nombre.value.trim().length < 3) {
+    document.getElementById("errorNombre").innerText = "Campo inválido";
+    formulario.nombre.focus();
+    return false;
+  }
+
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!re.test(formulario.email.value)) {
+    document.getElementById("errorEmail").innerText = "Campo inválido";
+    formulario.email.focus();
+    return false;
+  }
+
+  if (formulario.contrasena.value.trim().length == 0) {
+    document.getElementById("errorContrasena").innerText = "Campo obligatorio";
+    formulario.contrasena.focus();
+    return false;
+  }
+
+  if (formulario.contrasena.value.trim().length < 6) {
+    document.getElementById("errorContrasena").innerText = "Campo inválido (Mínimo 6 caracteres)";
+    formulario.contrasena.focus();
+    return false;
+  }
+
+  if (formulario.contrasena.value != formulario.confirmacion.value) {
+    document.getElementById("errorConfirmacion").innerText = "Confirmación no coincide";
+    formulario.confirmacion.focus();
+    return false;
+  }
+
+  if (formulario.genero.value == "") {
+    document.getElementById("errorGenero").innerText = "Campo obligatorio";
+    return false;
+  }
+
+  if (formulario.pais.value == "") {
+    document.getElementById("errorPais").innerText = "Campo obligatorio";
+    formulario.pais.focus();
+    return false;
+  }
+
+  if (!formulario.terminos.checked) {
+    document.getElementById("errorTerminos").innerText = "Debe aceptar los términos y condiciones";
+    formulario.terminos.focus();
+    return false;
+  }
+
+  alert("Datos enviados");
+
+  return true;
+}
+
+................--------------------------............................
+# Solución
+
+La validación de formularios es algo muy común en la web.
+
+## Creación de los contenedores span para mostrar los errores 
+
+Se crea un `span` para cada caso y se coloca en el lugar que corresponda en el HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+...
+  <form action="" >
+    <p>
+      <label>Nombre</label>
+      <input type="text" name="nombre" id="nombre">
+      <span id="errorNombre" class="error"></span>
+    </p>
+    ...
+
+    ...<span id="errorEmail" class="error"></span>
+    
+    ...<span id="errorContrasena" class="error"></span>
+    
+    ...<span id="errorConfirmacion" class="error"></span>
+    
+    ...<span id="errorGenero" class="error"></span>
+
+    ...<span id="errorPais" class="error"></span>
+    
+    ...<span id="errorTerminos" class="error"></span>
+...
+</html>
+```
+
+## Limpiar los errores
+
+Esta función recorre cada uno de los elementos para asignar la cadena vacía y los errores se reinicien en cada verificación
+
+```javascript
+function limpiarErrores(){
+  var errores = document.getElementsByClassName("error");
+  for(var i = 0; i < errores.length; i++){
+    errores[i].innerHTML = "";
+  }
+}
+```
+
+Recuerda llamar a esta función al inicio de `validar(formulario)`
+
+## Validaciones
+
+Es importante hacer foco en el campo que está inválido para facilitar la interacción al usuario. Excepción: Los elementos del tipo `radio button` no pueden ser enfocados
+
+### Nombre
+
+```javascript
+if (formulario.nombre.value.trim().length == 0) {
+  document.getElementById("errorNombre").innerText = "Campo obligatorio";
+  formulario.nombre.focus();
+  return false;
+}
+
+if (formulario.nombre.value.trim().length < 3) {
+  document.getElementById("errorNombre").innerText = "Campo inválido";
+  formulario.nombre.focus();
+  return false;
+}
+```
+
+### Email
+
+```javascript
+var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+if (!re.test(formulario.email.value)) {
+  document.getElementById("errorEmail").innerText = "Campo inválido";
+  formulario.email.focus();
+  return false;
+}
+```
+
+### Contraseña
+
+```javascript
+if (formulario.contrasena.value.trim().length == 0) {
+  document.getElementById("errorContrasena").innerText = "Campo obligatorio";
+  formulario.contrasena.focus();
+  return false;
+}
+
+if (formulario.contrasena.value.trim().length < 6) {
+  document.getElementById("errorContrasena").innerText = "Campo inválido (Mínimo 6 caracteres)";
+  formulario.contrasena.focus();
+  return false;
+}
+```
+
+### Contraseña (Confirmación)
+
+```javascript
+if (formulario.contrasena.value != formulario.confirmacion.value) {
+  document.getElementById("errorConfirmacion").innerText = "Confirmación no coincide";
+  formulario.confirmacion.focus();
+  return false;
+}
+```
+
+### Género 
+
+```javascript
+if (formulario.genero.value == "") {
+  document.getElementById("errorGenero").innerText = "Campo obligatorio";
+  return false;
+}
+```
+
+### Pais
+
+```javascript
+if (formulario.pais.value == "") {
+  document.getElementById("errorPais").innerText = "Campo obligatorio";
+  formulario.pais.focus();
+  return false;
+}
+```
+
+### Terminos
+
+```javascript
+if (!formulario.terminos.checked) {
+  document.getElementById("errorTerminos").innerText = "Debe aceptar los términos y condiciones";
+  formulario.terminos.focus();
+  return false;
+}
+```
+
+
+
+..................................-------------------------------------.................
+Tipo de Web API
+	
+
+Descripción
+
+document.getElementById(id)
+	
+
+Devuelve un elemento dado un id
+
+document.getElementByTagName(etiqueta)
+	
+
+Dada una etiqueta HTML por ejemplo (p, td, h1) devuelve una lista de elementos de ese tag
+
+document.createElement(etiqueta)
+	
+
+Crea un nodo HTML dada una etiqueta
+
+elementoPadre.appendChild(elementoHijo)
+	
+
+Agrega un elemento hijo de un elemento padre
+
+elemento.innerHTML
+	
+
+Atributo que representa el HTML interno de un elemento
+
+elemento.innerText
+	
+
+Atributo que representa el texto interno de un elemento
+
+elemento.setAttribute(nombre, valor)
+	
+
+Agrega un atributo a un elemento
+
+elemento.getAttribute(nombre)
+	
+
+Retorna un atributo a un elemento
+
+document.querySelector(query)
+	
+
+Dado un query similar a CSS, retorna el primer elemento con el que coincide
+
+document.querySelectorAll(query)
+	
+
+Dado un query similar a CSS, retorna una lista de elementos con los que coincide
+
+elemento.addEventListener(evento, listener, opciones)
+	
+
+Agrega un listener a un elemen
+
+................--------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1 id="saludo"></h1>
+  <script src="javascripts/main.js"></script>
+</body>
+
+</html>
+
+
+var saludoEspanol = "Bienvenido!";
+var saludoIngles = "Welcome!";
+
+function colocarSaludo() {
+  var saludo;
+  if (location.search.includes("lang=en")) {
+    saludo = saludoIngles;
+  }
+  else if (location.search.includes("lang=es")) {
+    saludo = saludoEspanol;
+  }
+  else if (navigator.language == "en") {
+    saludo = saludoIngles;
+  }
+  else {
+    saludo = saludoEspanol;
+  }
+  document.getElementById("saludo").innerText = saludo;
+}
+
+colocarSaludo();
+
+
+................--------------------------------...................................
+```
+.
+├── index.html
+└── javascripts
+    └── script.js
+```
+
+## Creación de los archivos
+
+Creamos el archivo `main.js` dentro de la nueva carpeta `javascripts`
+
+## Enlace de los archivos
+
+En el archivo `index.html` enlazamos el script con 
+
+```html
+<script src="./javascripts/main.js"></script>
+```
+
+Nota: Recuerda agregarlo justo antes de que cierre la etiqueta `body` ya que se considera una buena práctica.
+
+## Definición de las funciones
+
+Luego en `main.js` creamos la función `colocarSaludo` que sustituye el saludo en inglés o español del `h1` en el HTML de acuerdo a la siguiente manera:
+
+Esta función busca el parámetro en el url usando includes
+
+```javascript
+location.search.includes("lang=es")
+...
+location.search.includes("lang=en")
+```
+
+Y si encuentra el idioma en el `URL` entonces lo acepta, de lo contrario utiliza el lenguaje del navegador con
+
+```javascript
+navigator.language == "en"
+```
+
+Finalmente llamamos a la función `colocarSaludo()` en `main.js`
+
+## Verificación
+
+- Coloca en el `URL` después de `index.html` el parámetro `lang` quedando  de la manera `index.html?lang=es` y `index.html?lang=en`
+- Luego quitá el parámetro y cambia el lenguaje del navegador para ver el saludo
+.......................------------------------------------...............
+
+Tipo de Web API
+	
+
+Descripción
+Cookies 	Instrucciones para permitir almacenar y recuperar cookies. Las cookies son archivos que permiten guardar información para su posterior recuperación. Su capacidad es limitada.
+
+Manejo de video 	Manipulación de objetos de video incluyendo la edición del mismo.
+
+Manejo de audio 	Manipulación de objetos de audio incluyendo la edición del mismo.
+
+Canvas 	Proporciona un cuadrado para que dibujemos líneas, formas geométricas, en sí funciones similares a las disponibles en un programa para dibujar.
+
+Manejo de base de datos 	Hay varias implementaciones de bases de datos, entre ellas el Local Storage. Pero se pueden construir bases de datos más grandes, jerárquicas o equivalentes a SQL. Por ejemplo, podemos tener una aplicación con una base de datos creada y gestionada con SQL. Representan la evolución de los cookies para el almacenamiento de información.
+
+
+Criptografía 	Entre la opciones de seguridad tenemos las APIs que proporcionan opciones para cifrar datos.
+
+Tiempo de usuario 	Están relacionadas con el tiempo del usuario, tal como cuánto tiempo un usuario permanece en un elemento o cuánto permanece en el navegador.
+
+Portapapeles 	Hay instrucciones para obtener información sobre el portapapeles, tal como guardar elementos en el portapapeles o recuperar información almacenada en el mismo.
+
+Captura de pantallas 	Permiten grabar la pantalla.
+
+Errores de red 	Incluyen instrucciones para manejar errores de la red. Por ejemplo, si la red tiene algún problema podemos acceder a esos errores.
+
+Fuera de línea 	Hay instrucciones que permiten detectar que la aplicación que estamos usando está fuera de línea, permitiendo que se programen acciones o notificaciones basadas en este evento. Pero también podríamos combinar estas instrucciones con el Local Storage, para guardar información de nuestra página en esa base de datos local. Así, si la aplicación está fuera de línea, podemos buscar la misma en dicha base de datos local, dándole al usuario la sensación que está en línea o que simplemente la aplicación funciona fuera de línea.
+
+Pagos 	Permiten la gestión de los pagos por vía de una aplicación Web.
+
+Dispositivo 	Conjunto de instrucciones que nos permite conocer en qué tipo de dispositivo está corriendo el navegador.
+
+Batería 	Conjunto de instrucciones que nos permite saber cuánto queda de batería en nuestro dispositivo.
+
+Sensores 	En el caso de dispositivos móviles, tenemos instrucciones que manejan los sensores y elementos propios de éstos, tales como los eventos de touch, sensor de luz, acelerómetro y giroscopio.
+
+Vibración 	Conjunto de instrucciones que nos permite acceder a la vibración para enviar este tipo de acción al dispositivo móvil.
+
+Mensajería 	Conjunto de instrucciones que nos permite acceder a la mensajería, para enviar o recibir mensajes de textos.
+
+Telefonía 	Conjunto de instrucciones que nos permite realizar llamadas telefónicas y otras funciones asociadas a la telefonía.
+
+Contactos 	Conjunto de instrucciones que nos permite acceder a los contactos.
+
+Calendario 	Conjunto de instrucciones que nos permite acceder al calendario. 
+
+.......................................................-.------------------------------...................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+<body>
+  <h1>Página</h1>
+
+  <button id="boton-aceptar">Aceptar</button>
+
+  <p onclick="console.log('párrafo')">Párrafo
+    <button onclick="console.log('botón')">Cancelar</button>
+  </p>
+  <script src="./javascripts/main.js"></script>
+</body>
+</html>
+
+function aceptando(event){
+  alert('Aceptado');
+}
+
+function aceptandoOtraVez(){
+  alert('Aceptado otra vez');
+}
+
+var botonAceptar = document.getElementById('boton-aceptar');
+
+//botonAceptar.onclick = aceptando;
+//botonAceptar.onclick = aceptandoOtraVez;
+
+botonAceptar.addEventListener("click", aceptando);
+botonAceptar.addEventListener("click", aceptandoOtraVez);
+
+.............................--------------------------------............................
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Página</h1>
+
+  <button onclick="conectar()">Conectar</button>
+  <span id="mensaje"></span>
+
+  <h2 id="contador"></h2>
+
+  <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
+
+//tiempos de respuestas
+
+var contador = 10;
+
+function conectar() {
+
+  document.getElementById("mensaje").innerHTML = "Conectando..."//cambiar el mensaje interno
+
+  setTimeout(function(){
+    document.getElementById("mensaje").innerHTML = "Conectado..."
+  }, 1000)
+
+  setTimeout(function(){
+    document.getElementById("mensaje").innerHTML = "Fin..."
+  }, 3000)
+
+}
+//contador regre
+var interval = setInterval(function(){
+
+  document.getElementById("contador").innerHTML = contador;
+
+  contador--;
+
+  if (contador < 1){
+    clearInterval(interval);
+  }
+
+}, 1000)
+
+....................-----------------------------------------------................
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Eventos</h1>
+
+  <div id="eventos">
+
+  </div>
+
+
+  <script src="./javascripts/main.js"></script>
+</body>
+
+</html>
+
+var eventos = [];
+
+
+function iniciarEventos() {
+  for (var i = 1; i < 200; i++) {
+    eventos.push({
+      nombre: "Evento " + i,
+      descripcion: "Esta es la descripción del evento " + i,
+    })
+  }
+}
+
+function llenarEventos() {
+  for (var i = 0; i < 5; i++) {
+    var nombre = document.createElement("h2");
+    var contenidoNombre = document.createTextNode(eventos[i].nombre);
+    nombre.appendChild(contenidoNombre);
+
+    var descripcion = document.createElement("p");
+    var contenidoDescripcion = document.createTextNode(eventos[i].descripcion);
+    descripcion.appendChild(contenidoDescripcion);
+
+    var separador = document.createElement("hr");
+
+    document.getElementById("eventos").appendChild(nombre);
+    document.getElementById("eventos").appendChild(descripcion);
+    document.getElementById("eventos").appendChild(separador);
+  }
+}
+
+function llenarMas() {
+  for (var i = 5; i < eventos.length; i++) {
+    var nombre = document.createElement("h2");
+    var contenidoNombre = document.createTextNode(eventos[i].nombre + " (LUEGO DEL SCROLL)");
+    nombre.appendChild(contenidoNombre);
+
+    var descripcion = document.createElement("p");
+    var contenidoDescripcion = document.createTextNode(eventos[i].descripcion);
+    descripcion.appendChild(contenidoDescripcion);
+
+    var separador = document.createElement("hr");
+
+    document.getElementById("eventos").appendChild(nombre);
+    document.getElementById("eventos").appendChild(descripcion);
+    document.getElementById("eventos").appendChild(separador);
+  }
+}
+
+document.addEventListener("scroll", function (Evento) {
+  if ((window.scrollY / (window.outerHeight - window.innerHeight)) > 0.5) {
+    llenarMas();
+  }
+})
+
+
+iniciarEventos();
+llenarEventos();
+
+
+...............................---------------------------------------............................-------
+Evento
+	
+
+Descripción
+onchange 	Cuando cambia un elemento de un formulario
+onclick 	Al hacer click
+onmouseover 	Al situar el puntero del ratón sobre el elemento
+onmouseout 	Al situar el puntero del ratón fuera del elemento
+onkeydown 	Al presionar una tecla
+onload 	Al cargar la página
+Window
+
+.......................-----------------------------------.....................................-
+Evento
+	
+
+Descripción
+onafterprint 	Después de imprimir
+onbeforeprint 	Antes de imprimir
+onerror 	Si ocurre un error en la página
+onresize 	Al redimensionar la página
+Formularios
+
+Evento
+	
+..............................----------------------------....................................
+Descripción
+onfocus 	Al enfocar un elemento
+onblur 	Al quitar el foco de un elemento
+onsubmit 	Al procesar el formulario
+Varios
+
+Evento
+	
+.............................----------------------......................---------------------
+Descripción
+ondrag 	Al arrastrar
+ondragend 	Al finalizar el arrastre
+oncopy 	Al copiar
+oncut 	Al cortar
+onpaste 	Al pegar
+onplay 	Al reproducir un multimedia
+onscroll 	Al hacer scroll 
+
+............-------------------------.......................------------------.....
+
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <div id="contenido"></div>
+
+  <script src="javascripts/babel.min.js"></script>
+
+  <script type="text/babel">
+
+  // function arreglarElCuarto() {
+  //   console.log('Cuarto arreglado');
+  // }
+
+  function arreglarElCuarto() {
+    var promesa = new Promise(function(resolve, reject){
+      // resolve('Cuarto arreglado');
+      reject('No se arregló');
+    })
+    return promesa;
+  }
+
+  arreglarElCuarto().then(function(resultado){
+    console.log(resultado);
+  }).catch(function(error){
+    console.log("Promesa no cumplida");
+    console.log(error);
+  })
+.............------------------------------------------------------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <div id="contenido"></div>
+
+  <script src="javascripts/babel.min.js"></script>
+
+  <script type="text/babel" src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+
+function arreglarElCuarto(){
+  var promesa = new Promise(function (resolve, reject) {
+    // resolve('Cuarto arreglado');
+    reject('No se arregló');
+  })
+  return promesa;
+}
+
+// arreglarElCuarto().then(function(resultado){
+
+// })
+
+async function procesar(){
+  try {
+  var resultado = await arreglarElCuarto()
+  console.log('resultado: ', resultado);
+  }
+  catch(error){
+    console.log('error: ', error);
+  }
+}
+
+procesar()
+
+
+
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+..............----------------.......................
+
+const promise = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        const number = parseInt(Math.random() * 10);
+        if (number % 2 == 0) {
+            resolve(number)
+        }
+        else {
+            reject("Rechazado")
+        }
+    },
+ 1000)
+});
+
+..................---------------------.............
+
+Para el manejo de excepciones en JavaScript existe la siguiente estructura:
+
+try {
+    // codigo que puede lanzar una excepcion
+}
+catch(error){
+    // codigo que se ejecuta cuando una excepcion ocurre
+}
+finally{
+    // codigo que se ejecuta indistintamente si hay excepcion o no
+Las excepciones suceden cuando existe un error en ejecución, sin embargo, se pueden disparar excepciones intencionalmente con la instrucción
+
+throw("<mensaje de la excepcion>")
+}
+
+.................--------------..............
+
+//ajax
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <div id="contenido"></div>
+  <button onclick="cargarDatos()">Cargar</button>
+
+  <script src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+
+{
+  "nombre": "luis"
+}
+
+
+ function cargarDatos() {
+  var peticion = new XMLHttpRequest();
+  // peticion.open('GET', 'datos.json');
+  peticion.open('GET', 'http://127.0.0.1:5500/datos.json');
+  peticion.onload = function () {
+    if (peticion.status == 200) {
+      // console.log('peticion.response: ', peticion.response);
+      var datos = JSON.parse(peticion.response)
+      // console.log('datos: ', datos);
+      document.getElementById("contenido").innerHTML = "Hola: " + datos.nombre;
+    }
+  };
+  peticion.send();
+};
+
+..................---------------------..................................................
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <div id="contenido"></div>
+  <!-- <button onclick="cargarDatos()">Cargar</button> -->
+
+  <button class="cargar">Cargar JQUERY</button>
+
+  <script src="javascripts/jquery-3.3.1.min.js"></script>
+  <script src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+function cargarDatos() {
+}
+
+$.ajax({
+  url: "http://127.0.0.1:5500/datos.json"
+})
+
+
+}).done(function(respuesta){
+
+});
+
+function cargarDatos() {
+  $.ajax({
+    url: "http://127.0.0.1:5500/datos.json"
+  }).done(function(respuesta){
+    $("#contenido").html("Hola: " + respuesta.nombre);
+    $("#contenido").slideDown("slow");
+  });
+};
+
+
+$( document ).ready(function() {
+  $("#contenido").hide();
+
+  $("button.cargar").click(function(){
+    cargarDatos();
+  })
+
+});
+......................................-----------------------------------------------..........................
+
+
+{
+  "fechaActual": "2019-01-01",
+  "eventos": [
+    {
+      "id": 1,
+      "nombre": "Feria de Comida",
+      "fecha": "2018-12-12",
+      "descripcion": "Disfruta de tus platos favoritos",
+      "lugar": "Salón A",
+      "invitados": 0,
+      "precio": 5
+    },
+    {
+      "id": 2,
+      "nombre": "Salida al museo",
+      "fecha": "2018-11-02",
+      "descripcion": "Vamos al museo de Ciencias",
+      "lugar": "Campo",
+      "invitados": 20,
+      "precio": 15
+    },
+    {
+      "id": 3,
+      "nombre": "Fiesta de Disfraces",
+      "fecha": "2019-02-12",
+      "descripcion": "Ven con tu personaje favorito",
+      "lugar": "Salón C",
+      "invitados": 10,
+      "precio": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Concierto de Música",
+      "fecha": "2019-01-22",
+      "descripcion": "Canta con nosotros",
+      "lugar": "Salón A",
+      "invitados": 0,
+      "precio": 10
+    },
+    {
+      "id": 5,
+      "nombre": "Carrera",
+      "fecha": "2018-03-01",
+      "descripcion": "Ven y haz ejercicio",
+      "lugar": "Campo de Futból",
+      "invitados": 50,
+      "precio": 0
+    },
+    {
+      "id": 6,
+      "nombre": "Intercambio de Libros",
+      "fecha": "2018-10-15",
+      "descripcion": "Trae y lleva tu libro favorito",
+      "lugar": "Salón D1",
+      "invitados": 3,
+      "precio": 8
+    },
+    {
+      "id": 7,
+      "nombre": "Vamos al Cine",
+      "fecha": "2019-10-15",
+      "descripcion": "Veremos la película más interesante",
+      "lugar": "Salón D1",
+      "invitados": 3,
+      "precio": 8
+    }
+  ]
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Evento</h1>
+  <div id="evento">
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/detalle.js"></script>
+</body>
+
+</html>
+
+// Hemos omitido los acentos en los comentarios por compatibilidad
+
+$(document).ready(function () {
+
+  //cargando los datos
+  $.ajax({
+    url: "info.json"
+  }).done(function (resultado) {
+
+    //llenando la variable
+    eventos = resultado.eventos;
+
+    //obteniendo el id del url
+    var id = location.search.match(/id=(\d)*/)[1]
+
+    evento = eventos.find(function (element) {
+      return element.id == id
+    })
+    //llenando dinamicamente los eventos
+    var html = `
+                <h2>${evento.nombre}</h2>
+                <p>${evento.fecha}</p>
+                <p>Lugar: ${evento.lugar}</p
+                <p>Descripción: ${evento.descripcion}</p>
+                <p>Costo: ${evento.precio}</p>
+                <p>Invitados: ${evento.invitados}</p>
+                `
+    document.getElementById("evento").innerHTML = html
+  });
+
+});
+.......................----------------------------------.......................
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+  <h1>Eventos Pasados</h1>
+  <div id="pasados"></div>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src="js/pasados.js"></script>
+</body>
+
+</html>
+
+{
+  "fechaActual": "2019-01-01",
+  "eventos": [
+    {
+      "id": 1,
+      "nombre": "Feria de Comida",
+      "fecha": "2018-12-12",
+      "descripcion": "Disfruta de tus platos favoritos",
+      "lugar": "Salón A",
+      "invitados": 0,
+      "precio": 5
+    },
+    {
+      "id": 2,
+      "nombre": "Salida al museo",
+      "fecha": "2018-11-02",
+      "descripcion": "Vamos al museo de Ciencias",
+      "lugar": "Campo",
+      "invitados": 20,
+      "precio": 15
+    },
+    {
+      "id": 3,
+      "nombre": "Fiesta de Disfraces",
+      "fecha": "2019-02-12",
+      "descripcion": "Ven con tu personaje favorito",
+      "lugar": "Salón C",
+      "invitados": 10,
+      "precio": 1
+    },
+    {
+      "id": 4,
+      "nombre": "Concierto de Música",
+      "fecha": "2019-01-22",
+      "descripcion": "Canta con nosotros",
+      "lugar": "Salón A",
+      "invitados": 0,
+      "precio": 10
+    },
+    {
+      "id": 5,
+      "nombre": "Carrera",
+      "fecha": "2018-03-01",
+      "descripcion": "Ven y haz ejercicio",
+      "lugar": "Campo de Futból",
+      "invitados": 50,
+      "precio": 0
+    },
+    {
+      "id": 6,
+      "nombre": "Intercambio de Libros",
+      "fecha": "2018-10-15",
+      "descripcion": "Trae y lleva tu libro favorito",
+      "lugar": "Salón D1",
+      "invitados": 3,
+      "precio": 8
+    },
+    {
+      "id": 7,
+      "nombre": "Vamos al Cine",
+      "fecha": "2019-10-15",
+      "descripcion": "Veremos la película más interesante",
+      "lugar": "Salón D1",
+      "invitados": 3,
+      "precio": 8
+    }
+  ]
+}
+
+// Hemos omitido los acentos en los comentarios por compatibilidad
+
+var pasados = [];
+var hoy;
+var eventos;
+
+$(document).ready(function () {
+
+  //Carga los datos que estan en el JSON (info.json) usando AJAX
+  $.ajax({
+    url: "info.json"
+  }).done(function (resultado) {
+
+    //Guarda el resultado en variables
+    hoy = resultado.fechaActual;
+    eventos = resultado.eventos;
+
+    //Selecciona los eventos que sean anteriores a la fecha actual del JSON
+    for(var i = 0; i < eventos.length; i++){
+      if (eventos[i].fecha < hoy){
+        pasados.push(eventos[i]);
+      }
+    }
+
+    //Ordena los eventos segun la fecha (los mas recientes primero)
+    pasados = pasados.sort(function(x,y){
+      if (x.fecha < y.fecha){
+        return 1;
+      }
+      return -1;
+    });
+
+    //Crea un string que contenga el HTML que describe el detalle del evento
+    var html = ""
+
+    //Recorre el arreglo y concatena el HTML para cada evento
+    for(var j = 0; j < pasados.length; j++){
+      html += `
+              <h2>${pasados[j].nombre}</h2>
+              <p>${pasados[j].fecha}</p>
+              <p>Lugar: ${pasados[j].lugar}</p
+              <p>Descripción: ${pasados[j].descripcion}</p>
+              <p>Invitados: ${pasados[j].invitados}</p>
+              `
+    }
+
+    //Modifica el DOM agregando el html generado
+    document.getElementById("pasados").innerHTML = html
+
+  })
+
+});
+
+.........................-....................................-------------------------.................
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <canvas id="lienzo" width="150" height="150" style="border: 1px solid black"></canvas>
+
+  <script src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+
+function dibujar(){
+
+  var canvas = document.getElementById('lienzo')
+  var contexto = canvas.getContext('2d');
+  var centro = {
+    x: canvas.width / 2,
+    y: canvas.height / 2,
+  }
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 50, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'yellow';
+  contexto.fill();
+  contexto.lineWidth = 3;
+  contexto.strokeStyle = 'black';
+  contexto.stroke();
+
+  contexto.beginPath();
+  contexto.arc(centro.x - 15, centro.y - 15, 8, 0, 2 * Math.PI, false);
+  contexto.arc(centro.x + 15, centro.y - 15, 8, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'black';
+  contexto.fill();
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 30, 0, Math.PI, false);
+  contexto.stroke();
+
+}
+
+dibujar();
+.....................--------------------------------------------..............
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <canvas id="lienzo" width="150" height="150" style="border: 1px solid black"></canvas>
+
+
+  <script src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+var despX = 0;
+var despY = 0;
+
+var canvas = document.getElementById('lienzo')
+var contexto = canvas.getContext('2d');
+var centro = {
+  x: canvas.width / 2,
+  y: canvas.height / 2,
+}
+
+function moverOjos(){
+  despX = Math.round(Math.random()*5)-3
+  despY = Math.round(Math.random()*5)-3
+  dibujar()
+}
+
+function dibujar(){
+
+  contexto.clearRect(0, 0, canvas.width, canvas.height);
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 50, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'yellow';
+  contexto.fill();
+  contexto.lineWidth = 3;
+  contexto.strokeStyle = 'black';
+  contexto.stroke();
+
+  contexto.beginPath();
+  contexto.arc(centro.x - 15 - despX, centro.y - 15 + despY, 8, 0, 2 * Math.PI, false);
+  contexto.arc(centro.x + 15 + despX, centro.y - 15 - despY, 8, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'black';
+  contexto.fill();
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 30, 0, Math.PI, false);
+  contexto.stroke();
+
+}
+
+canvas.addEventListener("mousemove",function(evento){
+  centro = {
+    x: evento.x,
+    y: evento.y
+  }
+})
+
+setInterval(moverOjos,200);
+
+.....................------------------------------------------------.................
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+</head>
+
+<body>
+
+  <canvas id="lienzo" width="750" height="750" style="border: 1px solid black"></canvas>
+
+  <script src="javascripts/script.js">
+
+ </script>
+
+
+
+</body>
+
+</html>
+
+function dibujar(){
+
+  var canvas = document.getElementById('lienzo')
+  var contexto = canvas.getContext('2d');
+  var centro = {
+    x: canvas.width / 2,
+    y: canvas.height / 2,
+  }
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 200, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'black';
+  contexto.fill();
+  contexto.lineWidth = 3;
+  contexto.strokeStyle = 'black';
+  contexto.stroke();
+
+  contexto.beginPath();
+  contexto.arc(centro.x - 200, centro.y - 200, 100, 0, 2 * Math.PI, false);
+  contexto.arc(centro.x + 200, centro.y - 200, 100, 0, 2 * Math.PI, false);
+  contexto.fillStyle = 'black';
+  contexto.fill();
+
+  contexto.beginPath();
+  contexto.arc(centro.x, centro.y, 30, 0, Math.PI, false);
+  contexto.stroke();
+
+}
+
+dibujar();
+
+.............-.....--------------------............
+
+Tecnología
+	
+
+Uso
+HTML	Define la estructura de la página y contenido. Está basado en etiquetas.
+
+CSS	Define la presentación o apariencia de la página. Ejemplo: colores, tamaños.
+
+Diseño Responsivo	Conjunto de técnicas que permiten que una página adaptarse coherentemente a distintos tamaños (tales como teléfonos móviles y computadores de escritorio).
+
+JavaScript	Lenguaje que le da comportamiento e interactividad a tu página.
+
+Eventos	Conjunto de señales a las cuales los elementos responden.
+
+
+DOM	Representación de la estructura en forma de árbol.
+
+BOM	Conjunto de objetos y funciones pertenecientes al navegador.
+
+AJAX	Técnica de peticiones asíncronas para obtener datos del servidor sin refrescar la página completamente.
+
+Web APIs	Conjunto de objetos y funciones que brinda el navegador y que son accesibles desde JavaScript.
+
+
+Hasta este punto ya conoces las tecnologías para desarrollos Frontend y cómo se relacionan. Sigue avanzando que tienes aún varios nuevos conceptos por descubrir.
+
+..............--------............................................
+
+refresh-sf.com
+
+uglifyjs
+
+obfuscadorio
+.................................--------------------------------------------------------------..................................
+Unidad 1
+JavaScript-Conceptos básicos
+
+JavaScript es un lenguaje de programación ampliamente utilizado para proporcionar dinamismo e interactividad a las páginas Web. Es un lenguaje de alto nivel interpretado dinámico, que significa que no requiere de un compilador para traducir sus instrucciones, que a su vez se generan en tiempo de ejecución. JavaScript es además un lenguaje que se considera débilmente tipado ya que sus variables se asignan a medida que se ejecuta el programa. Adicionalmente, el lenguaje incorpora aspectos de múltiples paradigmas de programación, tales como orientación a objetos y lenguajes funcionales, considerándose así multiparadigma.
+
+JavaScript se usa como un lenguaje de programación para las aplicaciones corriendo en el navegador Web, por lo tanto, es una tecnología Front End. Sin embargo, su uso se ha extendido a las aplicaciones que corren del lado del servidor o Backend, a través del uso de Node.js, que es una extensión del lenguaje para convertirlo en un lenguaje de propósito general, cuyos programas pueden ejecutarse en cualquier ambiente.
+
+ JavaScript, similarmente a otros lenguajes de programación, soporta tipos de datos simples, tales como, los strings y enteros, así como también tipos más complejos, tales como, los arreglos y el tipo de dato objeto. Los tipos de datos definen la clase de contenido que tienen las variables y por ende la clase de operaciones que pueden realizarse con ellas.  Igualmente encontramos una serie de estructuras de control que incorporadas en nuestro código permiten definir lo que queremos que nuestro código realice. Ellas se clasifican en condicionales, tales como, if/else y ciclos, tales como,  for y while.
+
+Por otro lado, tenemos las funciones que nos permiten la construcción modular de nuestro programa y la reutilización de parte del código que se encuentra definido dentro de dichas funciones. Relacionado con las funciones está el alcance de las variables en el ámbito de un programa, el cual se determina desde las definiciones más internas hacia las más externas. Así, una variable puede tener un ámbito global, es decir, todo el programa o local, tal como en determinada función.
+.................................--------------------------------------------------------------..................................
+Unidad 2
+Explorando JavaScript
+
+Esta unidad, “Explorando JavaScript”, nos lleva a examinar estructuras y funciones más complejas en el lenguaje. Comenzamos estudiando un tipo de datos bastante particular denominado objeto, que es similar al tipo de dato registro en otros lenguajes de programación y que no debe confundirse con los objetos en el paradigma orientado a objetos. El tipo de dato objeto proporciona gran flexibilidad para definir estructuras con los campos necesarios, lo cual subsana el problema de la rigidez de otras estructuras como los arreglos. 
+
+Seguidamente, en esta unidad, analizamos el paradigma orientado a objetos, donde el sistema que estamos implementando se representa como un conjunto de objetos interactuando entre sí. Cuando usamos este paradigma, debemos aplicar el concepto de abstracción, para tratar de identificar en un problema dado aquellos elementos que son relevantes para su solución. Los conceptos fundamentales en la orientación a objetos son: las clases, que se representan como los tipos; los objetos, que son  instancias de las clases; los atributos, que son propiedades de los objetos; y los métodos, que son funciones que determinan el comportamiento los  objetos.
+
+En JavaScript, una clase se define usando la palabra reservada class. Dentro de la clase el método constructor es de particular importancia porque es el que inicializa el objeto. Dentro de la clase también se encapsulan las propiedades del objeto. A través del uso de la palabra reservada new, se puede crear una instancia de la clase, es decir un objeto.
+
+Seguimos profundizando en JavaScript, explorando las expresiones regulares, que son una forma de definir un patrón para ver si coincide con una cadena de caracteres dada y se utiliza comúnmente para procesar strings. También, revisamos cómo trabajar con la clase Fecha, que nos proporciona una amplio abanico de métodos para operar sobre las mismas.
+
+Para finalizar, estudiamos el paso de funciones como argumentos en otras funciones. que es particularmente útil cuando trabajamos con el procesamiento de los elementos de un arreglo. Tenemos tres funciones útiles cuando trabajamos con arreglos, una de filtrado (filter), que permite seleccionar los elementos de un arreglo basados en lo que definamos en una función determinada; la otra es el mapa (map), que transforma la estructura del arreglo de acuerdo a lo que le especifiquemos; y el encontrar (find), que permite buscar un elemento determinado en un arreglo.
+.................................--------------------------------------------------------------..................................
+Unidad 3
+JavaScript en el Navegador
+
+Una vez que hemos examinado los componentes estructurales de JavaScript, avanzamos hacia la integración del código escrito en este lenguaje, también conocido como javascript, en nuestro navegador, de forma tal de incorporar dinamismo e interactividad a nuestras páginas. 
+
+Comenzamos esta unidad, explicando cómo se integran los javascripts usando las etiquetas html script. Dichos scripts pueden estar localizados en cualquier parte de nuestro código html, pero debemos tomar en cuenta que es importante que se carguen los elementos que dibujan una  página antes del código que define su comportamiento, que es lo que se hace con el código JavaScript.  Por otra parte, hoy en día los navegadores incorporan características para depurar un programa, es decir, estas facilidades permiten que los programadores vean los valores de variables o el estado de su aplicación en determinado momento.
+
+Tradicionalmente JavaScript ha sido utilizado para validar formularios. Las validaciones se establecen con la ayuda de lo siguiente: las etiquetas html de form, el uso de objetos, tales como, los botones, la definición de eventos asociados a estos objetos, tales como onclick, y los javascripts que implementan las reglas de validación. 
+
+El Modelo de Objeto del Documento o DOM (Document Object Model) es una representación jerárquica (o en forma de árbol) de los elementos de un documento html. JavaScript incorpora instrucciones para que obtengamos o quitemos elementos al DOM actual, haciendo nuestras páginas más dinámicas.  En este mismo orden de ideas, tenemos el objeto global window soportado por todos los navegadores, el cual nos permite acceder sus diversos elementos, tales como la pantalla, la localización, el portapapeles y el  documento. Este último incluye a su vez otros métodos y atributos, como por ejemplo, imágenes y enlaces. 
+
+Las Web APIs son un conjunto de objetos y funciones que se pueden llamar desde el navegador con JavaScript. Ellas nos permiten manejar los objetos en el navegador, tales como, la localización y la pantalla. Existen muchas APIs, pero una de ellas es la de Web Storage utilizada para guardar información del usuario, en la forma de Local Storage donde podemos guardar información local y Session Storage para guardar información durante la sesión del usuario.
+
+Un evento se define como algo que el usuario o el navegador pueden hacer, y ante los cuales podemos hacer que un código JavaScript reaccione. Un ejemplo de evento es el onclick, que sucede cuando el usuario cliquea un botón. Adicionalmente, tenemos los métodos settimeout y setinterval que se pueden utilizar para planificar eventos a futuro dado un intervalo de tiempo específico.
+.................................--------------------------------------------------------------..................................
+Unidad 4
+Avanzando con JavaScript
+
+En esta unidad comenzamos destacando la importancia de ECMAScript 6 (ES6) como estándar para JavaScript. Sin embargo, este estándar se publicó mucho después que JavaScript surgiera, por lo cual ya muchas soluciones utilizaban versiones no estandarizadas del lenguaje o versiones previas a ECMAScript 6. Es por tal razón que surgen los transpiladores,  que convierte código ES6 a código JavaScript compatible. Una de estas herramientas es Babel. Esto significa que si estamos siguiendo ES6, debemos usar una librería, tal como Babel, para que traduzca nuestro código, permitiendo que nuestras páginas se comporten apropiadamente en cualquier navegador.
+
+Iniciamos esta última parte de nuestra travesía por JavaScript estudiando las formas de implementar funciones asíncronas usando promesas. Recordemos que en el caso de las funciones asíncronas, el intérprete no necesita esperar porque la función retorne un valor, entonces la promesa se puede cumplir (es decir estar disponible)  ahora, en el futuro, o nunca. La función tiene dos funciones argumentos: resolve (resolver) y reject (rechazar), que resuelven o rechazan la promesa, respectivamente. Cuando tenemos muchas funciones asíncronas anidadas usando las promesas, esto puede resultar engorroso a la vista del desarrollador. Para simplificar este proceso, tenemos el Await y el Async, que simplifican el proceso de trabajar con promesas que están encadenadas.
+
+Ajax es una técnica que nos permite realizar peticiones al servidor para que nos devuelva ciertos datos, que emplearemos para dibujar algunas porciones de nuestra página html. Junto con las peticiones Ajax, podemos usar JQuery que es una librería de JavaScript que simplifica la forma de sumar interactividad y dinamismo a las páginas.
+
+Canvas es un elemento HTML que se emplea para dibujar gráficos usando JavaScript. Ella permite expandir el uso de este lenguaje para incorporar otras funcionalidades a nuestra página Web, basadas en el uso de animaciones, videos e imágenes.
+
+Finalizamos esta parte de nuestro aprendizaje estudiando ciertas técnicas y mecanismos para poner nuestro código en ambiente de producción. Con las técnica de compresión es posible minimizar el código removiendo data innecesaria, tal como los espacios. Otra técnica es el ofuscamiento que convierte nuestro código en algo que es difícil de leer por alguien que acceda el mismo y consiste en cambiar el nombre de las variables y funciones. Una vez que el código esté en producción, se puede elegir usar las Redes de Distribución de Contenidos o CDNs, que permiten crear réplicas de nuestros archivos en varios servidores ubicados en diferentes localizaciones, ofreciendo grandes ventajas tales como el incremento de la velocidad de acceso al sitio, incremento de la tolerancia a fallas, incremento de la robustez e incremento de la seguridad.

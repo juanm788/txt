@@ -1,0 +1,1662 @@
+
+.............................................................................................instalar nodejs.................
+
+node -v
+
+npm -v
+
+
+sudo npm install -g npx
+
+ npx create-react-app
+
+
+
+npx create-react-app react_aap1
+
+ cd react_app1
+
+npm start
+
+npm install --save font-awesome 
+
+ npm install --save bootstrap
+
+...................................---------------------------------------------------------.............................................
+
+{
+    type: 'div',
+    props: { className: 'estilo' },
+    children: 'Hello!'
+}
+
+........................................---------------------------------------
+ReactDOM.render(element, container[, callback])
+
+l ReactDOM.render() maneja el contenido que se pasa con el element en el nodo del contenedor. Cualquier elemento del DOM existente es reemplazado cuando se llama este método por primera vez. Las llamadas posteriores usan el algoritmo de diferenciación del DOM de React para hacer la actualización eficiente. ReactDOM.render() no modifica el nodo del contenedor (solo modifica los elementos internos del contenedor). Es posible insertar un componente en un nodo DOM existente sin sobrescribir los secundarios existentes.
+
+.--------------------------------------------------------------------------
+Creación de elementos React con JavaScript
+
+La creación de nodos React usando JavaScript es tan simple como invocar la siguiente función y pasarle un conjunto de argumentos que definen un nodo DOM real.
+
+React.createElement (type, props, children)
+
+Type (Cadena de caracteres| React.createClass ()): 	Type puede ser una cadena de caracteres (string) que representa un elemento HTML o puede ser una instancia de componente React, es decir, una instancia de React.createClass.
+
+props (vacío | objeto): 	props puede ser vacío o un objeto que contiene atributos o propiedades y valores.
+
+children (vacío| cadena de caracteres| React.createClass () | React.createElement ()): 	También pueden ser vacíos, una cadena de caracteres que se convierte en un nodo de texto, una instancia de React.createClass() o un React.createElement().
+
+
+En el método createElement de la clase React, el primer parámetro indica el elemento HTML que va a representar. El segundo parámetro indica los atributos / propiedades. Y, el tercer parámetro define cuál será el nodo dentro del elemento. El último argumento, que se convierte en un elemento secundario del nodo que se está creando, puede ser un nodo de texto, un nodo de elemento o incluso una instancia del componente.
+
+RETROALIMENTACIÓNElelementoReact,querepresentaelárboldelDOMdelejerciciopuedeser:constelement=React.createElement('div','',React.createElement('p','','Togetstarted,edit',React.createElement('code','','src/App.js'),'andsaveto',React.createElement('b','','reload.')))
+
+ElelementoReact,querepresentaelárboldelDOMdelejerciciopuedeser:
+
+
+constelement=React.createElement('div','',
+
+React.createElement('p','','Togetstarted,edit'
+
+React.createElement('code','','src/App.js'),
+'andsaveto',
+
+React.createElement('b','','reload.')))
+
+....................................--------------------------------------------------------------------------------------------------...........-
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div id="html"></div>
+    <div id="time"></div>
+    <div id="parrafo"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+  <script src="./public/index.js">
+</html>
+
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
+
+............-------------------------
+export default App;
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<div>Nuevo Nodo Html</div>, document.getElementById("html"));
+const element = (<div>Son las {new Date().toLocaleTimeString()}</div>);
+ReactDOM.render(element,document.getElementById("time"));
+const element1 = React.createElement('p',{align:'center'},'Nuevo Párrafo');
+ReactDOM.render(element1,document.getElementById('parrafo'));
+registerServiceWorker();
+
+//tfu818
+...............-
+#body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.............-
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+......................................................................................------------------------------------
+
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+............................
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+const element1 = React.createElement('h1',{},'Ejercicio 2. Curso React');
+ReactDOM.render(element1,document.getElementById('title'));
+const element2 = React.createElement('p',{class: 'App'},'En esta página se coloca un enlace a la página de NextU');
+ReactDOM.render(<a href="http://www.nextu.com" target='_blank'>Página de NextU</a>,
+    document.getElementById('nextu'));
+ReactDOM.render(element2,document.getElementById('parrafo'));
+
+registerServiceWorker();
+............................................
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div id="html"></div>
+    <div id="h1"></div>
+    <div id="time"></div>
+    <div id="parrafo"></div>
+    <div id="App"></div>
+    <div id="nextu"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+  </html>
+.............................................--------------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div class="react-form-container" id="root"></div>
+  </body>
+</html>
+
+......................................
+//registerServiceWorker
+
+// In production, we register a service worker to serve assets from local cache.
+
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on the "N+1" visit to a page, since previously
+// cached resources are updated in the background.
+
+// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.
+// This link also includes instructions on opting out of this behavior.
+
+const isLocalhost = Boolean(
+  window.location.hostname === 'localhost' ||
+    // [::1] is the IPv6 localhost address.
+    window.location.hostname === '[::1]' ||
+    // 127.0.0.1/8 is considered localhost for IPv4.
+    window.location.hostname.match(
+      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+    )
+);
+
+export default function register() {
+  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+    // The URL constructor is available in all browsers that support SW.
+    const publicUrl = new URL(process.env.PUBLIC_URL, window.location);
+    if (publicUrl.origin !== window.location.origin) {
+      // Our service worker won't work if PUBLIC_URL is on a different origin
+      // from what our page is served on. This might happen if a CDN is used to
+      // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374
+      return;
+    }
+
+    window.addEventListener('load', () => {
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+
+      if (isLocalhost) {
+        // This is running on localhost. Lets check if a service worker still exists or not.
+        checkValidServiceWorker(swUrl);
+
+        // Add some additional logging to localhost, pointing developers to the
+        // service worker/PWA documentation.
+        navigator.serviceWorker.ready.then(() => {
+          console.log(
+            'This web app is being served cache-first by a service ' +
+              'worker. To learn more, visit https://goo.gl/SC7cgQ'
+          );
+        });
+      } else {
+        // Is not local host. Just register service worker
+        registerValidSW(swUrl);
+      }
+    });
+  }
+}
+
+function registerValidSW(swUrl) {
+  navigator.serviceWorker
+    .register(swUrl)
+    .then(registration => {
+      registration.onupdatefound = () => {
+        const installingWorker = registration.installing;
+        installingWorker.onstatechange = () => {
+          if (installingWorker.state === 'installed') {
+            if (navigator.serviceWorker.controller) {
+              // At this point, the old content will have been purged and
+              // the fresh content will have been added to the cache.
+              // It's the perfect time to display a "New content is
+              // available; please refresh." message in your web app.
+              console.log('New content is available; please refresh.');
+            } else {
+              // At this point, everything has been precached.
+              // It's the perfect time to display a
+              // "Content is cached for offline use." message.
+              console.log('Content is cached for offline use.');
+            }
+          }
+        };
+      };
+    })
+    .catch(error => {
+      console.error('Error during service worker registration:', error);
+    });
+}
+
+function checkValidServiceWorker(swUrl) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl)
+    .then(response => {
+      // Ensure service worker exists, and that we really are getting a JS file.
+      if (
+        response.status === 404 ||
+        response.headers.get('content-type').indexOf('javascript') === -1
+      ) {
+        // No service worker found. Probably a different app. Reload the page.
+        navigator.serviceWorker.ready.then(registration => {
+          registration.unregister().then(() => {
+            window.location.reload();
+          });
+        });
+      } else {
+        // Service worker found. Proceed as normal.
+        registerValidSW(swUrl);
+      }
+    })
+    .catch(() => {
+      console.log(
+        'No internet connection found. App is running in offline mode.'
+      );
+    });
+}
+
+export function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+
+.................
+
+//index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
+
+const titulo = React.createElement('h1','','Ejercicio 3. Formulario')
+
+const nombre = React.createElement('fieldset',{class: 'form-group'},
+                <label>Nombre Completo</label>,
+                React.createElement('input',{id:'nombre',class: 'form-input',
+                    name: 'nombre',type:'text'}));
+
+const email = React.createElement('fieldset',{class: 'form-group'},
+            <label>Correo electrónico</label>,
+            React.createElement('input',{id: 'email',type: 'email', class: 'form-input'}));
+
+const subject = React.createElement('fieldset',{class: 'form-group'},
+            <label>Asunto</label>,
+            React.createElement('input',{id:'asunto',class: 'form-input',
+            name: 'asunto',type:'text'}));
+
+const mensaje = React.createElement('fieldset',{class: 'form-group'},
+            <label>Mensaje</label>,
+            React.createElement('textarea',{id:'mensaje',class: 'form-input',name: 'mensaje',type:'text'}));
+const form = React.createElement('form',{class: 'react-form'},titulo,nombre,email,subject,mensaje);
+
+ReactDOM.render(form,document.getElementById('root'));
+
+registerServiceWorker();
+
+.......................................
+//index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+
+var listElement1 = React.createElement('li',{id:'item1',type:'circle'},'Uno');
+var listElement2 = React.createElement('li',{id:'item2',type:'disc'},'Dos');
+var listElement3 = React.createElement('li',{id:'item3',type:'square'},'Tres');
+var listElement4 = React.createElement('li',{id:'item4',type:'1'},'Cuatro');
+var listElement5 = React.createElement('li',{id:'item5',type:'a'},'Cinco');
+var listElement6 = React.createElement('li',{id:'item6',type:'A'},'Seis');
+
+var elements = [listElement1,listElement2,listElement3,
+            listElement4,listElement5, listElement6];
+
+var listOfElements = React.createElement('lu','',elements);
+
+ReactDOM.render(listOfElements,document.getElementById('list'));
+
+serviceWorker.unregister();
+.....................................................
+//index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div id="list"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+
+..............
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.......................................................................................................................
+//index.html
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Receta de Pan</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <div id='img_pan' align='center'></div>
+    <div id='titulo'></div>
+    <div id='ingredientes'></div>
+    <div id='pasos'></div>
+  </body>
+</html>
+..........................
+
+index.js
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
+
+var pan_imagen = React.createElement('img',{src: 'photo.jpg',alt:'Pan',class: 'img_pan'});
+var p_ingredientes = React.createElement('p','',
+        'A continuación se indican los ingredientes necesario para hacer la receta de pan:');
+var ingrediente1 = React.createElement('li',{type: 'circle'},
+        <b>15 gr</b>,' levadura fresca');
+var ingrediente2 = React.createElement('li',{type: 'circle'},
+        <b>1 cda</b>,' azúcar');
+var ingrediente3 = React.createElement('li',{type: 'circle'},
+        <b>1 cda</b>,' sal');
+var ingrediente4 = React.createElement('li',{type: 'circle'},
+        <b>3 cdas</b>,' de aceite de oliva');
+var ingrediente5 = React.createElement('li',{type: 'circle'},
+        <b>300 ml</b>,' agua templada', <i> (1 taza 1/2)</i>);
+var ingrediente6 = React.createElement('li',{type: 'circle'},
+        <b>500 gr</b>,' harina');
+
+var l_ingredientes = [ingrediente1, ingrediente2, ingrediente3, 
+        ingrediente4, ingrediente5, ingrediente6];
+var ingredientes = React.createElement('div',
+        {class: 'ingredientes'},
+        p_ingredientes,
+        React.createElement('div',{class: 'l_ingredientes'},
+        React.createElement('ul','',l_ingredientes)));
+
+var pasos = <div className='pasos'>
+        <p>Ahora que ya tienes los ingredientes medidos 
+        y preparados sigue los siguientes pasos para lograr hacer tu pan.</p>
+        <div class='l_pasos'>
+            <ol>
+                <li>
+                Primero hay que hidratar la levadura. Ponn la levadura 
+                con un poco de agua, el aceite y el azúcar. Revuelve hasta 
+                que este todo disuelto.
+                </li>
+                <li>
+                Incorpora 5 cda. De harina y cuando esté todo integrado 
+                deja reposar aprox 10 minutos. Tapado con repasador.
+                </li>
+                <li>
+                Termina de incorporar La harina junto con la sal y el agua.
+                </li>
+                <li>
+                Amasa durante unos 2 minutos aprox. Y deja reposar unos 30 minutos.
+                </li>
+                <li>
+                Saca el aire amasando un poco más y forma un bollo que debes colocar
+                en la asadera aceitada.
+                </li>
+                <li>
+                Aplica unos cortes y espolvorea con harina.
+                </li>
+                <li>
+                Tapa con un recipiente apto de horno y aceitado. 
+                Esto es para conservar la humedad.
+                </li>
+                <li>
+                Por último lleva al horno recién encendido a 200 grados celsius, 
+                fuego arriba y abajo, durante 45 minutos aprox.
+                </li>
+            </ol>
+        </div>
+        <p>Ya haz hecho tu primer pan, ahora disfrútalo.</p>
+    </div>;
+
+ReactDOM.render(pan_imagen,document.getElementById('img_pan'));
+ReactDOM.render(<h1 align='center'> Receta de pan, fácil de hacer</h1>,
+document.getElementById('titulo'));
+ReactDOM.render(ingredientes,document.getElementById('ingredientes'));
+ReactDOM.render(pasos,document.getElementById('pasos'));
+
+
+registerServiceWorker();
+.........................------------
+//index.css
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ingredientes{
+  margin-left: 20px;
+}
+
+.l_ingredientes{
+  margin-left: 20px;
+}
+
+.pasos{
+  margin-left: 20px;
+}
+
+.l_pasos{
+  margin-left: 25px;
+}
+
+.img_pan{
+  margin-top: 20px;
+  width:550px;
+  height:430px;
+}
+
+........................------------------------------------------.............................
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
+...................
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import registerServiceWorker from './registerServiceWorker';
+
+var lista_fac = React.createFactory('li');
+
+var l1 = lista_fac('',
+    React.createElement('a',{href:''},'Física'));
+var l2 = lista_fac({id: 'selected'},<a href="">Química</a>);
+var l3 = lista_fac({},<a href="">Biología</a>);
+var l4 = lista_fac({},<a href="">Inglés</a>);
+var l5 = lista_fac({},<a href="">Sociales</a>);
+var l6 = lista_fac({},<a href="">Historia</a>);
+var l7 = lista_fac({},<a href="">Deporte</a>);
+var lista =[l1,l2,l3,l4,l5,l6,l7]; 
+
+var header=<header>
+    <h1>Pestañas con React</h1>
+    <nav>
+        <ul>
+            {lista}
+        </ul>
+    </nav>
+</header>;
+
+var seccion = React.createElement('section',{id: 'content'},
+    <p>Ejemplo de pestañas creadas con elementos estáticos de React y CSS.</p>,
+    <p>La química es la ciencia que estudia tanto la composición, como la estructura y las propiedades de 
+        la materia como los cambios que esta experimenta durante las reacciones químicas 
+        y su relación con la energía.​</p>,
+    React.createElement('p','',
+    React.createElement('a',{href:''},
+    <img src="https://conceptodefinicion.de/wp-content/uploads/2014/07/Qu%C3%ADmica.jpg" alt="Química"/>)));
+
+ReactDOM.render([header,seccion],document.getElementById('root'));
+
+registerServiceWorker();
+...............................
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+*, #content :first-child, #content :last-child {
+  margin: 0;
+}
+
+body {
+  font: 300 15px/1.2 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #333;
+  margin: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 55px;
+  font-weight: 100;
+  letter-spacing: 30px;
+  text-shadow: 3px 3px 5px #000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0 0 0 10px;
+  min-width: 460px;
+}
+
+nav li {
+  float: left;
+  position: relative;
+  height: 30px;
+  border-radius: 10px 30px 0 0;
+  margin-left: -10px;
+  text-shadow: 1px 1px 0 #bbb;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  transition: .2s;
+}
+
+nav a {
+  display: block;
+  position: relative;
+  width: 90px;
+  height: 20px;
+  padding: 6px 10px 20px 0;
+  border-radius: 10px 30px 0 0;
+  background: #999;
+  color: #444;
+  text-align: center;
+  text-decoration: none;
+  transition: .2s;
+}
+
+nav li:hover {
+  z-index: 1;
+}
+
+nav li:hover a {
+  background: #ccc;
+  color: #000;
+}
+
+#selected {
+  z-index: 2;
+}
+
+#selected a {
+  z-index: 3;
+  background: #fff;
+  color: #000;
+  text-shadow: none;
+  font-weight: 500;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  clear: both;
+  min-width: 420px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+  background: #fff;
+}
+
+#content p {
+  margin: 20px 0;
+}
+..............------------
+
+// In production, we register a service worker to serve assets from local cache.
+
+// This lets the app load faster on subsequent visits in production, and gives
+// it offline capabilities. However, it also means that developers (and users)
+// will only see deployed updates on the "N+1" visit to a page, since previously
+// cached resources are updated in the background.
+
+// To learn more about the benefits of this model, read https://goo.gl/KwvDNy.
+// This link also includes instructions on opting out of this behavior.
+
+const isLocalhost = Boolean(
+  window.location.hostname === 'localhost' ||
+    // [::1] is the IPv6 localhost address.
+    window.location.hostname === '[::1]' ||
+    // 127.0.0.1/8 is considered localhost for IPv4.
+    window.location.hostname.match(
+      /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
+    )
+);
+
+export default function register() {
+  if (process.env.NODE_ENV === 'production' && 'serviceWorker' in navigator) {
+    // The URL constructor is available in all browsers that support SW.
+    const publicUrl = new URL(process.env.PUBLIC_URL, window.location);
+    if (publicUrl.origin !== window.location.origin) {
+      // Our service worker won't work if PUBLIC_URL is on a different origin
+      // from what our page is served on. This might happen if a CDN is used to
+      // serve assets; see https://github.com/facebookincubator/create-react-app/issues/2374
+      return;
+    }
+
+    window.addEventListener('load', () => {
+      const swUrl = `${process.env.PUBLIC_URL}/service-worker.js`;
+
+      if (isLocalhost) {
+        // This is running on localhost. Lets check if a service worker still exists or not.
+        checkValidServiceWorker(swUrl);
+
+        // Add some additional logging to localhost, pointing developers to the
+        // service worker/PWA documentation.
+        navigator.serviceWorker.ready.then(() => {
+          console.log(
+            'This web app is being served cache-first by a service ' +
+              'worker. To learn more, visit https://goo.gl/SC7cgQ'
+          );
+        });
+      } else {
+        // Is not local host. Just register service worker
+        registerValidSW(swUrl);
+      }
+    });
+  }
+}
+
+function registerValidSW(swUrl) {
+  navigator.serviceWorker
+    .register(swUrl)
+    .then(registration => {
+      registration.onupdatefound = () => {
+        const installingWorker = registration.installing;
+        installingWorker.onstatechange = () => {
+          if (installingWorker.state === 'installed') {
+            if (navigator.serviceWorker.controller) {
+              // At this point, the old content will have been purged and
+              // the fresh content will have been added to the cache.
+              // It's the perfect time to display a "New content is
+              // available; please refresh." message in your web app.
+              console.log('New content is available; please refresh.');
+            } else {
+              // At this point, everything has been precached.
+              // It's the perfect time to display a
+              // "Content is cached for offline use." message.
+              console.log('Content is cached for offline use.');
+            }
+          }
+        };
+      };
+    })
+    .catch(error => {
+      console.error('Error during service worker registration:', error);
+    });
+}
+
+function checkValidServiceWorker(swUrl) {
+  // Check if the service worker can be found. If it can't reload the page.
+  fetch(swUrl)
+    .then(response => {
+      // Ensure service worker exists, and that we really are getting a JS file.
+      if (
+        response.status === 404 ||
+        response.headers.get('content-type').indexOf('javascript') === -1
+      ) {
+        // No service worker found. Probably a different app. Reload the page.
+        navigator.serviceWorker.ready.then(registration => {
+          registration.unregister().then(() => {
+            window.location.reload();
+          });
+        });
+      } else {
+        // Service worker found. Proceed as normal.
+        registerValidSW(swUrl);
+      }
+    })
+    .catch(() => {
+      console.log(
+        'No internet connection found. App is running in offline mode.'
+      );
+    });
+}
+
+export function unregister() {
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(registration => {
+      registration.unregister();
+    });
+  }
+}
+
+...................-----------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
+................................
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; //iconos con npm install --save font-awesome en el cmd
+import registerServiceWorker from './registerServiceWorker';
+
+var form = React.createElement('form',{action: ''},
+    <h2>Formulario de Registro</h2>,
+    <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Nombre de usuario" name="usrnm"/>
+    </div>,
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Correo Electrónico" name="email"/>
+    </div>,
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Contraseña" name="psw"/>
+    </div>,
+    <button type="submit" class="btn"><strong>Regístrate</strong></button>);
+
+ReactDOM.render(<div class='form'>{form}</div>,document.getElementById('root'));
+
+registerServiceWorker();
+.....................
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+* {box-sizing: border-box;}
+
+/* Style the input container */
+.input-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.form{
+  margin: 100px;
+  border:3px solid #ddd;
+  padding:10px 25px 25px 25px;
+}
+
+button {
+  font-size: 14px;
+}
+.....................--------......
+
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+...................................................................................................................
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+.....................-----------
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; //iconos con npm install --save font-awesome en el cmd
+import registerServiceWorker from './registerServiceWorker';
+
+var form = React.createElement('form',{action: ''},
+    <h2>Formulario de Registro</h2>,
+    <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Nombre de usuario" name="usrnm"/>
+    </div>,
+    <div class="input-container">
+    <i class="fa fa-envelope icon"></i>
+    <input class="input-field" type="text" placeholder="Correo Electrónico" name="email"/>
+    </div>,
+    <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Contraseña" name="psw"/>
+    </div>,
+    <button type="submit" class="btn"><strong>Regístrate</strong></button>);
+
+ReactDOM.render(<div class='form'>{form}</div>,document.getElementById('root'));
+
+registerServiceWorker();
+..................---
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.....................................------
+import React, { Component } from 'react';
+import '../node_modules/font-awesome/css/font-awesome.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div class='border rounded login m-5 container'>
+      <h2>Ingreso</h2>
+      <form>
+        <div class="input-group pb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-envelope-o fa-fw"></i></span>
+          </div>
+          <input class="form-control" type="text" placeholder="Correo Electrónico"/>
+        </div>
+        <div class="input-group pb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
+          </div>
+          <input class="form-control" type="password" placeholder="Contraseña"/>
+        </div>
+      </form>
+      </div>
+    );
+  }
+}
+
+export default App;
+........................................................................-.........
+
+//index
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import Form from './Form';
+
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<Form formName='Registro Personal' input1='Primer Nombre' input2='Apellido'
+    input3='Correo Electrónico' input4='Contraseña' input5='Dirección' input6='Ciudad' 
+    input7='Código Postal' buttonName='Guardar'/>,
+document.getElementById('root'));
+registerServiceWorker();
+
+......................------------------------
+
+//from.js
+import React, { Component } from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.css';
+import '../node_modules/font-awesome/css/font-awesome.css';
+
+export default class Form extends Component {
+  render() {
+    return (
+        <div class='border m-3 p-3'>
+        <h2>{this.props.formName}</h2>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputName1">{this.props.input1}</label>
+                    <div class='input-group'>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="inputFirstName" placeholder={this.props.input1}/>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastName">{this.props.input2}</label>
+                    <div class='input-group'>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-user fa-fw"></i></span>
+                        </div>
+                        <input type="text" class="form-control" id="inputLastName" placeholder={this.props.input2}/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">{this.props.input3}</label>
+                    <div class='input-group'>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-envelope-o fa-fw"></i></span>
+                        </div>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder={this.props.input3}/>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">{this.props.input4}</label>
+                    <div class='input-group'>
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fa fa-key fa-fw"></i></span>
+                        </div>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder={this.props.input4}/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">{this.props.input5}</label>
+                <div class='input-group'>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-home fa-fw"></i></span>
+                    </div>
+                    <input type="text" class="form-control" id="inputAddress" placeholder={this.props.input5}/>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">{this.props.input6}</label>
+                    <input type="text" class="form-control" id="inputCity"/>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">{this.props.input7}</label>
+                    <input type="text" class="form-control" id="inputZip"/>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck"/>
+                    <label class="form-check-label" for="gridCheck">
+                        Estoy de acuerdo con el registro de mis datos personales
+                    </label>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">{this.props.buttonName}</button>
+        </div>
+    )
+  }
+}
+.............................................-
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
+    );
+  }
+}
+
+export default App;
+..................
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+...........................-............------------------------------------...........................
+
+
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+constructor(props){
+  super(props);
+  this.state={mostrarEstado:true,
+              estado:'Este es el estado del componente'};
+}
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p style={{display:this.state.mostrarEstado ? 'block' : 'none'}} >{this.state.estado}</p>
+      </div>
+    );
+  }
+}
+
+export default App;
+...............................
+
+//estados
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+................
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
+registerServiceWorker();
+........................
+import React, { Component } from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+class App extends Component {
+constructor(props){
+  super(props);
+  this.state={mostrarEstado:true,
+              estado:'Este es el estado del componente'};
+}
+
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">Welcome to React</h1>
+        </header>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+        <p style={{display:this.state.mostrarEstado ? 'block' : 'none'}} >{this.state.estado}</p>
+      </div>
+    );
+  }
+}
+
+export default App;
+...................----------------------------------.......................................--------------------------------------..........
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root" align='center'></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
+.........................
+//app
+import React, { Component } from 'react';
+import '../node_modules/font-awesome/css/font-awesome.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import './App.css';
+
+class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      hecho:false,
+      usuario:'',
+      errorMensaje:''
+    }
+  }
+
+  registro = () => {
+    this.setState({
+      hecho:true,
+      usuario:this.usuario.value
+    })
+  }
+
+  nuevoRegistro = () => {
+    this.setState({
+      hecho:false,
+      usuario:''
+    })
+  }
+
+  render() {
+    if (this.state.hecho)
+      return(
+        <div>
+          <h3>Registro Satisfactorio.</h3>
+          <p>Muchas gracias por resgistrarte</p>
+          <p>Tu nombre de usuario es: <b>{this.state.usuario}</b></p>
+          <div className='btn-group pb-3'>
+          <a className="btn btn-secondary" onClick={this.nuevoRegistro}>
+          <i className="fa fa-user fa-fw"></i>Nuevo Registro</a>
+        </div>
+        </div>
+      );
+    return (
+      <div className='border rounded login m-5 container login'>
+      <h2>Registro</h2>
+      <form>
+        <div className="input-group pb-3">
+          <div className="input-group-prepend">
+            <span className="input-group-text">
+            <i className="fa fa-envelope-o fa-fw"></i></span>
+          </div>
+          <input id='usuario' className="form-control" 
+          type="text" placeholder="Correo Electrónico"
+          ref={input => this.usuario = input}/>
+        </div>
+        <div className="input-group pb-3">
+          <div className="input-group-prepend">
+            <span className="input-group-text">
+            <i className="fa fa-key fa-fw"></i></span>
+          </div>
+          <input id='clave'className="form-control" 
+          type="password" placeholder="Contraseña"
+          ref={input => this.clave = input}/>
+        </div>
+        <div className='btn-group pb-3'>
+          <a className="btn btn-secondary" onClick={this.registro}>
+          <i className="fa fa-user fa-fw"></i>Registrar</a>
+        </div>
+      </form>
+      </div>
+    );
+  }
+}
+
+export default App;
+
+......................---------------------
+//index
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />,
+        document.getElementById('root'));
+
+registerServiceWorker();
+
+........................................
+import React, { Component } from 'react';
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../node_modules/font-awesome/css/font-awesome.css'
+
+
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state={registrado:false}
+  }
+
+  registrar = () => {
+    this.setState({
+      registrado:true,
+      usuario:document.getElementById('nombre').value
+    })
+  }
+
+  render() {
+    if (this.state.registrado)
+      return (
+        <div>
+          Usuario <strong>{this.state.usuario}</strong> registrado
+        </div>
+      )
+    else
+    return (
+      <div class="container border ounded m-3" style={{width:'350px'}}>
+			<div class="row">
+				<div class="col-sm-12">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">Registro de Usuario</h1>
+	               		<hr />
+	               	</div>
+	            </div> 
+				<div class="row pl-4 ml-3">
+					<form class="col-sm-12" method="post" action="#">
+						
+						<div class="form-group">
+							<label for="nombre" class="cols-sm-2 control-label">Nombre Completo</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa pr-2" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="nombre" id="nombre"  placeholder="Nombre completo"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="email" class="cols-sm-2 control-label">Correo Electrónico</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa pr-2" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="email" id="email"  placeholder="Correo Electrónico"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="username" class="cols-sm-2 control-label">Nombre de Usuario</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-users fa pr-2" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="username" id="username"  placeholder="Nombre de usuario"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="password" class="cols-sm-2 control-label">Contraseña</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg pr-2" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="password" id="password"  placeholder="Contraseña"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="confirm" class="cols-sm-2 control-label">Confirmar Contraseña</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg pr-2" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="confirm" id="confirm"  placeholder="Confirmar Contraseña"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button type="button" class="btn btn-primary btn-lg btn-block login-button"
+                onClick={this.registrar}>
+                Registrar</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+    );
+  }
+}
+
+export default App;
+
+
+
+
+
+

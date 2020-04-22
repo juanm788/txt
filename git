@@ -1,0 +1,25 @@
+ git push origin master
+
+git pull
+
+git status
+
+git add .
+
+ git commint -m "nombre de la actualizacion"
+
+ git checkout -b add-juanm
+
+ git push origin add-juanm
+
+para eliminar ramas
+
+ git branch
+
+ git branch
+
+
+jumaagusan@gmail.com	
+
+juc4s0123456
+

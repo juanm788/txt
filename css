@@ -1,0 +1,4808 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht:device-width,user-scalable-no"
+    <title>hoja de estilos </title>
+    <style>
+h1 {
+  color: blue;
+  font-family: helvetica;
+}
+p{
+  color:red;
+  font-family:helvetica;
+    font-size: 5PX;
+}
+    </style>
+  </head>
+  <body>
+    <h1>definicion</h1>
+      <p >
+        HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcas de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.1​
+      </p>
+
+  </body>
+</html>
+
+
+
+
+
+h1 {
+  color: blue;
+  font-family: helvetica;
+}
+p{
+  color:red;
+  font-family:helvetica;
+    font-size: 10PX;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colores</h1>
+    <p style="color:green">Color verde</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="widht:device-width,user-scalable-no"
+    <title>hoja de estilos </title>
+  <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/hojas_estilos_atri/estilos.css"
+  </head>
+  <body>
+    <h1>definicion</h1>
+      <p >
+      
+      </p>
+
+  </body>
+</html>
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="widht:device-width,user-scalable-no">
+    <title>hoja de estilos </title>
+  <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/concierto/css/estilos.css">
+  <style>
+    h1 {
+      font-family: Arial;
+    }
+  </style>
+</head>
+<body>
+  <h1><img src="/home/juanmanuel/Escritorio/FIXBOX/html nexu/NEXT_U/sitio_web/img/c.jpg" alt="Logo" style="background-color: green"> Tu concierto</h1>
+  <p>
+    Bienvenido a este blog de conciertos...
+  </p>
+  <img src="/home/juanmanuel/Escritorio/FIXBOX/html nexu/NEXT_U/sitio_web/img/Rey.jpg" alt="Concierto" style="width: 80%">
+</body>
+</html>
+
+css
+
+/* Estamos trabajando con la etiqueta del cuerpo, y por lo tanto con la página COMPLETA */
+body
+{
+    background-color: black; /* La página de fondo será negra */
+   color: white; /*El texto de la página será blanco */
+    font-family: verdana;
+}
+
+
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="widht:device-width,user-scalable-no">
+    <title>hoja de estilos </title>
+  <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/concierto/css/estilos.css">
+</head>
+<body>
+<div >
+  <h1><img src="/home/juanmanuel/Escritorio/FIXBOX/html nexu/NEXT_U/sitio_web/img/c.jpg" alt="Logo" style="background-color:white"> Tu concierto</h1>
+  <p>
+    Bienvenido a este blog de conciertos...
+  </p>
+  <img src="/home/juanmanuel/Escritorio/FIXBOX/html nexu/NEXT_U/sitio_web/img/Rey.jpg" alt="Concierto" style="width: 80%">
+
+  <a href="mailto:info@concierto.com">info</a>
+</div>
+</body>
+</html>
+css
+
+/* Estamos trabajando con la etiqueta del cuerpo, y por lo tanto con la página COMPLETA */
+body
+{
+    background-color: black; /* La página de fondo será negra */
+   color: white; /*El texto de la página será blanco */
+    font-family: verdana;
+}
+a
+{
+  color: white;
+}
+h1{
+  font-family: Arial;/*El texto h1 será Arial */
+}
+div
+{
+  margin-top: 30px;/*margen superior */
+  margin-left: 60px;/*margen izq */
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+body p{
+	color: green;
+}
+
+
+body{
+	background-color: black;
+	color: white !important;
+	font-family: Verdana;
+}
+
+h1 {
+	font-family: Arial;
+}
+
+a {
+	color: inherit;
+}
+
+div{
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+body{
+	color: red;
+}
+
+p{
+	color: blue;
+}
+img
+{
+  border-radius: 10px
+}
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <h1 class="rojo">La tienda online</h1>
+    <p class="rojo">Bienvenido a tu tienda</p>
+  </body>
+</html>
+.rojo {
+  color: red
+}
+
+<!doctype html>
+<html>
+<head>
+	<title>Recetas</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/Recetas/estilos.css">
+</head>
+<body>
+
+<header>
+	<h1>
+		<img src="https://www.xatakafoto.com/tutoriales/conseguir-un-poster-de-una-fotografia-diminuta" alt=""> Recetas.com
+	</h1>
+</header>
+<navbar id="menu-principal">
+
+	<a href="https://www.directoalpaladar.com/tag/las-mejores-recetas">Platos Principales</a>	|
+	<a href="https://www.directoalpaladar.com/categoria/postres">Postres</a>
+</navbar>
+<br>
+<br>
+<p>
+	Este es un sitio de art&iacute;culos de gastronom&iacute;a...
+</p>
+<section>
+	<h1 class="titulo">&Uacute;ltimas recetas</h1>
+	<article>
+		<h1 class="resaltado">**Arroz Criollo**</h1>
+		<p>
+			Tiempo de preparaci&oacute;n: <strong>45 minutos</strong>
+
+			N&uacute;mero de porciones <strong>4</strong>
+		<h1><strong>Ingredientes</strong> </h1>
+		<ul>
+			<li> Salsa de tomate </li>
+			<li> 2 cucharadas de aceite 14gr </li>
+			<li> 1 cebolla larga picada 45gr </li>
+			<li> 2 dientes de ajo finamente picado 3gr </li>
+			<li> 1 piment&oacute;n rojo picado en cuadritos 60gr </li>
+			<li> 1 taza de arroz blanco 225gr </li>
+			<li> 1 taza de ma&iacute;z desgranado 79gr </li>
+			<li> 150gr de pechuga de pollo cocinado y desmechado </li>
+			<li> Sal al gusto </li>
+		</ul>
+
+		<h1> <strong>Preparaci&oacute;n</strong></h1>
+		<ol>
+			<li> Calentar en una olla el aceite, sofre&iacute;r la cebolla junto con el ajo, el piment&iacute;n por 3 minutos. </li>
+			<li> Adicionar el arroz y continua sofriendo para que se dore. </li>
+			<li> Agregar el pollo, el ma&iacute;z desgranado y las verduras. </li>
+			<li> Mezclar todo, rectificar sal y dejar cocinar hasta que seque. </li>
+			<li> Bajar el fuego, tapar la olla y continuar la cocci&oacute;n por 25 minutos m&aacute;s. </li>
+		</ol>
+		</p>
+		<p> Esta rica receta fue proporcionada por <span class="resaltado">Mar&iacute;a Paula</span>. </p>
+	</article>
+	<article>
+		<p>
+		<h1 class="resaltado">**Arroz con Leche**</h1>
+		<p>
+			Tiempo de preparaci&oacute;n: <strong>30 minutos</strong>
+
+			N&uacute;mero de porciones <strong>8</strong>
+		<h1><strong>Ingredientes</strong> </h1>
+		<ul>
+			<li> 215 grs de Arroz </li>
+			<li> 2 litros de leche </li>
+			<li> 215 grs de Azúcar </li>
+			<li> 1 rama de canela </li>
+			<li> 1 cucharada de mantequilla </li>
+			<li> Sal al gusto </li>
+		</ul>
+
+		<h1> <strong>Preparaci&oacute;n</strong></h1>
+		<ol>
+			<li> Calentar la leche y agregar el arroz </li>
+			<li> Adicionar el azúcar y la canela </li>
+			<li> Agregar la mantequilla y cocinar a fuego lento tapado. </li>
+			<li> Cocinar por 25 minutos aproximadamente o hasta que este blando el arroz. </li>
+			<li> Refrigerar por 3 horas y servir frío. </li>
+		</ol>
+		</p>
+		<p> Esta f&aacute;cil receta es una contribuci&oacute;n de <span class="resaltado">Janeth Patricia</span>. </p>
+		</p>
+	</article>
+</section>
+<br>
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body
+{
+  margin: 20px;/*Margen igual para todo*/
+  font-family: verdana;
+}
+.resaltado
+{
+  background-color: yellow;/*Color de relleno*/
+}
+#menu-principal
+{
+  padding: 10px 0px;         /*  arriba y abajo 10px de padding distancia desde el borde del relleno*/
+                             /* izquierda y derecha 0px de padding */
+}
+h1.titulo
+{
+	background-color: aliceblue; /*color de fondo*/
+	text-align: center;/*Alineado central*/
+	
+}
+footer
+{
+  margin-top: 1px;
+  color: black;
+  padding-top: 10px;
+  text-align: center;
+}
+
+
+a[href]{
+color:red;
+}
+img[href^"#"]{
+  color: red;
+}
+img[src$=".sgv"]{
+  border-radius: 50px;
+}
+*{
+  margin:1vh 1vw;
+}
+h1+h2{
+  text-decoration: underline;
+}
+h2~p{
+  text-align: justify;
+}
+article> h2{
+  text-decoration: underline;
+}
+ul li{
+  list-style-type: circle;
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <header>
+      <h1>La tienda online</h1>
+    </header>
+    <main>
+      <h1>Bienvenido a tu tienda</h1>
+    </main>
+  </body>
+</html>
+
+h1 {
+  font-family: 'Arial';
+}
+
+header h1{
+  color: blue;
+}
+
+<html>
+<head>
+	<title>HTML Base</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/Selectores/estilos.css">
+</head>
+<body>
+<h1>Registro en nuestra tienda</h1>
+<form action="">
+	<p>
+		<label for="username">Nombre de usuario</label>
+		<br>
+		<input type="text" name="username" placeholder="Ej: luis" autofocus required>
+	</p>
+	<p>
+		<label for="email">Email: </label>
+		<br>
+		<input type="email" name="email" placeholder="Ej: luis@gmail.com" required>
+	</p>
+	<p>
+		<label for="age">Edad: </label>
+		<br>
+		<input type="number" name="age" placeholder="Ej: 21" required>
+	</p>
+	<p>
+		<label for="dob">Fecha de nacimiento: </label>
+		<br>
+		<input type="date" name="dob" placeholder="Ej: 21" >
+	</p>
+	<p>
+		<label for="genre">G&eacute;nero: </label>
+		<br>
+		<input type="radio" name="genre"> Masculino
+		<br>
+		<input type="radio" name="genre"> Femenino
+	</p>
+	<p>
+		<label for="recommend">Recomendado por: </label>
+		<br>
+		<select name="recommend">
+			<option value="1">Google</option>
+			<option value="1">Amigo</option>
+			<option value="1">Redes Sociales</option>
+		</select>
+	</p>
+	<p>
+		<label for="comment">Comentarios: </label>
+		<br>
+		<textarea name="comment" ></textarea>
+	</p>
+
+	<p>
+		<label for="accept">Acepto terminos y condiciones: </label>
+		<br>
+		<input type="checkbox" name="accept">
+	</p>
+
+	<p>
+		<input type="submit" value="Registrar">
+	</p>
+</form>
+
+</body>
+</html>
+body{
+	margin: 20px;
+	font-family: Verdana;
+}
+
+input[name^=email]{/*Crea un selector de input cuyo atributo name sea email y asignarle el color de fondo #eeeeee.*/
+	background-color: #eeeeee;
+}
+
+p:nth-child(3) {/* Selecciona cada n elemento entre   cualquier grupo de hermanos en este caso (3)*/
+	color: red;
+}
+
+p, label{/*Asigna la fuente Tahoma a todos los párrafos y label con un selector multiple*/
+	font-family: Tahoma;
+}
+
+p > textarea{/*Crea un selector de etiqueta y asignarle de ancho 200px.*/
+	width: 400px;
+  height: 100px;
+}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+<link rel="stylesheet" href="/estilos.css">
+	</head>
+  </head>
+  <body>
+    <p>Este es un enlace a <a href="https://www.google.com">Google</a></p>
+  </body>
+</html>
+
+a {
+  font-family: 'Arial';
+}
+
+a:hover{
+  font-weight: bold;
+}
+.....................................................................................
+Las pseudo-clases
+
+ son palabras clave que representan el estado en el que se puede encontrar un elemento HTML, las pseudo-clases son :link, :active, :hover, :focus, :checked, :first-child, :last-child, :nth-child. Por otro lado, los pseudo-elementos se refieren a partes de la estructura HTML que se encuentran ocultas pero que, al igual que las pseudo clases, podemos usar en cualquier momento. Todos los elementos HTML tienen pseudo-elementos, los pseudo-elementos existentes son ::after, ::before, ::first-letter, ::first_line y ::selection.
+
+LVHA: :link — :visited — :hover — :active.
+
+<a href="#">Este enlace cambiará a color lima mientras hace clic en él.</a>
+
+CSS
+
+a:link { color: blue; }          /* Enlaces no visitados */
+a:visited { color: purple; }     /* Enlaces visitados */
+a:hover { background: yellow; }  /* El usuario esta sobre el enlace */
+a:active { color: lime; }        /* Enlaces activos */
+.....................................................................................
+:active
+
+La pseudo-clase :active de CSS  representa un elemento (como un botón) que el usuario está activando.  Cuando se usa un mouse, la "activación" generalmente comienza cuando el usuario presiona el botón primario del mouse y termina cuando se suelta. La pseudo-clase :active se usa comúnmente en los elementos <a> y <button>, pero también se puede usar en otros elementos.
+
+/* Selecciona cualquier <a> que esté siendo activado */
+a:active {
+  color: red;
+}
+........................................................................................
+ :focus
+ CSS representa un elemento (como una entrada de formulario) que ha recibido el foco. Generalmente se activa cuando el usuario hace clic, toca un elemento o lo selecciona con la tecla "Tab" del teclado.
+
+/* Selecciona cualquier <input> cuando se enfoca */
+input:focus {
+  color: red;
+}
+..........................................................................................
+:link
+
+La pseudo-clase :link CSS representa un elemento que aún no se ha visitado. Coincide con cada elemento no visitado <a>, <area>, o <link> que tiene un atributo href.
+
+/* Selecciona cualquier <a> que aún no se haya visitado */
+a:link {
+  color: red;
+}
+...............................................................................................
+:visited
+
+La pseudo-clase :visited de CSS  representa enlaces que el usuario ya ha visitado. Por motivos de privacidad, los estilos que se pueden modificar con este selector son muy limitados.
+
+/* Selecciona cualquier <a> que ha sido visitado */
+a:visited {
+  color: green;
+}
+.............................................................................................
+
+:hover
+
+La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).
+
+/* Selecciona cualquier elemento <a> cuando está "mantenido (hovered)" */
+a:hover {
+  color: orange;
+}
+........................................................................
+:checked
+
+representa cualquier radio (<input type="radio">), checkbox (<input type="checkbox">) u option (<option> en un elemento <select>) que está marcado o conmutado a un estado on.
+div>
+  <input type="radio" name="my-input" id="yes">
+  <label for="yes">Yes</label>
+
+  <input type="radio" name="my-input" id="no">
+  <label for="no">No</label>
+</div>
+
+<div>
+  <input type="checkbox" name="my-checkbox" id="opt-in">
+  <label for="opt-in">Check me!</label>
+</div>
+
+<select name="my-select" id="fruit">
+  <option value="opt1">Apples</option>
+  <option value="opt2">Grapes</option>
+  <option value="opt3">Pears</option>
+</select>
+
+css
+
+div,
+select {
+  margin: 8px;
+}
+
+/* Etiquetas para entradas marcadas */
+input:checked + label {
+  color: red;
+}
+
+/* Elemento Radio, cuando está marcado */
+input[type="radio"]:checked {
+  box-shadow: 0 0 0 3px orange;
+}
+
+/* Elemento Checkbox, cuando está marcado */
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 0 3px hotpink;
+}
+
+/* Elementos Option, cuando se seleccionan */
+option:checked {
+  box-shadow: 0 0 0 3px lime;
+  color: red;
+}
+.........................................................................
+
+
+ :first-child 
+de CSS representa el primer elemento entre un grupo de elementos hermanos.
+
+/* Selecciona cualquier <p> que sea el primer 
+   elemento entre sus hermanos */
+p:first-child {
+  color: lime;
+}
+.............................................................
+La pseudo-clase :last-child de CSS representa el último elemento entre un grupo de elementos hermanos.
+
+/* Selecciona cualquier <p> que sea el último elemento 
+   entre sus hermanos */
+p:last-child {
+  color: lime;
+
+.......................................................................
+
+La pseudo-clase :nth-child() de CSS coincide con uno o más elementos en función de su posición entre un grupo de hermanos.
+
+/* Selecciona cada cuarto elemento entre 
+   cualquier grupo de hermanos */
+:nth-child(4n) {
+  color: lime;
+}
+
+.........................................................................
+
+pseudo-elementos
+
+::after
+
+En CSS, ::after crea un pseudo-elemento que es el último hijo del elemento seleccionado. Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad content.Es en linea (inline) de forma predeterminada.
+
+/* Añdade una flecha después de los enlaces */
+a::after {
+  content: "→";
+}
+.................................................................................
+
+
+::before
+
+En CSS, ::before crea un pseudo-elemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.
+
+/* Añade un corazón antes de los enlaces */
+a::before {
+  content: "♥";
+}
+
+
+..................................................................................
+
+
+::first-letter
+
+El pseudo-elemento ::first-letter aplica estilos a la primera letra de la primera línea un elemento de bloque, sólo cuando no es precedido de otro contenido (como imágenes o tablas).
+
+/* Selecciona la primera letra de <p> */
+p::first-letter {
+  font-size: 130%;
+}
+................................................................................................................................
+
+
+::first-line
+
+El Pseudoelemento ::first-line aplica estilos a la primera línea de un elemento de bloque. Nótese que la longitud de la primera línea depende de muchos factores, incluyendo el tamaño del elemento, el tamaño del documento y la fuente del texto.
+
+/* Selecciona la primera línea de un <p> */
+p::first-line {
+  color: red;
+
+.............................................................................................................................
+
+
+El selector ::selection CSS pseudo-elemento aplica reglas a una porción de un documento que ha sido destacado (por ejemplo: selección con el mouse o algún otro puntero en un dispositivo) del usuario.
+
+Sólo un pequeño subconjunto de propiedades CSS pueden ser usadas en una regla  ::selection en el selector de:  color, background, background-color y text-shadow. Nótese que, en particular, background-image es ignorado, como cualquier otra propiedad.
+....................................................................................
+
+<html>
+	<head>
+		<title>HTML Base</title>
+		<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/aerolinea/estilos.css">
+	</head>
+	<body>
+		<h1>Cartelera de vuelos - Aeropuerto el mirador</h1>
+		<navbar id="menu-principal">
+				<a href="https://www.latam.com/es_co/?gclid=Cj0KCQiAs67yBRC7ARIsAF49CdV-Eb2RwPmv6Ijs0ypHl4HDzfaXJhnXk4rH6yZ3dcHBuYTOndz-aXkaApOQEALw_wcB&gclsrc=aw.ds">Vuelos por hora</a>
+				<a href="https://www.latam.com/en_ue/">Vuelos por destino</a>
+</navbar></br>
+		<h2>Llegadas</h2>
+		<table >
+			<thead>
+				<tr>
+					<th>Aerolinea</th>
+					<th>Nro. vuelo</th>
+					<th>Estatus</th>
+					<th>Hora estimada</th>
+					<th>Puerta</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>AIRLAN</td>
+					<td>355</td>
+					<td>ATERRIZO</td>
+					<td>2:45PM</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>VIAJAR</td>
+					<td>556</td>
+					<td>RETARDADO</td>
+					<td>2:35PM</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>AEROVUELO</td>
+					<td>1234</td>
+					<td>EN VUELO</td>
+					<td>3:45PM</td>
+					<td>8</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Salidas</h2>
+		<table class="sombra">
+			<thead>
+			<tr>
+				<th>Aerolinea</th>
+				<th>Nro. vuelo</th>
+				<th>Estatus</th>
+				<th>Hora estimada</th>
+				<th>Puerta</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>AIRLAN</td>
+				<td>355</td>
+				<td>EMBARCANDO</td>
+				<td>2:15PM</td>
+				<td>1</td>
+			</tr>
+			</tbody>
+		</table>
+
+		<footer>
+			Derechos Reservados
+		</footer>
+	</body>
+</html>
+....................................................................
+
+
+
+    em: Se basa en el elemento que contenga al elemento.
+
+Ejemplo: 
+
+<div style=”font-size: 30px”>
+    <p id=”miParrafo”>Lorem ipsum…. </p>
+ </div> 
+#miParrafo { width: 2em; // 1em = 30px, 2em = 60px }  
+
+En este ejemplo, le estamos diciendo a la etiqueta < p > hija de un elemento < div > con un tamaño de letra de 30px, que tenga un ancho de 2em. En este caso 1em es equivalente a la medida de la Fuente del elemento padre o sea 30px, por tanto, en este caso 2em es igual a 60px.
+
+    rem: Se basa en el tamaño de fuente que tenga la raíz del documento HTML es decir el < body >.
+
+Ejemplo: 
+
+ <body>
+    <div style=”font-size: 30px”>
+        <p id=”miParrafo”>Lorem ipsum…. </p>
+   </div>
+</body> 
+body 
+{font-size: 16px; }
+#miParrafo {
+width: 2rem; // 1rem = 16px, 2rem = 32px }
+
+    ex: relativa con respecto a la altura de la letra “x” minúscula del tipo y tamaño de letra del elemento padre.
+
+Relativas al viewport (Área visible del navegador/ventana)
+
+    vw: (Viewport Width) Relativo al ancho del viewport. Si el ancho es 1280px entonces 1vw es equivalente a 1280px.
+    vh: (Viewport Height) Relativo al alto del viewport, si el alto son 900px entonces 1vh es equivalente a 900px.
+    vmin: Entre vw y vh toma el que tenga menor valor.
+    vmax: Entre vw y vh toma el que tenga mayor valor.
+
+Las medidas relativas al viewport son muy importantes cuando estamos haciendo diseños web que se adaptarán a múltiples dispositivos.
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de cajas</title>
+    	</head>
+<body>
+  <span class="caja">Esto es una caja</span></span>
+</body>
+</html>
+
+
+.caja{
+  padding: 4px 100px;
+  background: green;
+  margin-left: 50px;
+}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de cajas</title>
+    <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/video/estilos.css">
+	</head>
+
+<body>
+<h1>esto es una frase</h1>
+<h2>esto está bueno</h2>
+<p>    Las lenguas indoeuropeas antiguas carecían de artículos, a excepción del griego clásico. Sin embargo, en varias ramas de la familia se han desarrollado a partir de elementos deícticos, así todas las lenguas románicas tienen artículos, también las lenguas germánicas más importantes, las lenguas celtas modernas y algunas lenguas eslavas.
+    Las lenguas semíticas por lo general carecen de artículo aunque las dos más notorias, el hebreo y el árabe, poseen artículos.</p>          
+</body>
+</html>
+
+
+h1{
+  background-color: rgba(113, 63, 81, 0.5);
+width: 400PX;
+opacity:0;
+}
+h2{
+  background-color: rgba(153, 63, 244, 0.5);
+  display: inline;
+}
+p{
+  display: inline;
+}
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width">
+    <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/float/estilos.css">
+    <title>Propiedad Float</title>
+  </head>
+  <body>
+    <header>
+      <img src="file:///home/juanmanuel/.cache/.fr-GGRlE3/imagenes/logoNextU.png" alt="Logo NextU" title="Logo NextU"/>
+    </header>
+    <section>
+        <aside>
+
+        </aside>
+        <article>
+
+        </article>
+    </section>
+    <footer>
+
+    </footer>
+  </body>
+</html>
+
+
+header{
+  background-color: rgb(213, 156, 64);
+  width: 100%;
+  height: 120px;
+}
+section{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(133, 195, 226);
+}
+section aside{
+  width: 20%;
+  height: 400px;
+  background-color: rgb(24, 128, 180);
+  float: left;
+}
+section article{
+  width: 80%;
+  height: 400px;
+  background-color: rgb(150, 185, 203);
+    float: right;
+}
+footer{
+  clear: both;
+  height: 100px;
+  width: 100%;
+  background-color: rgb(218, 146, 29);
+}
+header img {
+height: 90%;
+float: right;
+padding: 0.5% 2% 0 0;
+}
+
+
+
+------------..........................................................
+<html>
+<head>
+	<title>Parque</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/forestal/estilos.css">
+</head>
+<body>
+<header>
+	<h1>
+		<img src="/home/juanmanuel/Escritorio/FIXBOX/css/forestal/imagen1.jpg" alt=""> Parque ecol&oacute;gico
+	</h1>
+</header>
+<navbar id="menu-principal">
+
+	<ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Ubicaci&oacute;n</a></li>
+		<li><a href="#">Galer&iacute;a</a></li>
+	</ul>
+</navbar>
+<section id="contenido">
+
+	<p>
+		<img src="/home/juanmanuel/Escritorio/FIXBOX/css/forestal/imagen2.jpg" alt="">
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+	</p>
+
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	margin-left: 15%;
+	font-family: Verdana;
+	width: 70%;
+	color: #605B56;
+}
+
+header h1{
+	text-align: center;
+}
+
+#menu-principal ul  {
+	float: left;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+
+}
+
+#menu-principal ul li {
+	padding: 20px;
+	list-style-type:  georgian;
+}
+
+#contenido {
+	margin-left: 200px;
+	padding: 10px;
+	background-color: F9F7F3;
+}
+
+footer {
+	clear: both;
+	border-top: solid 4px red;
+	padding-top: 20px;
+	margin-top: 45px;
+	text-align: center;
+}
+
+#contenido p img {
+	float: right;
+  width: 30%;
+}
+..........................................
+
+header{
+  background-color: rgb(95, 87, 251);
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  top: 0;
+}
+footer{
+  clear: both;
+  width: 100%;
+  height: 70px;
+  background-color: rgb(40, 84, 61);
+  position: fixed;
+  bottom: : 0;
+}
+nav {
+  height: 100%;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+li{
+  float: right;
+  display: block;
+  margin: 0px 5px;
+  padding: 15px 0px;
+  height: 100%;
+  background-color: rgb(213, 156, 64);
+}
+section{
+  width: 100%;
+  height: 400px;
+}
+section article{
+  width: 80%;
+  height: 400px;
+  background-color: rgb(150, 185, 203);
+  margin: 0 auto;
+}
+#panelIzq{
+  width: 50px;
+  height: 100px;
+  background-color: rgb(212, 66, 144);
+  position: fixed;
+  left: o;
+  margin-top: 200px;
+}
+#panelDer{
+  width: 50px;
+  height: 100px;
+  background-color: rgb(212, 66, 144);
+  position: fixed;
+right: : 0;
+  margin-top: 200px;
+}
+#absoluta{
+  width: 150;
+  height: 150;
+  background-color: rgb(249,68, 147);
+  position: absolute;
+  top: 200px;
+  left: 35%;
+}
+#interDer{
+  width: 50px;
+  height: 100px;
+  background-color: rgb(40,100,155);
+  position: relative;
+  top:400px;
+  margin-left: -50px;
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width">
+    <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/cajas_posi/estilos.css">
+    <title>Etiqueta display</title>
+  </head>
+  <body>
+    <div id="panelIzq"></div>
+    <div id="panelDer"></div>
+    <div id="absoluta"></div>
+    <header>
+      <nav>
+        <ul>
+          <li>Opción 1</li>
+          <li>Opción 2</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="contenedor">
+      <section>
+            <div id="panelDer"></div>
+        <article>
+        </article>
+      </section>
+    </div>
+    <footer>
+    </footer>
+  </body>
+</html>
+
+-----------------..-.-.-..............---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <title>CSS Transformaciones</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+      <div class="contenedor">
+        <div class="bloque1">1</div>
+        <div class="bloque2">2</div>
+        <div class="bloque3">3</div>
+        <div class="bloque4">4</div>
+        <div class="bloque5">5</div>
+        <div class="bloque6">6</div>
+        <div class="bloque7">7</div>
+      </div>
+
+
+    </body>
+</html>
+
+body {
+  font-size: 3em;
+  font-family: helvetica;
+}
+div [class*="bloque"]{
+  min-height: 200px;
+  flex: 1 2 40%;
+}
+
+.bloque1 {
+  color: #ddd;
+  background-color: #FF0000;
+  order: 2;
+
+..................--------------------------------...........------------.
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Propiedades font</title>
+    <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/TIPOGRAFIA/estilos.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> 
+  </head>
+  <body>
+    <h1>Tipografías Web</h1>
+    <p>
+      Lorem ipsum dolor sit amet, <em>consectetur</em> adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, <em>consectetur adipisicing</em> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, <strong> sed do eiusmod tempor</strong>  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+  </body>
+</html>
+
+
+@font-face {
+  font-family: 'FreeSans';
+  src: url('FreeSans.otf');
+}
+
+h1{
+  font-family: 'FreeSans';
+  font-size: 3em;
+  font-variant: small-caps;
+  font-weight:  lighter;
+  text-decoration:  overline;
+  word-spacing: 30px;/*Escapios entre palabras*/
+  color: orange;
+}
+p{
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.2em;
+  text-align: justify;
+  text-indent: 2CM;/*Desplazar 2 cm el texto*/
+  text-transform: capitalize;/*la ṕrimera letra de cada palabra queda en mayus*/
+  letter-spacing: 5px;
+
+}
+............------------------------------------..........................--------------------..........
+
+
+}
+.bloque2 {
+  color: #333;
+  background-color: #00FF99;
+  order: 3;
+
+
+}
+.bloque3 {
+  color: #333;
+  background-color: #00FFFF;
+  order: 4;
+
+
+}
+.bloque4 {
+  color: #333;
+  background-color: #FFFF00;
+  order: 5;
+
+
+}
+.bloque5 {
+  color: #ddd;
+  background-color: #000000;
+  order: 1;
+
+}
+.bloque6 {
+  color: #333;
+  background-color: #0Fd000;
+  order: 6;
+
+}
+.bloque7 {
+  color: #ddd;
+  background-color: #0000F0;
+  order: 7;
+
+}
+
+.contenedor{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+....................----.........-.-.-.-..........---
+
+HTML
+
+<!DOCTYPE html>
+ <html>
+   <head>
+      <meta charset="utf-8">
+       <title>Diseño y maquetación Fluida </title>
+       <link rel="stylesheet" href="estilos.css">
+   </head>
+    <body>
+      <section id="container">
+         <div class="cajas1">
+          </div>
+          <div class="cajas2">
+          </div>
+      </section>
+    </body>
+ </html>
+
+CSS
+
+#container{
+width: 80%;
+margin: 0 auto;
+border: 2px dotted black;
+text-align: center;
+}
+
+.cajas1, .cajas2{
+display: inline-block;
+width: 30%;margin: 10vh;
+height: 32vh;
+border: 1px solid black;
+background: #5810E8;
+} 
+
+
+..........................-------------------------------------
+
+  html{
+    font-size: 10px;
+  }
+  #a {
+    font-size: 20px;
+  }
+  #b {
+    font-size: 35px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <div id="a">
+        <h1>Encabezado A</h1>
+    </div>
+    <div id="b">
+        <h1>Encabezado B</h1>
+    </div>
+  </body>
+</html>
+
+------------------------------................................-----------
+<html>
+<head>
+	<title>Recetas</title>
+	<link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/receta2/estilos.css">
+</head>
+<body>
+<header>
+	<h1>
+		<img src="imagenes/recetas.jpg" alt=""> Recetas.com
+	</h1>
+</header>
+<navbar id="menu-principal">
+	<a href="http://www.recetasgratis.net">Recetas Principales</a>
+	|
+	<a href="http://cocinalatina.about.com/od/Postresentremesesydulces/">Postres Latinos</a>
+</navbar>
+<br>
+<br>
+<p>
+	Bienvenido a nuestro sitio web sobre gastronom&iacute;a latina, te invitamos a preparar nuestras recetas.
+</p>
+<section>
+	<h1 class="titulo">Nuevas Recetas</h1>
+	<article>
+		<h1 class="resaltado">**Arroz Criollo**</h1>
+		<p>
+			Tiempo de preparaci&oacute;n: <strong>45 minutos</strong>
+
+			N&uacute;mero de porciones <strong>4</strong>
+		<h1><strong>Ingredientes</strong>
+			<ul>
+				<li> Salsa de tomate</li>
+				<li> 2 cucharadas de aceite 14gr</li>
+				<li> 1 cebolla larga picada 45gr</li>
+				<li> 2 dientes de ajo finamente picado 3gr</li>
+				<li> 1 piment&oacute;n rojo picado en cuadritos 60gr</li>
+				<li> 1 taza de arroz blanco 225gr</li>
+				<li> 1 taza de ma&iacute;z desgranado 79gr</li>
+				<li> 150gr de pechuga de pollo cocinado y desmechado</li>
+				<li> Sal al gusto</li>
+			</ul>
+
+			<H1><strong>Preparaci&oacute;n</strong></H1>
+			<ol>
+				<li> Calentar en una olla el aceite, sofre&iacute;r la cebolla junto con el ajo, el piment&iacute;n por
+					3 minutos.
+				</li>
+				<li> Adicionar el arroz y continua sofriendo para que se dore.</li>
+				<li> Agregar el pollo, el ma&iacute;z desgranado y las verduras.</li>
+				<li> Mezclar todo, rectificar sal y dejar cocinar hasta que seque.</li>
+				<li> Bajar el fuego, tapar la olla y continuar la cocci&oacute;n por 25 minutos m&aacute;s.</li>
+			</ol>
+		</p>
+		<p> Esta rica receta fue proporcionada por Mar&iacute;a Paula. </p>
+	</article>
+	<article>
+		<p>
+		<h1 class="resaltado">**Arroz con Leche**</h1>
+		<p>
+			Tiempo de preparaci&oacute;n: <strong>30 minutos</strong>
+
+			N&uacute;mero de porciones <strong>8</strong>
+		<h1><strong>Ingredientes</strong>
+			<ul>
+				<li> 215 grs de Arroz</li>
+				<li> 2 litros de leche</li>
+				<li> 215 grs de Az&uacute;car</li>
+				<li> 1 rama de canela</li>
+				<li> 1 cucharada de mantequilla</li>
+				<li> Sal al gusto</li>
+			</ul>
+
+			<H1><strong>Preparaci&oacute;n</strong></H1>
+			<ol>
+				<li> Calentar la leche y agregar el arroz</li>
+				<li> Adicionar el az&uacute;car y la canela</li>
+				<li> Agregar la mantequilla y cocinar a fuego lento tapado.</li>
+				<li> Cocinar por 25 minutos aproximadamente o hasta que este blando el arroz.</li>
+				<li> Refrigerar por 3 horas y servir fr&iacute;o.</li>
+			</ol>
+		</p>
+		<p> Esta f&aacute;cil receta es una contribuci&oacute;n de Janeth Patricia. </p>
+		</p>
+	</article>
+</section>
+<br>
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+
+
+body{
+	margin: 20px;
+	font-family: lora;
+}
+
+.resaltado{
+	background-color: yellow;
+	color: black;
+}
+
+#menu-principal{
+	padding: 10px 0px;
+	font-family: FuenteLato;
+	font-style: italic;
+}
+
+footer{
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+
+h1.titulo{
+	background-color: aliceblue;
+	text-align: center;
+	padding: 10px;
+	font-family: FuenteLato;
+	font-variant: small-caps;
+	
+}
+@font-face {
+  font-family: 	"FuenteLato" ;
+ src:"url(../fuentes/Lato-Regular.ttf)";.
+}
+
+
+text-shadow :1px 2px 3px red;/*der abajo desenfoque color*/}
+
+..............----------------------...........................----------------
+
+<html>
+<head>
+	<title>Tienda</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/Tienda/estilos.css">
+</head>
+<body>
+<header>
+	<h1>
+		Tu tienda
+	</h1>
+</header>
+<section id="contenido">
+	<section id="destacados">
+		<h1>Productos destacados</h1>
+		<div class="contenedor">
+			<div>
+				Producto 1
+			</div>
+			<div>
+				Producto 2
+			</div>
+		</div>
+	</section>
+	<section id="ofertas">
+		<h1>Ofertas</h1>
+		<div class="contenedor">
+			<div>
+				Producto 1
+			</div>
+			<div>
+				Producto 2
+			</div>
+			<div>
+				Producto 3
+			</div>
+		</div>
+	</section>
+	<section id="disponible">
+		<h1>Disponible</h1>
+		<div class="contenedor">
+			<div>
+				Producto 1
+			</div>
+			<div>
+				Producto 2
+			</div>
+			<div>
+				Producto 3
+			</div>
+			<div>
+				Producto 4
+			</div>
+		</div>
+	</section>
+</section>
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	margin: 20px;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#destacados {
+	background-color: #669999;
+}
+
+#ofertas {
+	background-color: #F7D988;
+}
+
+#disponible {
+	background-color: #F7A188;
+}
+
+#contenido > section > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 10px;
+	border-top: solid 1px black;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+#destacados .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	width: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(255, 255, 0, 0.3);
+
+}
+
+#destacados h1 {
+	text-shadow: 0 0 3px white;
+}
+
+#ofertas .contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	background-color: white;
+	width: 33.3%;
+	box-shadow: 4px 8px;
+}
+
+#ofertas h1 {
+	text-shadow: 1px 1px 2px white, 0 0 30px #D46A6A;
+
+}
+
+#disponible .contenedor > div {
+	text-align: center;
+	padding: 10px;
+
+	background-color: white;
+	width: 24%;
+	margin: 10px;
+	box-shadow: 4px 8px #D46A6A;
+}
+...............................................-------------------....................-----------------------------.............
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width,user-scalable=no">
+    <title>Propiedades de Color, Fondo y Degradado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+    <!-- Encabezado de la página -->
+    <header id="banner" class="body">
+      <!-- Título de la página -->
+      <h1><a href="#">CSS3 <strong>Propiedades de Color, Fondo y Degradado</strong></a></h1>
+      <!-- Barra de menú -->
+      <nav>
+        <ul>
+          <li class="active"><a href="#">css</a></li>
+          <li><a href="#">Color</a></li>
+          <li><a href="#">Fondo</a></li>
+          <li><a href="#">Degradado</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Campo para poner el contenido de elementos relacionados con el contenido principal, se
+         representan con la etiqueta aside-->
+    <aside id="featured" class="body">
+      <article>
+        <h2>Imágenes de Fondo</h2>
+        <h3><a href="#">Múltiples Imágenes de fondo.</a></h3>
+        <p>CSS3 permite añadir múltiples imágenes de fondo para un elemento a través de la propiedad "background-image".</p>
+      </article>
+    </aside>
+
+    <!-- Contenido de la página -->
+    <section id="content" class="body">
+      <!-- Lista de Publicaciones -->
+      <ol id="posts-list" class="hfeed">
+
+        <li>
+          <article class="hentry">
+            <header>
+              <h2 class="entry-title"><a href="#" rel="bookmark" title="Link a este título">Título de la publicación</a></h2>
+            </header>
+            <!-- Información de la publicación-->
+            <footer class="post-info">
+              <abbr class="published" title="2005-10-10T14:07:00-07:00"><!-- YYYYMMDDThh:mm:ss+ZZZZ -->
+                10 de Octubre 2005
+              </abbr>
+
+              <address class="vcard author">
+                Por <a class="url fn" href="#">Next university</a>
+              </address>
+            </footer>
+            <!-- Contenido textual del Contenido del artículo. -->
+            <div class="entry-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+            </div>
+          </article>
+        </li>
+
+        <li>
+          <article class="hentry">
+            <header>
+              <h2 class="entry-title"><a href="#" rel="bookmark" title="Link a este título">Título de la publicación</a></h2>
+            </header>
+            <!-- Información de la publicación-->
+            <footer class="post-info">
+              <abbr class="published" title="2005-10-10T14:07:00-07:00"><!-- YYYYMMDDThh:mm:ss+ZZZZ -->
+                10 de Octubre 2005
+              </abbr>
+
+              <address class="vcard author">
+                Por <a class="url fn" href="#">Next university</a>
+              </address>
+            </footer>
+            <!-- Contenido textual del Contenido del artículo. -->
+            <div class="entry-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque venenatis nunc vitae libero iaculis elementum. Nullam et justo <a href="#">non sapien</a> dapibus blandit nec et leo. Ut ut malesuada tellus.</p>
+            </div>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section id="extras" class="body">
+      <div class="blogroll">
+        <h2>blogroll</h2>
+
+        <!-- Enlaces a blogs.-->
+        <ul>
+          <li><a href="#" rel="external">HTML5 Doctor</a></li>
+          <li><a href="#" rel="external">HTML5 Spec (working draft)</a></li>
+          <li><a href="#" rel="external">Smashing Magazine</a></li>
+
+          <li><a href="#" rel="external">W3C</a></li>
+          <li><a href="#" rel="external">Wordpress</a></li>
+          <li><a href="#" rel="external">Wikipedia</a></li>
+
+          <li><a href="#" rel="external">HTML5 Doctor</a></li>
+          <li><a href="#" rel="external">HTML5 Spec (working draft)</a></li>
+          <li><a href="#" rel="external">Smashing Magazine</a></li>
+
+          <li><a href="#" rel="external">W3C</a></li>
+          <li><a href="#" rel="external">Wordpress</a></li>
+          <li><a href="#" rel="external">Wikipedia</a></li>
+
+          <li><a href="#" rel="external">HTML5 Doctor</a></li>
+          <li><a href="#" rel="external">HTML5 Spec (working draft)</a></li>
+          <li><a href="#" rel="external">Smashing Magazine</a></li>
+
+          <li><a href="#" rel="external">W3C</a></li>
+          <li><a href="#" rel="external">Wordpress</a></li>
+          <li><a href="#" rel="external">Wikipedia</a></li>
+
+        </ul>
+      </div>
+     <!-- Redes Sociales-->
+      <div class="social">
+        <h2>social</h2>
+        <ul>
+          <li><a href="http://delicious.com/" rel="me">delicious</a></li>
+          <li><a href="http://digg.com/" rel="me">digg</a></li>
+          <li><a href="http://facebook.com/" rel="me">facebook</a></li>
+
+          <li><a href="http://www.lastfm.es/" rel="me">last.fm</a></li>
+          <li><a href="http://website.com/feed/" rel="alternate">rss</a></li>
+          <li><a href="http://twitter.com/" rel="me">twitter</a></li>
+        </ul>
+      </div>
+    </section><!-- /#extras -->
+    <!-- Contenido del pie de pagina con información del autor-->
+    <footer id="contentinfo" class="body">
+      <!-- Contenido de acerca de nosotros-->
+      <address id="about" class="vcard body">
+        <!-- Contenido Primario -->
+        <span class="primary">
+          <strong><a href="#" class="fn url">Revista CSS3</a></strong>
+          <span class="role">Revista interesante para programadores Web</span>
+        </span>
+        <img src="img/magazine.png" width="100px" alt="Logo Revista CSS3" class="photo" />
+        <span class="bio">La revista CSS3 ofrece información sobre cómo construir una página Web atractiva visualmente utilizando CSS3.</span>
+      </address>
+      <p>2005-2016 <a href="#">Revista CSS3</a></p>
+    </footer>
+
+  </body>
+</html>
+body {
+		font-size: 87.5%;
+		font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		line-height: 1.429;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+		color:#000302;
+	}
+
+/* Encabezados */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+/* Hipervínculos */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+	padding: 0 1px;
+	text-decoration: underline;
+}
+
+/* Párrafos */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+
+/* Listas */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Texto entre comillas */
+blockquote {font-style: italic;}
+cite {}
+
+q {}
+
+/* Tablas */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+
+	tbody .alt td {}
+	tbody .alt th {}
+
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+
+/* Tags de HTML5*/
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/***** Estructura General *****/
+.body {clear: both; margin: 0 auto; width: 800px;}
+img.right figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: right; margin: 0 0 2em 2em;}
+
+/*
+	Encabezado
+*****************/
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+
+	/* Banner */
+	#banner h1 {font-size: 3.571em; line-height: .6;}
+	#banner h1 a:link, #banner h1 a:visited {
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 465px;
+	}
+	#banner h1 a:hover, #banner h1 a:active {
+		text-shadow: none;
+	}
+
+	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+	/* Nav Principal*/
+	#banner nav {
+		background: hsl(0, 0%, 21%);
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		width: 800px;
+	}
+
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav li {float: left; display: inline; margin: 0;}
+
+	#banner nav a:link, #banner nav a:visited {
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+		color: #fff;
+	}
+	#banner nav a:hover, #banner nav a:active{
+		background: hsla(200,60%,50,0.5);
+	text-shadow: none !important;
+	}
+	#banner nav .active a:link, #banner nav .active a:visited {
+	c
+		background: #3399CC;
+		color: :#fff;
+	}
+
+/*
+	Contenido Relacionado con el contenido principal
+*****************/
+#featured {
+	background: url(.....)lef top.repeat;right: 
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	width: 760px;
+}
+
+#featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+
+#featured h3 a:link, #featured h3 a:visited {text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {}
+
+/*
+	Cuerpo de la página <body>
+*****************/
+#content {
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 760px;
+}
+
+/*
+	Sección Extras
+*****************/
+#extras {margin: 0 auto 3em auto; overflow: hidden;}
+
+#extras ul {list-style: none; margin: 0;}
+#extras li {}
+#extras h2 {
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+
+
+body {
+		color: #000305;
+		font-size: 87.5%;
+		font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+		line-height: 1.429;
+		margin: 0;
+		padding: 0;
+		text-align: left;
+	}
+
+/* Encabezados */
+h2 {font-size: 1.571em}	/* 22px */
+h3 {font-size: 1.429em}	/* 20px */
+h4 {font-size: 1.286em}	/* 18px */
+h5 {font-size: 1.143em}	/* 16px */
+h6 {font-size: 1em}		/* 14px */
+
+h2, h3, h4, h5, h6 {
+	font-weight: 400;
+	line-height: 1.1;
+	margin-bottom: .8em;
+}
+
+/* Hipervínculos */
+a {outline: 0;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+	color: rgb(51, 153, 204);
+	padding: 0 1px;
+	text-decoration: underline;
+}
+
+/* Párrafos */
+p {margin-bottom: 1.143em;}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+em, i {font-style: italic;}
+
+
+/* Listas */
+ul {
+	list-style: outside disc;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+ol {
+	list-style: outside decimal;
+	margin: 1em 0 1.5em 1.5em;
+}
+
+dl {margin: 0 0 1.5em 0;}
+dt {font-weight: bold;}
+dd {margin-left: 1.5em;}
+
+/* Texto entre comillas */
+blockquote {font-style: italic;}
+cite {}
+
+q {}
+
+/* Tablas */
+table {margin: .5em auto 1.5em auto; width: 98%;}
+
+	/* Thead */
+	thead th {padding: .5em .4em; text-align: left;}
+	thead td {}
+
+	/* Tbody */
+	tbody td {padding: .5em .4em;}
+	tbody th {}
+
+	tbody .alt td {}
+	tbody .alt th {}
+
+	/* Tfoot */
+	tfoot th {}
+	tfoot td {}
+
+/* Tags de HTML5*/
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+
+/***** Estructura General *****/
+.body {clear: both; margin: 0 auto; width: 800px;}
+img.right figure.right {float: right; margin: 0 0 2em 2em;}
+img.left, figure.left {float: right; margin: 0 0 2em 2em;}
+
+/*
+	Encabezado
+*****************/
+#banner {
+	margin: 0 auto;
+	padding: 2.5em 0 0 0;
+}
+
+	/* Banner */
+	#banner h1 {font-size: 3.571em; line-height: .6;}
+	#banner h1 a:link, #banner h1 a:visited {
+		display: block;
+		font-weight: bold;
+		margin: 0 0 .6em .2em;
+		text-decoration: none;
+		width: 465px;
+	}
+	#banner h1 a:hover, #banner h1 a:active {
+		text-shadow: none;
+	}
+
+	#banner h1 strong {font-size: 0.36em; font-weight: normal;}
+
+	/* Nav Principal*/
+	#banner nav {
+		background: hsl(0, 0%, 21%);
+		font-size: 1.143em;
+		height: 40px;
+		line-height: 30px;
+		margin: 0 auto 2em auto;
+		padding: 0;
+		text-align: center;
+		width: 800px;
+	}
+
+	#banner nav ul {list-style: none; margin: 0 auto; width: 800px;}
+	#banner nav li {float: left; display: inline; margin: 0;}
+
+	#banner nav a:link, #banner nav a:visited {
+		color: #fff;
+		display: inline-block;
+		height: 30px;
+		padding: 5px 1.5em;
+		text-decoration: none;
+	}
+	#banner nav a:hover, #banner nav a:active{
+		background: hsla(200, 60%, 50%, 0.65);
+		text-shadow: none !important;
+	}
+	#banner nav .active a:link, #banner nav .active a:visited {
+		background: #3399CC;
+		text-shadow: none !important;
+	}
+
+/*
+	Contenido Relacionado con el contenido principal
+*****************/
+#featured {
+	background: url(../img/css3_html5_badges.png) right top no-repeat,
+							url(../img/papel_doblado.jpg) left top repeat;
+	background-size: 150px, 300px;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	width: 760px;
+}
+
+#featured h2 {font-size: 1.714em; margin-bottom: 0.333em;}
+#featured h3 {font-size: 1.429em; margin-bottom: .5em;}
+
+#featured h3 a:link, #featured h3 a:visited {text-decoration: none;}
+#featured h3 a:hover, #featured h3 a:active {}
+
+/*
+	Cuerpo de la página <body>
+*****************/
+#content {
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px 20px;
+	width: 760px;
+}
+
+/*
+	Sección Extras
+*****************/
+#extras {margin: 0 auto 3em auto; overflow: hidden;}
+
+#extras ul {list-style: none; margin: 0;}
+#extras li {}
+#extras h2 {
+	font-size: 1.429em;
+	margin-bottom: .25em;
+	padding: 0 3px;
+}
+
+#extras a:link, #extras a:visited {
+	display: block;
+	text-decoration: none;
+	padding: .3em .25em;
+}
+
+
+#extras a:hover, #extras a:active {}
+
+	/* Blogroll */
+	#extras .blogroll {
+		float: left;
+		width: 615px;
+	}
+
+	#extras .blogroll li {float: left; margin: 0 20px 0 0; width: 185px;}
+
+	/* Redes Sociales */
+	#extras .social {
+		float: right;
+		width: 175px;
+	}
+
+/*
+	Acerca de nosostros
+*****************/
+#about {
+	font-style: normal;
+	margin-bottom: 2em;
+	overflow: hidden;
+	padding: 20px;
+	text-align: left;
+	width: 760px;
+}
+
+#about .primary {float: left; width: 165px;}
+#about .primary strong {display: block; font-size: 1.286em;}
+#about .photo {float: left; margin: 5px 20px;}
+
+#about .url:link, #about .url:visited {text-decoration: none;}
+
+#about .bio {float: right; width: 500px;}
+
+/*
+	Pie de página
+*****************/
+#contentinfo {padding-bottom: 2em; text-align: right;}
+
+/***** Secciones*****/
+/* Blog */
+.hentry {
+	padding: 1.5em 0;
+}
+li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
+#content > .hentry {padding: 1em 0;}
+
+.entry-title {font-size: 1.429em; margin-bottom: 0;}
+.entry-title a:link, .entry-title a:visited {text-decoration: none;}
+
+.hentry .post-info * {font-style: normal;}
+
+	/* Contenido */
+	.hentry footer {margin-bottom: 2em;}
+	.hentry footer address {display: inline;}
+	#posts-list footer address {display: block;}
+
+	/* Blog Index */
+	#posts-list {list-style: none; margin: 0;}
+	#posts-list .hentry {padding-left: 200px; position: relative;}
+
+	/* Blog cambio de Fondo hover */
+
+	#posts-list footer {
+		left: 10px;
+		position: absolute;
+		top: 1.5em;
+		width: 190px;
+	}
+..................................---------------------------.................
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ejemplo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Tu empresa</h1>
+    </header>
+  </body>
+</html>
+
+ header{
+    background-image: url("https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2018/07/13/balonmano.jpg?itok=z82JFIT8");
+    background-color: green;
+    padding: 20px;
+  }
+...................----------------------------------------------------------------------...........
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manejo de Tablas</title>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Producto</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>com001</td>
+          <td>Computador</td>
+          <td>100.000</td>
+        </tr>
+        <tr>
+          <td>mou001</td>
+          <td>Mouse</td>
+          <td>20.000</td>
+        </tr>
+        <tr>
+          <td>tec001</td>
+          <td>Teclado</td>
+          <td>15.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <td>135.000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
+
+
+table{
+width:50%;
+border-collapse: collapse;
+}
+table,td, th{
+  border: 1px solid black;
+}
+td,th{
+  width: 100px;
+  height: 30px;
+}
+th{
+  text-align: right;
+  vertical-align: top;
+}
+td{
+  text-align: left;
+  vertical-align: bottom;
+}
+tr:nth-child(add){
+  background-color: #d1d1d1;
+}
+
+
+.............................------------------------...........................
+
+
+body {
+	margin-left: 15%;
+	font-family: Verdana;
+	width: 70%;
+	color: #605B56;
+}
+header{
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -moz-linear-gradient(right, #5CA861 , #BADFBC);
+	border-radius: : 10px;
+}
+
+header h1{
+	padding-left: 10px;
+}
+
+#menu-principal ul {
+	float: left;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+}
+
+#menu-principal ul li {
+	padding: 10px;
+	list-style-type: none;
+}
+
+#contenido {
+	margin-left: 200px;
+	padding: 10px;
+	color: black;
+	background-image: url("https://www.elheraldo.co/sites/default/files/styles/width_860/public/articulo/2018/07/13/balonmano.jpg?itok=z82JFIT8");
+  padding: 20px;
+border-radius: : 10px;/*redondeo*/
+
+}
+
+footer {
+	clear: both;
+	border-top: solid 2px #605B56;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
+}
+
+#contenido p img {
+	float: right;
+	border:
+	border: 2px solid #605b56;
+	margin: 3px;
+	border-radius: 4px;
+}
+<html>
+<head>
+	<title>Parque</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header>
+	<h1>
+		<img src="imagenes/imagen1.jpg" alt=""> Parque ecol&oacute;gico
+	</h1>
+</header>
+<navbar id="menu-principal">
+	<ul>
+		<li><a href="#">Inicio</a></li>
+		<li><a href="#">Ubicaci&oacute;n</a></li>
+		<li><a href="#">Galer&iacute;a</a></li>
+	</ul>
+</navbar>
+<section id="contenido">
+
+	<p>
+		<img src="imagenes/imagen2.jpg" alt="">
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+		Descripci&oacute;n de la foto del parque...
+	</p>
+
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+.............---------------------------------------------------------------------------........................-----------------
+
+<html>
+<head>
+	<title>DientesFelices</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/Felices_D/estilos.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<header>
+	<h1>
+		DientesFelices.com
+	</h1>
+</header>
+<section id="contenido">
+	<p>Bienvenido a mi sitio Web. Se ofrecen servicios de Ortodoncia / Odontología</p>
+	<p>Aquí podrás ver información de contacto y horarios.</p>
+	<p>
+		Realizamos los siguientes servicios:
+		<ul>
+	<li>Tratamiento de conductos</li>
+	<li>Implantes</li>
+</ul>
+	</p>
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+
+body {
+	font-family: Verdana;
+	width: 90%;
+	margin-left: 5%;
+}
+
+header {
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(left, #1f47a8, #55dedf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #1f47a8, #55dedf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #1f47a8, #55dedf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #1f47a8, #55dedf); /* Standard syntax */
+	border-radius: 10px;
+}
+
+#contenido{
+	margin: 1%;
+}
+
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+}
+
+footer {
+	font-size: 0.8em;
+	border-top: solid 2px #1f47a8;
+	padding-top: 10px;
+	margin-top: 15px;
+	text-align: center;
+}
+..................------------------...................------------------------............
+
+ <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0>
+
+    Nivel width=device-width: Área disponible para renderizar, en este caso todo el ancho que tenga el viewport del dispositivo.
+    user-scalable=no: El usuario no puede hacer escala.
+    initial-scale=1.0: Nivel de zoom/escala Inicial.
+
+................................--------------------}}
+
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/home/juanmanuel/Escritorio/FIXBOX/css/Felices_D/estilos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo</title>
+</head>
+<body>
+<video src="video/cursoNextu.mp4" controls></video>
+</body>
+</html>
+
+
+video{
+	width:50%;
+	max-width: 100%
+}
+
+...............................------------------------------............................-------------........-----.
+
+
+
+<html>
+<head>
+	<title>El café</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+	<h1>
+		El café
+	</h1>
+</header>
+<section id="contenido">
+	<p>Simplemente café...</p>
+	<img src="imagenes/cafe.jpg" class="adaptativa-porcentaje">
+	<hr>
+	<article>
+		<h1>El café</h1>
+		<p>Energía de vida...</p>
+		<img src="imagenes/cafe_grande.jpg" class="adaptativa-porcentaje-1">
+	</article>
+
+	<article>
+		<h1>Café de montaña o de selva?</h1>
+		<p>Diferentes tipos de café...</p>
+		<img src="imagenes/cafe_mediana.jpg" class="adaptativa-porcentaje-2">
+	</article>
+
+	<article>
+		<h1>Café frio o caliente?</h1>
+		<p>Diferentes forma de preparación...</p>
+		<img src="imagenes/cafe_pequena.jpg" class="adaptativa-porcentaje-3">
+	</article>
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	font-family: Verdana;
+	width: 90%;
+	margin-left: 5%;
+
+}
+
+header {
+	padding: 1vh 1vw;
+	margin-bottom: 1vh;
+}
+
+#contenido{
+	margin: 1%;
+	text-align: center;
+}
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+}
+
+footer {
+	font-size: 0.8em;
+	border-top: solid 2px #1f47a8;
+
+	padding-top: 1vw;
+	margin-top: 1vw;
+	text-align: center;
+}
+
+.adaptativa-porcentaje{
+
+	width:90%;
+}
+
+.adaptativa-porcentaje-1{
+	width:70%;
+}
+
+.adaptativa-porcentaje-2{
+	width:50%;
+}
+
+.adaptativa-porcentaje-3{
+	width:20%;
+}
+...........................................----------------------.-----.............-......................................
+
+
+    print - Vista de Impresión.
+    min-width - Tamaño mínimo en horizontal.
+    max-width - Tamaño máximo en horizontal.
+    min-height - Tamaño mínimo en vertical.
+    max-height - Tamaño máximo en vertical.
+    orientation - Posición en la que se encuentre el dispositivo.
+    resolution - Tamaño ocupado por el browser en píxeles.
+    color - Detecta si la pantalla en que se visualiza el sitio es a color o en blanco y negro.
+    light-level - Densidad de la luz del dispositivo.
+
+
+............................................................------------------------------------------..............................
+<html>
+<head>
+	<title>El café</title>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/cafe/WEB_C02_U3L4_Ejercicio1_contenido_base/css/estilos.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+	<h1>
+		El café
+	</h1>
+</header>
+<section id="contenido">
+	<div id="resumen">
+		<p>Simplemente café...</p>
+		<img src="imagenes/cafe.jpg">
+	</div>
+	<hr>
+	<article>
+		<h1>El café</h1>
+		<p>Energía de vida...</p>
+		<img src="/home/juanmanuel/Escritorio/FIXBOX/css/cafe/WEB_C02_U3L4_Ejercicio1_contenido_base/imagenes/cafe_grande.jpg">
+	</article>
+
+	<article>
+		<h1>Café de montaña o de selva?</h1>
+		<p>Diferentes tipos de café...</p>
+		<img src="/home/juanmanuel/Escritorio/FIXBOX/css/cafe/WEB_C02_U3L4_Ejercicio1_contenido_base/imagenes/cafe_mediana.jpg">
+	</article>
+
+	<article>
+		<h1>Café frio o caliente?</h1>
+		<p>Diferentes forma de preparación...</p>
+		<img src="/home/juanmanuel/Escritorio/FIXBOX/css/cafe/WEB_C02_U3L4_Ejercicio1_contenido_base/imagenes/cafe_pequena.jpg">
+	</article>
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	font-family: Verdana;
+	width: 90%;
+	margin-left: 5%;
+	font-size: 18px;
+	color: blue;
+}
+
+#resumen{
+	display: none;
+}
+
+@media (min-width: 600px) {
+
+	body {
+		font-size: 16px;
+		color: red;
+	}
+
+	#resumen{
+		display: block;
+	}
+}
+
+@media (min-width: 900px) {
+	body {
+		font-size: 14px;
+		color: black;
+	}
+}
+
+header {
+	padding: 1vh 1vw;
+	margin-bottom: 1vh;
+}
+
+#contenido{
+	margin: 1%;
+	text-align: center;
+}
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+}
+
+footer {
+	font-size: 0.8em;
+	border-top: solid 2px #1f47a8;
+	padding-top: 1vw;
+	margin-top: 1vw;
+	text-align: center;
+}
+
+img {
+	width: 50%;
+}
+...........------------------------------------.......................--------------------------
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <title>Demostración</title>
+         <link href="css/estilos.css" type="text/css" rel="stylesheet">
+         <meta name="viewport" content="width=device-width,user-scalable=no">
+    </head>
+    <body class="cuerpo">
+        
+        <section class="seccion">
+
+            <p class="texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum odio eget mauris vestibulum feugiat. Praesent ante sapien, luctus pulvinar ultricies quis, aliquet in mi. Nulla facilisi. Donec malesuada fringilla iaculis. Praesent nec quam sit amet orci volutpat volutpat in eget eros. Duis pellentesque bibendum erat. Integer pretium nunc vel augue rutrum eget feugiat mi molestie. Cras venenatis, turpis et rhoncus scelerisque, mi augue suscipit urna, quis sagittis tortor nisl ut purus. Aliquam at enim est. Donec sit amet suscipit quam. Aliquam sit amet commodo eros.
+            </p>
+            <p>
+                <figure>
+                    <img src="image/periodico.png" alt="Noticias" class="imagen">
+                </figure>
+            </p>
+
+        </section>
+
+    </body>
+</html>
+
+.cuerpo{
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.texto{
+
+  font-size: 2em;
+  font-family: helvetica;
+}
+.imagen{
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+
+}
+
+@media (max-width: 1000px) {
+  .cuerpo{
+    margin-left: 7em;
+    margin-right: 7em;
+  }
+  .texto{
+
+    font-size: 1.6em;
+    font-family: helvetica;
+  }
+  .imagen{
+    margin-left: auto;
+    margin-right: auto;
+    width:60%;
+  }
+}
+
+@media (max-width: 600px) {
+  .cuerpo{
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+  .texto{
+
+    font-size: 1.3em;
+    font-family: helvetica;
+  }
+  .imagen{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%
+  }
+}
+
+.................-----------------------------........................---------------------------...................-
+
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="utf-8">
+         <title>Demostración</title>
+         <link href="css/estilos.css" type="text/css" rel="stylesheet">
+         <meta name="viewport" content="width=device-width,user-scalable=no">
+    </head>
+    <body class="cuerpo">
+
+      <header>
+        Encabezado
+      </header>
+
+      <div id="wrapper">
+        <section>
+          <article id="columna1">Columna 1</article>
+          <article id="columna2">Columna 2</article>
+          <article id="columna3">Columna 3</article>
+        </section>
+
+        <footer></footer>
+      </div>
+
+    </body>
+</html>
+
+*
+{
+	margin:0;
+}
+
+body{
+	background: #f2f2f2;
+	color: black;
+	font-size: 16px;
+	font-family: sans-serif;
+}
+
+#wrapper
+{
+	width: 960px;
+	margin: 0 auto;
+}
+
+header
+{
+	margin: 0 auto;
+	height: 1em;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	text-align: center;
+	background-color: grey;
+	color:white;
+}
+
+article
+{
+	box-sizing: border-box;
+	float:left;
+	height: 100%;
+	background-color: grey;
+	padding: 2%;
+	text-align: center;
+	height: 400px;
+}
+
+	#columna1
+	{
+	background-color: #91C9E8;
+	width: 100%;
+
+	}
+	#columna2
+	{
+	background-color: #D1D1D1;
+	width: 50%;
+	}
+	#columna3
+	{
+	background-color: #3399CC;
+	width: 50%;
+	}
+
+@media screen and (max-width: 960px){
+
+	#wrapper
+	{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 640px){
+
+	#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+#wrapper
+	{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#columna1
+	{
+	width: 100%;
+	}
+	#columna2
+	{
+	width: 100%;
+	}
+	#columna3
+	{
+	width: 100%;
+	}
+
+	header
+	{
+	width:100%;
+	}
+}
+.................----------------------------------..........................................--------------
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Escuela de Niños creativos</title>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/esculita/WEB_C02_U3L5_Ejercicio1_contenido_base/css/estilos.css">
+	<meta charset="utf-8">
+
+</head>
+<body>
+<div class="container" role="main">
+	<div class="c1">
+		<h1>Escuela de niños creativos</h1>
+	</div>
+	<div class="c2">
+		<p>En esta escuela tenemos el lema "Crea, juega, aprende"...</p>
+	</div>
+	<div class="c3">
+		<h2>Crea</h2>
+		<p>Actividades para estimular la creatividad</p>
+	</div>
+	<div class="c4">
+		<h2>Juega</h2>
+		<p>Divertirse en un ambiente sano</p>
+	</div>
+	<div class="c5">
+		<h2>Aprende</h2>
+		<p>Aprende mientras juegas</p>
+	</div>
+</div>
+
+</body>
+</html>
+
+body {
+	font-family: Indie Flower;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+
+.c1 {
+	color: black;
+	background-color: #E6EBE0;
+}
+
+.c2 {
+	color: black;
+	background-color: #F4F1BB;
+}
+
+.c3 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c4 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+.c5 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.c1, .c2, .c3, .c4, .c5 {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .c2, .c3, .c4, .c5 {
+    width: 50%;
+  }
+}
+@media (min-width: 800px) {
+  .c1 {
+    width: 100%;
+  }
+  .c2 {
+    width: 100%;
+  }
+  .c3, .c4, .c5 {
+    width: 33.33%;
+  }
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+..........................----------------------------------..................
+
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet" href="css/estilos.css">
+
+    <title>Demostracion LayoutShifter</title>
+  </head>
+  <body>
+    <div class="contenedor" role="main">
+
+      <div class="bloque1">1</div>
+      <div class="bloque2">2</div>
+      <div class="bloque3">3</div>
+
+      <div class="contenedor2">
+        <div class="bloque4">4</div>
+        <div class="bloque5">5</div>
+      </div>
+
+    </div>
+
+  </body>
+</html>
+
+
+body {
+	text-align: center;
+	font-size: 2em;
+	font-family: helvetica;
+}
+.contenedor {
+	margin: 0 auto;
+  width: 85%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor2 {
+	margin: 0;
+  width: 30%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor div {
+  box-sizing: border-box;
+	min-width: 50px;
+}
+.bloque1 {
+  color: #ddd;
+  background-color: #FF0000;
+	min-height: 200px;
+	width: 100%;
+}
+.bloque2 {
+  color: #333;
+  background-color: #00FF99;
+	min-height: 600px;
+	width: 20%;
+}
+.bloque3 {
+  color: #333;
+  background-color: #00FFFF;
+		min-height: 600px;
+	width: 50%;
+}
+.bloque4 {
+  color: #333;
+  background-color: #FFFF00;
+	min-height: 50px;
+	width: 100%;
+}
+.bloque5 {
+  color: #ddd;
+  background-color: #000000;
+	min-height: 50px;
+	width: 100%;
+}
+@media all and (max-width: 900px) and (min-width:700px) {
+	.contenedor{
+		width: 90%;
+	}
+	.bloque1 {
+		width: 100%;
+	}
+	.bloque2 {
+		width: 20%;
+		min-height: 400px;
+	}
+	.bloque3{
+		width: 80%;
+		min-height: 400px;
+	}
+	.contenedor2{
+		width: 100%;
+	}
+	.bloque4 {
+		width: 50%;
+		min-height: 300px;
+	}
+	.bloque5{
+		width: 50%;
+		min-height: 300px;
+	}
+}
+@media all and (max-width: 700px) and (min-width:480px) {
+	.contenedor{
+		width: 100%;
+	}
+	.bloque1 {
+		width: 20%;
+		order: 3;
+	}
+	.bloque2 {
+		width: 100%;
+		min-height: 100px;
+		order: 1:
+	}
+	.bloque3{
+		width: 100%;
+		min-height: 400px;
+		order: 2;
+	}
+	.contenedor2{
+		width: 80%;
+		order: 4;
+	}
+	.bloque4 {
+		width: 100%;
+		min-height: 150px;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 150px;
+	}
+}
+@media all and (max-width: 480px) {
+	.contenedor{
+		width: 100%;
+	}
+	.bloque1 {
+		width: 100%;
+		order: 4;
+	}
+	.bloque2 {
+		width: 100%;
+		min-height: 100px;
+		order: 1:
+	}
+	.bloque3{
+		width: 100%;
+		min-height: 400px;
+		order: 2;
+	}
+	.contenedor2{
+		width: 100%;
+		order: 3;
+	}
+	.bloque4 {
+		width: 100%;
+		min-height: 150px;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 150px;
+	}
+}
+..............--------------------------------..............................---------
+body {
+	text-align: center;
+	font-size: 2em;
+	font-family: helvetica;
+}
+.contenedor {
+	margin: 0 auto;
+  width: 85%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor2 {
+	margin: 0;
+  width: 30%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.contenedor div {
+  box-sizing: border-box;
+	min-width: 50px;
+}
+.bloque1 {
+  color: #ddd;
+  background-color: #FF0000;
+	min-height: 200px;
+	width: 100%;
+}
+.bloque2 {
+  color: #333;
+  background-color: #00FF99;
+	min-height: 600px;
+	width: 20%;
+}
+.bloque3 {
+  color: #333;
+  background-color: #00FFFF;
+		min-height: 600px;
+	width: 50%;
+}
+.bloque4 {
+  color: #333;
+  background-color: #FFFF00;
+	min-height: 50px;
+	width: 100%;
+}
+.bloque5 {
+  color: #ddd;
+  background-color: #000000;
+	min-height: 50px;
+	width: 100%;
+}
+@media all and (max-width: 900px) and (min-width:700px) {
+	.contenedor{
+		width: 90%;
+	}
+	.bloque1 {
+		width: 100%;
+	}
+	.bloque2 {
+		width: 20%;
+		min-height: 400px;
+	}
+	.bloque3{
+		width: 80%;
+		min-height: 400px;
+	}
+	.contenedor2{
+		width: 100%;
+	}
+	.bloque4 {
+		width: 50%;
+		min-height: 300px;
+	}
+	.bloque5{
+		width: 50%;
+		min-height: 300px;
+	}
+}
+@media all and (max-width: 700px) and (min-width:480px) {
+	.contenedor{
+		width: 100%;
+	}
+	.bloque1 {
+		width: 20%;
+		order: 3;
+	}
+	.bloque2 {
+		width: 100%;
+		min-height: 100px;
+		order: 1:
+	}
+	.bloque3{
+		width: 100%;
+		min-height: 400px;
+		order: 2;
+	}
+	.contenedor2{
+		width: 80%;
+		order: 4;
+	}
+	.bloque4 {
+		width: 100%;
+		min-height: 150px;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 150px;
+	}
+}
+@media all and (max-width: 480px) {
+	.contenedor{
+		width: 100%;
+	}
+	.bloque1 {
+		width: 100%;
+		order: 4;
+	}
+	.bloque2 {
+		width: 100%;
+		min-height: 100px;
+		order: 1:
+	}
+	.bloque3{
+		width: 100%;
+		min-height: 400px;
+		order: 2;
+	}
+	.contenedor2{
+		width: 100%;
+		order: 3;
+	}
+	.bloque4 {
+		width: 100%;
+		min-height: 150px;
+	}
+	.bloque5{
+		width: 100%;
+		min-height: 150px;
+	}
+}
+
+..............................................----------------------------------....................................
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Escuela de Niños creativos</title>
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/patrones adap/WEB_C02_U3L5_Ejercicio2_contenido_base (1)/css/estilos.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div class="container" role="main">
+	<div class="c1">
+		<h1>Escuela de Niños Creativos</h1>
+	</div>
+	<div class="c4">
+		<div class="c2">
+			<h2>Crea</h2>
+			<p>Actividades para estimular la creatividad</p>
+		</div>
+		<div class="c3">
+			<h2>Juega</h2>
+			<p>Divertirse en un ambiente sano</p>
+		</div>
+		<div class="c5">
+			<h2>Aprende</h2>
+			<p>Aprende mientras juegas</p>
+		</div>
+
+	</div>
+</div>
+</body>
+</html>
+
+
+body {
+	font-family: Indie Flower;
+}
+
+
+.container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.container div {
+	box-sizing: border-box;
+	min-width: 150px;
+	padding: 20px;
+}
+.c1 {
+	color: black;
+	background-color: #E6EBE0;
+}
+
+.c2 {
+	color: black;
+	background-color: #F4F1BB;
+}
+
+.c3 {
+	color: black;
+	background-color: #9BC1BC;
+}
+
+.c4 {
+	color: black;
+	background-color: #36C9C6;
+}
+
+.c5 {
+	color: white;
+	background-color: #ED6A5A;
+}
+
+.container {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+.c1, .c2, .c3, .c4, .c5 {
+  width: 100%;
+}
+@media (min-width: 600px) {
+  .c1 {
+    width: 25%;
+  }
+  .c4 {
+    width: 75%;
+  }
+}
+@media (min-width: 800px) {
+  .container {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+........................----------------------------------..............................
+
+rotacion
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <title>CSS Transformaciones</title>
+        <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/rotacion/estilos.css">
+    </head>
+    <body>
+
+      <div id="original">
+        Figura original
+      </div>
+
+      <div id="transformado">
+        Figura transformada
+      </div>
+
+    </body>
+</html>
+
+
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+#caja{
+  transform: rotate(180deg);
+}
+
+#original {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+
+#transformado {
+  transform: rotateZ(-180deg);
+}
+...........................------------------------------...........................-------.......
+
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejemplo</title>
+</head>
+<body>
+    <p>Esta es una caja</p>
+</body>
+</html>
+p {
+    width: 200px;
+    background-color: yellow;
+    border: 1px solid black;
+    -ms-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+.............................----------------------..........................-----------------.-.---
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <title>CSS Transformaciones</title>
+        <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/scale/estilos.css">
+    </head>
+    <body>
+
+      <div id="original">
+        Figura original
+      </div>
+
+      <div id="transformado">
+        Figura transformada
+      </div>
+
+    </body>
+</html>
+
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+    margin-left: 10px;
+
+}
+#transformado{
+  transform: scale(45,8);
+}
+
+#original {
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+#transformado {
+  transform: scale(0.3,2.5);
+}
+.............................------------------------------.............................................----------------..........---.
+
+<html>
+<head>
+	<title>Deportes</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+	<h1>
+		Deportes Extremos
+	</h1>
+</header>
+<section id="contenido">
+	<p>Fotos de deportes extremos</p>
+	<figure id="imagen1">
+		<img src="imagenes/imagen1.jpg">
+		<figcaption>Imagen 1</figcaption>
+	</figure>
+	<figure id="imagen2">
+		<img src="imagenes/imagen2.jpg">
+		<figcaption>Imagen 2</figcaption>
+	</figure>
+	<figure id="imagen3">
+		<img src="imagenes/imagen3.jpg">
+		<figcaption>Imagen 3</figcaption>
+	</figure>
+
+</section>
+
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	font-family: Arial;
+	width: 90%;
+	margin-left: 5%;
+}
+
+header {
+	padding: 1vh 1vw;
+	margin-bottom: 1vh;
+	border-radius: 1vh;
+	background-color: #669999;
+}
+
+#contenido {
+	margin: 1%;
+}
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+}
+
+footer {
+	font-size: 0.8em;
+	border-top: solid 2px #1f47a8;
+	padding-top: 1vw;
+	margin-top: 1vw;
+	text-align: center;
+}
+
+figure {
+	text-align: center;
+	margin: 100px;
+}
+
+figure img {
+	width: 420px;
+}
+
+#imagen1 {
+	-ms-transform: rotate(7deg); /* IE 9 */
+	-webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+	transform: rotate(7deg);
+}
+
+#imagen2 {
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+#imagen3 {
+	-ms-transform: rotate(-10deg); /* IE 9 */
+	-webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+	transform: rotate(-10deg);
+}
+.............................................-------------------------------
+/*Perpective*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Transformaciones</title>
+      <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/perpective/WEB19S_C2U4L1_Perspective/C2_U4_L1_Perspective/css/estilos.css">
+  </head>
+  <body>
+
+    <div id="elemento">
+      elemento
+    </div>
+
+  </body>
+</html>
+
+div {
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  background-color: cyan;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+
+#elemento {
+  transform:  perspective(100px)
+              rotateX(-30deg)
+              rotateY(45deg);
+}
+...................-----------------------------------------..........................----------------
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Transformaciones</title>
+      <link rel="stylesheet" href="css/estilos1.css">
+  </head>
+  <body>
+
+    <div class="contenedor">
+      <div id="elemento">
+        elemento
+      </div>
+    </div>
+
+  </body>
+</html>
+
+div {
+  border: 1px solid black;
+}
+
+.contenedor {
+      width: 300px;
+      height: 400px;
+      margin-top: 40px;
+      margin-left: 90px;
+      perspective: 8000px;
+      perspective-origin: bottom;
+}
+
+#elemento {
+  width: 150px;
+  height: 100px;
+  background-color: cyan;
+  margin-top: 50px;
+  transform: rotateX(-30deg) rotateY(45deg);
+}
+..............................................................-----------------------------------------------...........................
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Transformaciones</title>
+      <link rel="stylesheet" href="css/estilos2.css">
+  </head>
+  <body>
+
+    <div id="elemento1" class="elemento">
+      transform: perspective(800px);
+    </div>
+
+    <div class="contenedor">
+      perspective: 800px;
+      <div id="elemento2" class="elemento">
+
+      </div>
+    </div>
+
+  </body>
+</html>
+
+div {
+  border: 1px solid black;
+  font-family: helvetica;
+}
+
+.elemento {
+    width: 250px;
+    height: 200px;
+    background-color: cyan;
+}
+
+.contenedor {
+      width: 300px;
+      height: 300px;
+      margin-top: 60px;
+      margin-left: 90px;
+      perspective: 800px;
+}
+
+#elemento1 {
+  margin-top: 60px;
+  margin-left: 90px;
+  transform: perspective(800px) rotateX(-30deg) rotateY(45deg);
+}
+
+#elemento2 {
+  margin: 2em auto;
+  transform: rotateX(-30deg) rotateY(45deg);
+}
+..........................................------------------------------..................................
+/*Cubo*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Transformaciones</title>
+      <link rel="stylesheet" href="css/estilocubo.css">
+  </head>
+  <body>
+
+    <div class="cubo">
+      <div class="side  front">1</div>
+      <div class="side   back">6</div>
+      <div class="side  right">4</div>
+      <div class="side   left">3</div>
+      <div class="side    top">5</div>
+      <div class="side bottom">2</div>
+    </div>
+
+  </body>
+</html>
+
+.cubo {
+  font-size: 2em;
+  width: 6em;
+  height: 6em;
+  margin: 5em auto;
+  transform-style: preserve-3d;
+  perspective: 250px;
+  perspective-origin: center;
+}
+
+.side {
+  position: absolute;
+  width: 6em;
+  height: 6em;
+
+  background: rgba(255,0,0,0.3);
+  border: 1px solid black;
+
+  color: white;
+  text-align: center;
+  line-height: 6em;
+}
+
+.front  { transform:                  translateZ(3em); }
+.top    { transform: rotateX( 90deg)  translateZ(3em); }
+.right  { transform: rotateY( 90deg)  translateZ(3em); }
+.left   { transform: rotateY(-90deg)  translateZ(3em); }
+.bottom { transform: rotateX(-90deg)  translateZ(3em); }
+.back   { transform: rotateY(-180deg) translateZ(3em); }
+-------------------------......................................--------------------
+
+
+/*Translate*/
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,user-scalable=no">
+        <title>CSS Transformaciones</title>
+        <link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/translate/WEB19S_C2U4L1_Translate/C2_U4_L1_Translate/NextU/css/estilos.css">
+    </head>
+    <body>
+      <div id="contenedor">
+        <div id="transformado">
+          Figura transformada
+        </div>
+      </div>
+
+
+    </body>
+</html>
+
+div {
+    border: 1px solid black;
+}
+
+#contenedor {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 300px;
+  height: 300px;
+  perspective: 50px;
+}
+
+
+#transformado {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  transform: translate3d(-20px, 30px, 5px);
+
+}
+.......................--------------------------------------...................................----------
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/deportestf/estilos.css">
+    <title>Ejemplo deportes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Deportes Extremos</h1>
+    </header>
+    <p>Fotos de deportes extremos</p>
+<section id="contenido">
+    <figure id="imagen1">
+          <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportestf/omy.jpg" alt="bm" title="omy"/>
+              <figcaption>Imagen 1</figcaption>
+              </figure>
+    <figure id="imagen2">
+        <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportestf/omy1.jpg" alt="bm" title="omy2"/>
+              <figcaption>Imagen 2</figcaption>
+              </figure>
+    <figure id="imagen3">
+      <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportestf/omy3.jpg" alt="bm" title="omy3"/>
+        <figcaption>Imagen 3</figcaption>
+    </figure>
+  </section>
+  </body>
+    <footer>
+	Derechos Reservados
+</footer>
+</html>
+
+
+body {
+	font-family: Arial;
+	width: 90%;
+	margin-left: 5%;
+}
+
+header {
+	padding: 1vh 1vw;
+	margin-bottom: 1vh;
+	border-radius: 1vh;
+	background-color: #669999;
+}
+
+#contenido {
+	margin: 1%;
+}
+
+header h1 {
+	padding-left: 1%;
+	font-size: 1.5em;
+}
+
+footer {
+	font-size: 0.8em;
+	border-top: solid 2px #1f47a8;
+	padding-top: 1vw;
+	margin-top: 1000w;
+	text-align: center;
+}
+
+figure {
+	text-align: center;
+	margin: 100px;
+}
+
+figure img {
+	width: 420px;
+}
+
+#imagen1 {
+	perspective: 3000px;
+	-webkit-perspective: 3000px;
+
+}
+
+#imagen1 img{
+	transform: rotateY(-40deg);
+}
+
+#imagen2 {
+	-webkit-perspective: 6000px; /* Chrome, Safari, Opera */
+	perspective: 3000px;
+}
+
+#imagen2 img{
+	transform: rotateY(-50deg);
+}
+
+
+#imagen3 {
+	-webkit-perspective: 100px; /* Chrome, Safari, Opera */
+	perspective: 100px;
+}
+
+#imagen3 img{
+	transform: rotateX(20deg);
+}
+..............................................---------------------------------...................
+
+skew
+
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,user-scalable=no">
+      <title>Transformaciones</title>
+      <link rel="stylesheet" href="css/estilos.css">
+  </head>
+  <body>
+
+    <div id="original">
+      Elemento original
+    </div>
+
+    <div id="transformado">
+      Elemento despues de la transformacion
+    </div>
+
+  </body>
+</html>
+
+div {
+    width: 300px;
+    height: 100px;
+    background-color: purple;
+    border: 1px solid black;
+    margin-left: 100px;
+    color: white;
+}
+
+div#original {
+  margin-top: 60px;
+  margin-bottom: 90px;
+}
+
+div#transformado {
+    transform: skewY(-25deg);
+}
+..........................-----------------------------------------....................................
+
+/*Animaciones*/
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/deportesamp/estilos.css">
+    <title>Ejemplo deportes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Deportes Extremos</h1>
+    </header>
+    <p>Fotos de deportes extremos</p>
+<section id="contenido">
+    <figure id="imagen1">
+          <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy.jpg" alt="bm" title="omy"/>
+              <figcaption>Imagen 1</figcaption>
+              </figure>
+    <figure id="imagen2">
+        <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy1.jpg" alt="bm" title="omy"/>
+              <figcaption>Imagen 2</figcaption>
+              </figure>
+      <figure id="imagen3">
+        <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy3.jpg" alt="bm" title="omy"/>
+        <figcaption>Imagen 3</figcaption>
+        </figure>
+  </section>
+  </body>
+    <footer>
+	Derechos Reservados
+</footer>
+</html>
+
+header {
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(left, #1f47a8, #55dedf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #1f47a8, #55dedf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #1f47a8, #55dedf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #1f47a8, #55dedf); /* Standard syntax */
+	border-radius: 40px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  }
+  body {
+  	margin: center;
+    margin-left: 200px;
+  	font-family: Arial;
+  	width: 70%;
+  	color: black;
+  }
+  #contenido {
+  	margin: 1%;
+  }
+  figure {
+  	text-align: center;
+  	margin: 100px;
+  }
+  figure img {
+  	width: 600px;
+  }
+	#imagen1 img{
+		transition-property: border;
+		transition-duration: 0.5s;
+	}
+
+	#imagen1 img:hover{
+		border: solid 4px black;
+	}
+	#imagen2 img{
+		opacity: 0.1;/*opacadidad*/
+		transition: opacity 2s;
+	}
+
+	#imagen2 img:hover{
+		opacity: 100;
+	}
+	#imagen3 img{
+		transition-property: width;
+		transition-duration: 0.5s;
+	}
+
+	#imagen3 img:hover{
+		width: 70%;
+	}
+ footer {
+font-size: 0.8em;
+border-top: solid 2px #1f47a8;
+padding-top: 1vw;
+margin-top: 110px;
+text-align: center;
+}
+...............................................------------------------------................................--
+
+
+<html>
+<head>
+	<title>Fotografia</title>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/fotos/estilos.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<header>
+	<h1>
+		FotosEnLínea.com
+	</h1>
+</header>
+<section id="contenido">
+	<h1>Paisajes</h1>
+	<div class="contenedor">
+		<div id="imagen1">
+			<img src="/home/juanmanuel/Escritorio/FIXBOX/css/fotos/col1.jpg" >
+		</div>
+		<div id="imagen2">
+			<img src="/home/juanmanuel/Escritorio/FIXBOX/css/fotos/col2.jpg" >
+		</div>
+	</div>
+	<div class="contenedor">
+		<div id="imagen3">
+			<img src="/home/juanmanuel/Escritorio/FIXBOX/css/fotos/col3.jpg" >
+		</div>
+		<div id="imagen4">
+			<img src="/home/juanmanuel/Escritorio/FIXBOX/css/fotos/col4.jpg" >
+		</div>
+	</div>
+</section>
+<footer>
+	Derechos Reservados
+</footer>
+</body>
+</html>
+
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: Raleway;
+}
+
+header h1{
+	text-align: center;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	border: 2px solid white;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 100px;
+	margin: 10px;
+	width: 50%;
+}
+
+
+@keyframes imagen1-animacion {
+	from {
+		border: 1px solid black;
+	}
+	to {
+		border: 4px solid white;
+	}
+}
+
+#imagen1 img {
+	border: 4px solid white;
+	animation-name: imagen1-animacion;
+	animation-duration: 2s;
+}
+
+img{
+	width: 250px;
+}
+
+
+@keyframes imagen2-animacion {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 500px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}
+
+
+
+
+#imagen2 img{
+	animation-name: imagen2-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	-o-animation-delay: 1s;
+	animation-delay: 1s;
+}
+
+#imagen3 {
+	background: black;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+#imagen3:hover {
+	background: white;
+}
+.......................................-----------------------------------------------------...........................
+
+
+<!DOCTYPE html>
+ <html>
+    <head>
+     <meta charset="utf-8">
+     <title>Filtros en Imágenes </title>
+     <link rel="stylesheet" href="estilos.css">
+    </head>
+     <body>
+     <section id="container">
+        <h1> Filtros a Imágenes </h1>
+        <img src="paisajes.jpg" alt="Paisaje">
+    </section>
+     </body>
+ </html> 
+
+
+#container img{
+  width: 100%;
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+.....................--------------------...........................
+
+filtros
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <img
+    src="">
+  <img class="saturada"
+    src="">
+</body>
+
+.saturada {
+  -webkit-filter: saturate(7);
+  filter: saturate(7);
+}
+
+...................-------------------------------------.................................
+grayscale 	Escala de blanco y negro 	Porcentaje 	0% = original, 100% = B&N
+blur 	Grado de difuminado 	Tamaño 	Tamaño del radio de desenfoque
+sepia 	Grado de color sepia 	Porcentaje 	0% = original, 100% = sepia
+saturate 	Grado de saturación 	Porcentaje 	0% = B&N, 100% = original, permite >100%
+opacity 	Grado de transparencia 	Porcentaje 	0% = invisible, 100% = visible
+brightness 	Brillo 	Porcentaje 	0 = negro, 100% = original, permite >100%
+contrast 	Contraste 	Porcentaje 	0 = gris, 100% = original, permite >100%
+hue-rotate 	Rotación de color (matiz) 	Direccion 	0 ó 360deg = original
+invert 	Invertir 	Porcentaje 	0% original, 100% = invertido
+drop-shadow 	Sombra idéntica 	PosX PosY Tamaño Color 	(Ver apartado de sombras)
+
+................................------------------------------------------
+
+normal 	No se aplica ningún modo de fusión.
+multiply 	Multiplicar.
+screen 	Trama.
+overlay 	Superponer.
+darken 	Oscurecer.
+lighten 	Aclarar.
+color-dodge 	Sobreexponer color.
+color-burn 	Subexponer color.
+hard-light 	Luz fuerte.
+soft-light 	Luz suave.
+difference 	Diferencia.
+exclusion 	Exclusión.
+hue 	Tono.
+saturation 	Saturación.
+color 	Color.
+luminosity 	Luminosidad.
+
+filter: url("filters.svg#filter-id");
+filter: blur(5px);
+filter: brightness(0.4);
+filter: contrast(200%);
+filter: drop-shadow(16px 16px 20px blue);
+filter: grayscale(50%);
+filter: hue-rotate(90deg);
+filter: invert(75%);
+filter: opacity(25%);
+filter: saturate(30%);
+filter: sepia(60%);
+
+
+...........................................--------------------------------............
+
+    rgb(): define un color en RGB. Un ejemplo se muestra seguidamente:
+
+ <!DOCTYPE html>
+<html>
+   <head>
+    <style>
+      #p1 {
+            background-color:rgb(255,59,59);
+      }
+    </style>
+   </head>
+     <body>
+       <p>Ejemplo de color en RGB</p>
+       <p id="p1">Este color</p>
+    </body>
+</html>
+
+    rgba(): define un color en RGB con transparencia.
+    hsl(): define un color en HSL (Hue-saturation-lightness).
+    hsla(): define un color en HSL con transparencia.
+    radial-gradient(): establece un gradiente radial en el fondo de la imagen, como se muestra en el siguiente ejemplo.
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #gradiente1 {
+                     height: 150px;
+                     width: 200px;
+                     background-image: radial-gradient(pink, gray, blue);
+       }
+    </style>
+  </head>
+   <body>
+       <h3>Ejemplo de Gradiente Radial</h3>
+        <div id="gradiente1"></div>
+    </body>
+</html>
+
+    linear-gradient(): establece un gradiente lineal en el fondo de la imagen.
+    calc(): permite realizar operaciones matemáticas cuyos resulatdos se usan en la propiedades de CSS.
+
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+         #c1 {
+           position: absolute;
+           left: 100px;
+           width: calc(100% - 200px);
+           border: 1px solid black;
+           background-color: gray;
+        }
+     </style>
+     </head>
+     <body>
+        <h1>Ejemplo de la función calc()</h1>
+        <div id="c1">Usando calc()</div>
+     </body>
+    </html>
+
+    attr(): devuelve el valor de un atributo de elemento seleccionado, como se muestra a continuación:
+
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+       a:after {content: " (" attr(href) ")";}
+     </style>
+    </head>
+    <body>
+       <h1>Ejemplo de la función attr()</h1>
+        <p>Insert the value of the href attribute in parenthesis after each link:</p>
+        <p><a href="https://www.nextu.com">Visitanos en: </a></p>
+    </body>
+</html>
+
+    var(): permite el uso de variables con valores especificos que puden ser usadas varias veces en el documento HTML. La variable se define anteponiendo dos guiones al nombre y se accde usando la funcion var(). Es ampliamante usada en la definicion de aspectos tales como colores, margenes, tipos de letras que empleamos en varios lugraes de nuestro sitio Web. A continuacion tenemos un ejemplo:
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      :root {
+               --color-principal-de-fondo: #FF3B3B;
+               --color-del-texto: yellow;
+              }  
+    #div1 {
+            background-color: var( --color-principal-de-fondo);
+            padding: 5px;
+            color: var(--color-del-texto);
+           }
+     </style>
+  </head>
+  <body>
+      <h1>Uso de la función var()</h1>
+       <div id="div1">Ejemplo</div>
+  </body>
+  </html>
+
+.................-------------------..........................................................................
+						AVANZADO
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <h1>La Tienda</h1>
+  <h2>Los mejores precios</h2>
+  <p>Aqui tenemos la mejor tienda, con los productos que querias, escribe a <a href="#">contacto</a></p>
+</body>
+
+</html>
+.--------------------------------............-
+@import './variables.css';
+
+h1, h2 {
+  font-family: var(--fuente-titulos);
+}
+
+h1, h2, a {
+  color: var(--color-principal);
+}
+ ..........----------------
+:root {
+  --color-principal: #FF0000;
+  --fuente-titulos: Arial;
+}
+
+..............---------
+
+<style>
+.rejilla {
+  display: grid;
+  grid-template-columns: 50px auto 20%;
+  grid-template-rows: 70% 30%;
+}
+</style>
+
+<div class="rejilla">
+</div>
+
+.........----------------------------------........................
+
+<style>
+  .rejilla {
+    display: grid;
+    grid-template-columns: 50px auto 20%;
+    grid-template-rows: 70% 30%;
+  }
+
+  .elemento-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+</style>
+
+<div class="rejilla">
+  <div class="elemento-a">A</div>
+</div>
+.......................................-------------------------------
+
+<style>
+  .rejilla {
+    display: grid;
+    grid-template-columns: 50px auto 20%;
+    grid-template-rows: 70% 30%;
+  }
+
+  .elemento-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .elemento-b {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+</style>
+
+<div class="rejilla">
+  <div class="elemento-a">A</div>
+  <div class="elemento-b">B</div>
+</div>
+...............................--------------------------------------------...............
+
+<style>
+  .rejilla {
+    display: grid;
+    grid-template-columns: 50px auto 20%;
+    grid-template-rows: 70% 30%;
+  }
+
+  .elemento-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .elemento-b {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .elemento-c {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+</style>
+
+<div class="rejilla">
+  <div class="elemento-a">A</div>
+  <div class="elemento-b">B</div>
+  <div class="elemento-c">C</div>
+</div>
+
+.................................................----------------------------------....................
+
+<style>
+  .rejilla {
+    display: grid;
+    grid-template-columns: 50px auto 20%;
+    grid-template-rows: 70% 30%;
+  }
+
+  .elemento-a {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .elemento-b {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 4;
+  }
+
+  .elemento-c {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .elemento-d {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+</style>
+
+<div class="rejilla">
+  <div class="elemento-a">A</div>
+  <div class="elemento-b">B</div>
+  <div class="elemento-c">C</div>
+  <div class="elemento-d">D</div>
+</div>
+............................-------------------------------------------...........................
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ejemplo</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+  <header>
+    <h1>La Tienda</h1>
+  </header>
+  <nav>
+    <ul><a href="#">Nosotros</a></ul>
+    <ul><a href="#">Contacto</a></ul>
+  </nav>
+  <main>
+    <h2>Los mejores precios</h2>
+    <p>Aqui tenemos la mejor tienda, con los productos que querias, escribe a <a href="#">contacto</a></p>
+  </main>
+  <footer>
+    Derechos Reservados
+  </footer>
+
+</body>
+
+</html>
+footer {
+  border-top: 1px solid black;
+  padding: 5px;
+}
+
+nav {
+  background-color: lightgray;
+}
+
+header {
+  border-bottom: 1px solid black;
+}
+
+main {
+  padding: 5px 10px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: grid;
+}
+
+@media {
+  body {
+    background-color: white;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+@media (min-width: 850px) {
+  body {
+    grid-template-columns: 150px auto;
+  }
+
+  header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+}
+
+...................................------------------------------------------.............................
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  	<link rel="stylesheet" href="/home/juanmanuel/Escritorio/FIXBOX/css/deportesamp/estilos.css">
+    <title>Ejemplo deportes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Deportes Extremos</h1>
+    </header>
+    <p>Fotos de deportes extremos</p>
+<section id="contenido">
+    <figure id="imagen1">
+          <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy.jpg" alt="bm" title="omy"/>
+              <figcaption>Imagen 1</figcaption>
+              </figure>
+    <figure id="imagen2">
+        <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy1.jpg" alt="bm" title="omy"/>
+              <figcaption>Imagen 2</figcaption>
+              </figure>
+      <figure id="imagen3">
+        <img src="/home/juanmanuel/Escritorio/FIXBOX/css/deportes/omy3.jpg" alt="bm" title="omy"/>
+        <figcaption>Imagen 3</figcaption>
+        </figure>
+  </section>
+  </body>
+    <footer>
+	Derechos Reservados
+</footer>
+</html>
+
+header {
+	padding: 3px 10px;
+	margin-bottom: 5px;
+	background: -webkit-linear-gradient(left, #1f47a8, #55dedf); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #1f47a8, #55dedf); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #1f47a8, #55dedf); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #1f47a8, #55dedf); /* Standard syntax */
+	border-radius: 40px;
+  font-family: Arial;
+  font-size: 20px;
+  text-align: center;
+  }
+  body {
+  	margin: center;
+    margin-left: 200px;
+  	font-family: Arial;
+  	width: 70%;
+  	color: black;
+  }
+  #contenido {
+  	margin: 1%;
+  }
+  figure {
+  	text-align: center;
+  	margin: 100px;
+  }
+  figure img {
+  	width: 600px;
+  }
+	#imagen1 img{
+		transition-property: border;
+		transition-duration: 0.5s;
+	}
+
+	#imagen1 img:hover{
+		border: solid 4px black;
+	}
+	#imagen2 img{
+		opacity: 0.1;/*opacadidad*/
+		transition: opacity 2s;
+	}
+
+	#imagen2 img:hover{
+		opacity: 100;
+	}
+	#imagen3 img{
+		transition-property: width;
+		transition-duration: 0.5s;
+	}
+
+	#imagen3 img:hover{
+		width: 70%;
+	}
+ footer {
+font-size: 0.8em;
+border-top: solid 2px #1f47a8;
+padding-top: 1vw;
+margin-top: 110px;
+text-align: center;
+}
+
+...................-------------------------------------------......................
